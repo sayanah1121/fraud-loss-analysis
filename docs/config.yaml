@@ -1,0 +1,11 @@
+# Initial project configuration
+random_seed: 42
+customers: 20000
+cards: 30000
+merchants: 2000
+devices: 35000
+transactions: 1500000
+fraud_rate_target: 0.007
+period_start: 2025-01-01
+period_end: 2025-12-31
+currency: INR

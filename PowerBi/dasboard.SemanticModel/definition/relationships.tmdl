@@ -1,0 +1,50 @@
+relationship AutoDetected_7f07ed8f-d916-4ae7-8f62-5b38233f6bab
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Capacity.rule_id
+	toColumn: 'Rule Results'.rule_id
+
+relationship aa2a9cb4-30e3-4637-b8f4-2344f9144d86
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_transaction_clean.txn_ts
+	toColumn: LocalDateTable_6366da29-0165-4b48-9456-eec0a1b30318.Date
+
+relationship f6d6c923-fe08-4fce-b41b-2295acb197bf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_card.issue_date
+	toColumn: LocalDateTable_43e1ec6b-3c3f-4e90-a731-e957554fcda8.Date
+
+relationship AutoDetected_8416c5a8-f867-4500-b4d7-fa706eda0698
+	fromColumn: fact_transaction_clean.card_id
+	toColumn: dim_card.card_id
+
+relationship AutoDetected_87bfa7ec-8cb9-4433-9a2e-3940df66dfc2
+	fromColumn: fact_transaction_clean.customer_id
+	toColumn: dim_customer.customer_id
+
+relationship 7798fd52-be6a-408f-8bb4-2426f45fa503
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_device.first_seen_date
+	toColumn: LocalDateTable_df0b76e7-8970-47d8-b66c-c3b37cc8440a.Date
+
+relationship AutoDetected_4f342b7b-54e2-4ed6-8542-1028089519d5
+	fromColumn: fact_transaction_clean.device_id
+	toColumn: dim_device.device_id
+
+relationship AutoDetected_a0c89bac-0a4c-458a-9de3-f5b4333606d5
+	fromColumn: fact_transaction_clean.merchant_id
+	toColumn: dim_merchant.merchant_id
+
+relationship fa4413c5-06ec-4d39-9b34-c908fb8c96ae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fact_chargeback.reported_date
+	toColumn: LocalDateTable_761d36b7-4b0c-43b7-b9ac-fd027a0986f4.Date
+
+relationship cb5d1fe7-90e3-a1cd-e819-749bc5d6612a
+	fromColumn: fact_chargeback.txn_id
+	toColumn: fact_transaction_clean.txn_id
+
+relationship 6317c9a4-5f34-b625-d906-ac28d65bd602
+	fromColumn: fact_transaction_clean.'Txn Date'
+	toColumn: dim_date.Date
+

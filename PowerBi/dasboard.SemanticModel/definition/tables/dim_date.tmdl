@@ -1,0 +1,85 @@
+table dim_date
+	lineageTag: 500a111d-4703-461f-ba19-127f39fd8953
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 07cb61ba-37d1-4eb1-95c0-e615dec1cc86
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 533868dc-8aa2-4767-9e64-088a21cffe2d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: fcfdb1af-7e92-44b0-88c4-46ceb248fba3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 3705b71d-6932-43a8-9119-d408c72bfdcc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Year'
+		lineageTag: 5365ce08-dd74-445e-817b-138f42520c9e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Year]
+		sortByColumn: 'Year Month Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 16251e8a-4314-4c3e-b2ea-7d8d2ef98478
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Month Sort'
+		formatString: 0
+		lineageTag: 1d788ef1-6e0b-4736-969d-eb1b15e83570
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year Month Sort]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDAR(
+				        DATE(2025, 1, 1),
+				        DATE(2025, 12, 31)
+				    ),
+				    "Year", YEAR([Date]),
+				    "Month Number", MONTH([Date]),
+				    "Month", FORMAT([Date], "MMM"),
+				    "Month Year", FORMAT([Date], "MMM yyyy"),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "Year Month Sort", YEAR([Date]) * 100 + MONTH([Date])
+				)
+
+	annotation PBI_Id = af96774303754dfd80aeceaf6fb11b63
+

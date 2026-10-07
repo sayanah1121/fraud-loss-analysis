@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "p3thrc000000000012",
+  "position": {
+    "x": 1216,
+    "y": 440,
+    "z": 31,
+    "height": 300,
+    "width": 646,
+    "tabOrder": 31
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "SELECTED THRESHOLD → ₹20K",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#118DFF",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "\n\nValidation period: 616 alerts, 432 fraud, 184 legitimate\n",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "70.13% precision",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "\n₹18.55M fraud value caught\n\n",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#605E5C",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "WHY ₹20K",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "\nRaising the threshold lifts precision but each step surrenders fraud value. Lowering it buys that value back with alert volume the review team cannot absorb. ₹20K is the point where precision clears 70% while fraud value still holds roughly half the total — and the alert load stays inside capacity.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#605E5C",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "left"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

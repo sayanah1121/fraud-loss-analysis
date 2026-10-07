@@ -1,0 +1,3 @@
+rule,alerts,TP,FP,precision_pct,recall_pct,fraud_value_caught,expected_fraud_prevented,review_cost,customer_friction_cost,expected_net_savings
+R001 - High-value E-commerce High-risk Category,616,432,184,70.12987012987013,12.258796821793416,18550201.98,14840161.584,92400,18400,14729361.584
+R002 - E-commerce Card Testing,781,716,65,91.67733674775928,20.317820658342793,18493.85,14795.08,117150,6500,-108854.92

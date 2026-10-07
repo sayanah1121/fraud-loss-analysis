@@ -1,0 +1,250 @@
+table _Measures
+	lineageTag: 3db62b22-472e-42e6-a4ee-047f03ef4ec5
+
+	measure 'Total Transactions' =
+			
+			COUNTROWS(fact_transaction_clean)
+		formatString: 0
+		lineageTag: a85c7171-134d-4bbc-b31d-87027c2156ec
+
+	measure 'Transaction Value' =
+			
+			SUM(fact_transaction_clean[amount])
+		formatString: "₹"#,##0
+		lineageTag: c4c1049a-82b5-40d5-8b3e-ba2be2840c03
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Transactions' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(fact_transaction_clean[txn_id]),
+			    TREATAS(
+			        SELECTCOLUMNS(
+			            FILTER(
+			                fact_chargeback,
+			                fact_chargeback[confirmed_fraud_flag] = TRUE()
+			            ),
+			            "txn_id",
+			            fact_chargeback[txn_id]
+			        ),
+			        fact_transaction_clean[txn_id]
+			    )
+			)
+		formatString: 0
+		lineageTag: 190da2cc-0362-4ddf-8c7b-74a1d1d14c1a
+
+	measure 'Fraud Rate' =
+			
+			DIVIDE(
+			    [Fraud Transactions],
+			    [Total Transactions],
+			    0
+			)
+		formatString: 0.00%
+		lineageTag: 224fa2dd-25f1-4b92-bae2-5736981ba1c4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Value' =
+			
+			CALCULATE(
+			    SUM(fact_transaction_clean[amount]),
+			    TREATAS(
+			        SELECTCOLUMNS(
+			            FILTER(
+			                fact_chargeback,
+			                fact_chargeback[confirmed_fraud_flag] = TRUE()
+			            ),
+			            "txn_id",
+			            fact_chargeback[txn_id]
+			        ),
+			        fact_transaction_clean[txn_id]
+			    )
+			)
+		formatString: "₹"#,##0
+		lineageTag: ef2c4ddf-b3b9-40c5-bf78-2bcd90673640
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Value Share' =
+			
+			DIVIDE(
+			    [Fraud Value],
+			    [Transaction Value],
+			    0
+			)
+		lineageTag: 43142c55-17a4-4623-8e57-08946700f091
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Gross Chargeback Loss' =
+			
+			SUM(fact_chargeback[loss_amount])
+		formatString: "₹"#,##0
+		lineageTag: 9f43e338-b68f-4bba-9a04-b2520f9208ab
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Recovered Amount' =
+			
+			SUM(fact_chargeback[recovered_amount])
+		formatString: "₹"#,##0
+		lineageTag: aefea7d2-1efc-452e-9a33-41cc5b37e936
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Chargeback Loss' =
+			
+			[Gross Chargeback Loss] - [Recovered Amount]
+		formatString: "₹"#,##0
+		lineageTag: 1f192750-f61f-49f0-bda0-c6ef293c3209
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Recovery Rate' =
+			
+			DIVIDE(
+			    [Recovered Amount],
+			    [Gross Chargeback Loss],
+			    0
+			)
+		formatString: 0.00%
+		lineageTag: 0b79def7-ffb2-4ec0-bc71-bb18f045df38
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Transaction Value' =
+			
+			DIVIDE(
+			    [Transaction Value],
+			    [Total Transactions],
+			    0
+			)
+		lineageTag: 73144c9d-4044-400a-bf39-ec054d8d045b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Fraud Transaction Value' =
+			
+			DIVIDE(
+			    [Fraud Value],
+			    [Fraud Transactions],
+			    0
+			)
+		lineageTag: 866a6933-af49-4f68-b695-adbc77561449
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Value per Transaction' =
+			
+			DIVIDE(
+			    [Fraud Value],
+			    [Fraud Transactions],
+			    0
+			)
+		lineageTag: 27eb6944-fdb4-44bb-801e-c30ec917511a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Loss Rate' =
+			
+			DIVIDE(
+			    [Net Chargeback Loss],
+			    [Transaction Value],
+			    0
+			)
+		lineageTag: a673fe2a-b10c-4cff-88b2-20b651963500
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fraud Loss per Fraud Transaction' =
+			
+			DIVIDE(
+			    [Net Chargeback Loss],
+			    [Fraud Transactions],
+			    0
+			)
+		lineageTag: d36ce565-7e29-445b-825c-87c13711c227
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Loss Rate' =
+			
+			DIVIDE(
+			    [Net Chargeback Loss],
+			    [Transaction Value],
+			    0
+			)
+		lineageTag: 68b47393-add1-4bf2-872e-616739f65e08
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'R001 Alert Volume' =
+			
+			CALCULATE(
+			    MAX('Rule Results'[alerts]),
+			    'Rule Results'[rule_id] = "R001"
+			)
+		formatString: 0
+		lineageTag: b47dd4bd-a9dd-4050-ac39-772d96a65ec2
+
+	measure 'R001 Precision' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        MAX('Rule Results'[precision_pct]),
+			        'Rule Results'[rule_id] = "R001"
+			    ),
+			    100,
+			    0
+			)
+		lineageTag: 1b7ea7fd-f783-4179-9249-0c71e0bab47d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'R001 Fraud Value Caught' =
+			
+			CALCULATE(
+			    MAX('Rule Results'[fraud_value_caught]),
+			    'Rule Results'[rule_id] = "R001"
+			)
+		lineageTag: 27e1da5c-dfaf-44a7-bdfa-f9e56124b24f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'R001 Expected Net Savings' =
+			
+			CALCULATE(
+			    MAX('Rule Results'[expected_net_savings]),
+			    'Rule Results'[rule_id] = "R001"
+			)
+		lineageTag: e228d9f5-e59e-4e52-a060-570c8b27f2a4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'R002 Expected Net Savings' =
+			
+			CALCULATE(
+			    MAX('Rule Results'[expected_net_savings]),
+			    'Rule Results'[rule_id] = "R002"
+			)
+		lineageTag: ae9ee63d-d813-42f9-826b-a2f1fbd470dc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: bd243706-dc40-4015-8e0f-c87b9b604bb4
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = c44bbe15e0bc4c0794ae4f39abbe45a6
+

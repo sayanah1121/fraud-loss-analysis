@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "p2amtcallout000007",
+  "position": {
+    "x": 24,
+    "y": 608,
+    "z": 14,
+    "height": 32,
+    "width": 1872,
+    "tabOrder": 14
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "HIGH-VALUE SIGNAL",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#118DFF",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "   Transactions above ₹25K are only ",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "0.32% of volume",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " but carry ",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "55.87% of fraud value",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ".  ",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Fraud rate rises from 1.19% below ₹500 to 76.19% for transactions above ₹100K.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#201F1E",
+                      "fontFamily": "Segoe UI",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "left"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

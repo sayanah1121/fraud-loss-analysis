@@ -1,0 +1,286 @@
+table fact_transaction_clean
+	lineageTag: f2dc6fee-5b9f-4f4b-b8a5-2bd07cf54682
+
+	column txn_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 91ae94c7-8102-4e39-901c-cd3f10a6b086
+		summarizeBy: none
+		sourceColumn: txn_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 6388ea02-3385-4eb2-9b48-d76412a9b0fb
+		summarizeBy: none
+		sourceColumn: card_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ebeb1ed-77f3-425f-8175-7f6b791bdae0
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_id
+		dataType: int64
+		formatString: 0
+		lineageTag: e2f91925-8ebb-41eb-8f19-ad6bb81a2f1d
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column device_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f56a0b3-be2b-4491-bf91-8d131f448452
+		summarizeBy: none
+		sourceColumn: device_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column txn_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 60f60967-d632-40a9-a899-07879075ff87
+		summarizeBy: none
+		sourceColumn: txn_ts
+
+		variation Variation
+			isDefault
+			relationship: aa2a9cb4-30e3-4637-b8f4-2344f9144d86
+			defaultHierarchy: LocalDateTable_6366da29-0165-4b48-9456-eec0a1b30318.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column amount
+		dataType: double
+		lineageTag: 6816cd2d-a03b-4740-a0c1-dd86093fee18
+		summarizeBy: sum
+		sourceColumn: amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column channel
+		dataType: string
+		lineageTag: ad5341b3-43a5-462b-ab65-9fecd6f5b991
+		summarizeBy: none
+		sourceColumn: channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 26d0c5ae-20e4-499b-a0a0-34fa077f98de
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_city
+		dataType: string
+		lineageTag: 83352771-5b02-4af7-bd42-dc3c5711b5e4
+		summarizeBy: none
+		sourceColumn: merchant_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_country
+		dataType: string
+		lineageTag: 7c65f363-82ad-4866-9d0c-fbe728d6af10
+		summarizeBy: none
+		sourceColumn: merchant_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column ip_country
+		dataType: string
+		lineageTag: c3895ff9-db73-42a7-ab1d-171e6062f75a
+		summarizeBy: none
+		sourceColumn: ip_country
+
+		annotation SummarizationSetBy = Automatic
+
+	column auth_result
+		dataType: string
+		lineageTag: 4812ef65-8ddf-4c89-bf7d-68f168cd34f6
+		summarizeBy: none
+		sourceColumn: auth_result
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_home_city
+		dataType: string
+		lineageTag: 689fab5e-3933-4b97-8f40-25aea138911e
+		summarizeBy: none
+		sourceColumn: customer_home_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Txn Date' =
+			
+			DATE(
+			    YEAR(fact_transaction_clean[txn_ts]),
+			    MONTH(fact_transaction_clean[txn_ts]),
+			    DAY(fact_transaction_clean[txn_ts])
+			)
+		formatString: General Date
+		lineageTag: 293466f8-e63c-4b24-b40b-0c164c50fbbe
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card Age Band' =
+			
+			SWITCH(
+			    TRUE(),
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 30, "0-30 days",
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 90, "31-90 days",
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 180, "91-180 days",
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 365, "181-365 days",
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 730, "1-2 years",
+			    "2+ years"
+			)
+		lineageTag: b2000005-0000-4000-8000-000000000001
+		summarizeBy: none
+		sortByColumn: 'Card Age Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Card Age Sort' =
+			
+			SWITCH(
+			    TRUE(),
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 30, 1,
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 90, 2,
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 180, 3,
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 365, 4,
+			    DATEDIFF(RELATED(dim_card[issue_date]), DATE(2025, 1, 1), DAY) <= 730, 5,
+			    6
+			)
+		formatString: 0
+		lineageTag: b2000006-0000-4000-8000-000000000001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Value-range banding for Page 2.
+	/// 
+	/// These are calculated columns rather than a band dimension table with
+	/// SWITCH measures. The disconnected-table variant was tried first and
+	/// fails: SWITCH over a column from an unrelated table needs single-value
+	/// row context, which SUMMARIZECOLUMNS does not supply, so every band
+	/// measure raised "a single value for column ... cannot be determined".
+	/// Columns on the fact table make the visuals plain drag-and-drop.
+	/// 
+	/// Card age uses the COHORT definition - age as of 2025-01-01 - to match
+	/// sql/06_temporal_cohort_analysis.sql and notebook 03. An earlier version
+	/// measured age at each transaction instead, which put the 0-30 day band at
+	/// 1.01% rather than the validated 0.69%. Both are defensible, but they are
+	/// different questions and only one matches the project's own analysis:
+	/// cohort   : 54,185 txns (3.62% of volume), 372 fraud, 0.69%
+	/// txn-time :  2,227 txns (0.15% of volume),  22 fraud, 1.01%
+	/// The txn-time band is too thin to read (22 events; 95% CI 0.65-1.49%
+	/// brackets the 0.70% baseline, two-sided p = 0.14), so the cohort
+	/// definition is both more consistent and more informative.
+	/// 
+	/// DATEDIFF is inlined rather than reading a separate 'Card Age Days'
+	/// column: a same-table calculated-column dependency once left the
+	/// dependents at State=5 with no data while the dependency reported
+	/// State=1. Inlining removes the ordering hazard and saves a column.
+	column 'Amount Band' =
+			
+			SWITCH(
+			    TRUE(),
+			    fact_transaction_clean[amount] <= 500, "0-500",
+			    fact_transaction_clean[amount] <= 1000, "500-1K",
+			    fact_transaction_clean[amount] <= 5000, "1K-5K",
+			    fact_transaction_clean[amount] <= 10000, "5K-10K",
+			    fact_transaction_clean[amount] <= 25000, "10K-25K",
+			    fact_transaction_clean[amount] <= 50000, "25K-50K",
+			    fact_transaction_clean[amount] <= 100000, "50K-100K",
+			    "100K+"
+			)
+		lineageTag: b2000002-0000-4000-8000-000000000001
+		summarizeBy: none
+		sortByColumn: 'Amount Band Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Amount Band Sort' =
+			
+			SWITCH(
+			    TRUE(),
+			    fact_transaction_clean[amount] <= 500, 1,
+			    fact_transaction_clean[amount] <= 1000, 2,
+			    fact_transaction_clean[amount] <= 5000, 3,
+			    fact_transaction_clean[amount] <= 10000, 4,
+			    fact_transaction_clean[amount] <= 25000, 5,
+			    fact_transaction_clean[amount] <= 50000, 6,
+			    fact_transaction_clean[amount] <= 100000, 7,
+			    8
+			)
+		formatString: 0
+		lineageTag: b2000003-0000-4000-8000-000000000001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// ip_country vs merchant_country. The brief's original DAX used
+	/// RELATED(dim_customer[country]), but dim_customer has no country column -
+	/// it carries home_city. Both fields needed are already on this table.
+	column 'Country Match' =
+			
+			SWITCH(
+			    TRUE(),
+			    fact_transaction_clean[ip_country] = "UNKNOWN", "Unknown",
+			    fact_transaction_clean[ip_country] = fact_transaction_clean[merchant_country], "Match",
+			    "Mismatch"
+			)
+		lineageTag: b2000004-0000-4000-8000-000000000001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	/// The strongest observed combination: 40.24% fraud rate, 69.19% of total
+	/// fraud value. The production rule (R001) tightens this to 20K.
+	/// 
+	/// Labels are deliberately short. An earlier build used
+	/// "E-comm + Electronics/Gift Cards + 10K+" and the bar chart failed to
+	/// render at all - the category axis had no room for a label that long.
+	column 'Risk Pattern' =
+			
+			SWITCH(
+			    TRUE(),
+			    fact_transaction_clean[channel] = "E_COMMERCE"
+			        && fact_transaction_clean[category] IN { "Electronics", "Gift Cards" }
+			        && fact_transaction_clean[amount] >= 10000,
+			        "E-comm high-risk 10K+",
+			    "All other transactions"
+			)
+		lineageTag: b2000007-0000-4000-8000-000000000001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_transaction_clean = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\fact_transaction_clean.csv"), [Delimiter = ",", Columns = 14, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"txn_id", Int64.Type}, {"card_id", Int64.Type}, {"customer_id", Int64.Type}, {"merchant_id", Int64.Type}, {"device_id", Int64.Type}, {"txn_ts", type datetime}, {"amount", type number}, {"channel", type text}, {"category", type text}, {"merchant_city", type text}, {"merchant_country", type text}, {"ip_country", type text}, {"auth_result", type text}, {"customer_home_city", type text}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "dasboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "998f046c-e1c8-438b-9b85-ee824ab27558"
+  }
+}

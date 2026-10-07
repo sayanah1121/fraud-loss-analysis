@@ -1,0 +1,123 @@
+/// R001 threshold sweep - VALIDATION PERIOD ONLY (Sep-Dec 2025).
+/// 
+/// Source of truth: notebooks/05_sql_analysis.ipynb, Query 7
+/// "Development vs Validation", dataset_split = VALIDATION rows only.
+/// Exported to data/processed/r001_threshold_sweep_validation.csv.
+/// 
+/// WHY VALIDATION-ONLY:
+/// The published brief quotes 1,793 alerts / 73.51% / INR 56.01M for the
+/// selected INR 20,000 threshold. That figure is DEVELOPMENT + VALIDATION
+/// COMBINED (1,177 + 616 alerts, 886 + 432 fraud transactions). It cannot be
+/// used on a page whose own KPI row states R001 = 616 alerts / 70.13% /
+/// INR 18.55M, which is the `Rule Results` validation figure.
+/// 
+/// The validation-only row at INR 20,000 reconciles exactly with the deployed
+/// rule: 616 alerts, TP 432, FP 184, 70.13% precision, INR 18,550,201.98.
+/// Every row here shares that scope, so the sweep and the KPIs agree.
+/// 
+/// WHY CALCULATED AND NOT AN M PARTITION:
+/// An import partition is empty until someone clicks Refresh in the Desktop
+/// UI, and it surfaces as a banner instead of data. A calculated table is
+/// materialised during model load, so the rows are present the moment the
+/// project opens and no refresh (or CSV file) is needed afterwards.
+/// 
+/// The rows are UNIONed one ROW at a time because DATATABLE rejects this
+/// shape with "DATATABLE requires an odd number of arguments".
+/// 
+/// TMDL NOTES:
+/// - Only `///` doc comments are legal anywhere in a .tmdl file, including
+/// inside a DAX expression body. A bare `//` line is an indentation parse
+/// error that blocks the whole project from opening, and the message blames
+/// the comment line rather than the expression around it.
+/// - A calculated table's columns need `isNameInferred` and a bracketed
+/// `sourceColumn`, matching `dim_date`. Without them the table loads empty.
+table 'R001 Threshold Sweep'
+	lineageTag: 7c1f4a20-9b3e-4d51-8a72-1e6d0f3b84c9
+
+	column threshold
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e5a8c14-2d67-4b90-a1f8-5c7e9d204b6a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [threshold]
+
+		annotation SummarizationSetBy = Automatic
+
+	column alerts
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b2d6f39-5e14-4a27-9c60-d3f81a7e502b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [alerts]
+
+		annotation SummarizationSetBy = Automatic
+
+	column fraud_transactions
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c9e1b72-8d30-4f56-b1a9-6e2f5c83d047
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [fraud_transactions]
+
+		annotation SummarizationSetBy = Automatic
+
+	column legitimate_transactions
+		dataType: int64
+		formatString: 0
+		lineageTag: f1a6d839-0b47-4e25-8f73-2a9c4d610e58
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [legitimate_transactions]
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Stored percent-scaled (70.13 means 70.13%), NOT a 0-1 fraction.
+	/// Formatted with 0.00"%" - a 0.00% format would render "7013.00%".
+	column precision_pct
+		dataType: double
+		lineageTag: 2d7f8e51-6c93-4a08-bf45-81e3a9d70c26b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [precision_pct]
+
+		annotation SummarizationSetBy = Automatic
+
+	column fraud_value
+		dataType: double
+		lineageTag: 9b4e0a63-7d58-4c31-9e26-5f8b2a3d0147c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [fraud_value]
+
+		annotation SummarizationSetBy = Automatic
+
+	/// True only on the INR 20,000 row, so the selected operating point can
+	/// be highlighted without hard-coding a label.
+	column is_selected
+		dataType: boolean
+		lineageTag: 5e3b7c94-1f86-4a72-8d50-b7c9e2a4306d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [is_selected]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'R001 Threshold Sweep' = calculated
+		mode: import
+		source =
+				UNION(
+				    ROW("threshold", 10000, "alerts", 1803, "fraud_transactions", 648, "legitimate_transactions", 1155, "precision_pct", 35.94, "fraud_value", 21825193.99, "is_selected", FALSE()),
+				    ROW("threshold", 12500, "alerts", 1273, "fraud_transactions", 604, "legitimate_transactions", 669, "precision_pct", 47.45, "fraud_value", 21329241.06, "is_selected", FALSE()),
+				    ROW("threshold", 15000, "alerts", 960, "fraud_transactions", 543, "legitimate_transactions", 417, "precision_pct", 56.56, "fraud_value", 20494605.66, "is_selected", FALSE()),
+				    ROW("threshold", 17500, "alerts", 765, "fraud_transactions", 488, "legitimate_transactions", 277, "precision_pct", 63.79, "fraud_value", 19603788.04, "is_selected", FALSE()),
+				    ROW("threshold", 20000, "alerts", 616, "fraud_transactions", 432, "legitimate_transactions", 184, "precision_pct", 70.13, "fraud_value", 18550201.98, "is_selected", TRUE()),
+				    ROW("threshold", 22500, "alerts", 513, "fraud_transactions", 390, "legitimate_transactions", 123, "precision_pct", 76.02, "fraud_value", 17657343.52, "is_selected", FALSE()),
+				    ROW("threshold", 25000, "alerts", 446, "fraud_transactions", 349, "legitimate_transactions", 97, "precision_pct", 78.25, "fraud_value", 16676431.02, "is_selected", FALSE()),
+				    ROW("threshold", 30000, "alerts", 327, "fraud_transactions", 276, "legitimate_transactions", 51, "precision_pct", 84.4, "fraud_value", 14665987.27, "is_selected", FALSE()),
+				    ROW("threshold", 40000, "alerts", 199, "fraud_transactions", 174, "legitimate_transactions", 25, "precision_pct", 87.44, "fraud_value", 11171381.65, "is_selected", FALSE()),
+				    ROW("threshold", 50000, "alerts", 114, "fraud_transactions", 105, "legitimate_transactions", 9, "precision_pct", 92.11, "fraud_value", 8080463.11, "is_selected", FALSE())
+				)
+

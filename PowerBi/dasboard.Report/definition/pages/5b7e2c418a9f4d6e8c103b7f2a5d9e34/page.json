@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "5b7e2c418a9f4d6e8c103b7f2a5d9e34",
+  "displayName": "Rule Performance & Optimization",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

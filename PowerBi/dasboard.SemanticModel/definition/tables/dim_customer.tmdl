@@ -1,0 +1,101 @@
+table dim_customer
+	lineageTag: 188a0528-de90-43ed-a2d2-2cab826c5a03
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: e6772164-652a-4c7e-9b3a-49138344613c
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column home_city
+		dataType: string
+		lineageTag: a79039c6-e445-43f2-beda-d78cb2c5ed8d
+		summarizeBy: none
+		sourceColumn: home_city
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band
+		dataType: string
+		lineageTag: 2fbd9e55-7070-446b-8bca-1febc9a909ee
+		summarizeBy: none
+		sourceColumn: age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column income_band
+		dataType: string
+		lineageTag: 0d0b226b-46b0-4730-a7dd-c678fab82f48
+		summarizeBy: none
+		sourceColumn: income_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenure_months
+		dataType: int64
+		formatString: 0
+		lineageTag: c37c4e1a-c72f-4ede-8690-13d243ccd2df
+		summarizeBy: none
+		sourceColumn: tenure_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column segment
+		dataType: string
+		lineageTag: 226a5c64-40ef-47e1-bf82-8f20bbadd2cb
+		summarizeBy: none
+		sourceColumn: segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column typical_monthly_spend
+		dataType: double
+		lineageTag: c442de80-ee58-4195-9237-e66a4d8cc77e
+		summarizeBy: none
+		sourceColumn: typical_monthly_spend
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column preferred_category
+		dataType: string
+		lineageTag: 29de69b9-c20f-46a2-b7a4-cc4dd6fa0443
+		summarizeBy: none
+		sourceColumn: preferred_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column active_start_hour
+		dataType: int64
+		formatString: 0
+		lineageTag: a32c2018-7d2c-4751-8e52-07b038d32fe1
+		summarizeBy: none
+		sourceColumn: active_start_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column active_end_hour
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e524001-100d-42f4-8021-c0bebfc24657
+		summarizeBy: none
+		sourceColumn: active_end_hour
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customer = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\dim_customer.csv"), [Delimiter = ",", Columns = 10, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"customer_id", Int64.Type}, {"home_city", type text}, {"age_band", type text}, {"income_band", type text}, {"tenure_months", Int64.Type}, {"segment", type text}, {"typical_monthly_spend", type number}, {"preferred_category", type text}, {"active_start_hour", Int64.Type}, {"active_end_hour", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

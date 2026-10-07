@@ -1,0 +1,67 @@
+table fact_chargeback
+	lineageTag: b0f69b7d-8493-4c60-b011-7e17ada7fac5
+
+	column txn_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b9e7485a-374f-454b-aa21-a83d5f9ed754
+		summarizeBy: none
+		sourceColumn: txn_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column reported_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 88448a3d-483a-4f51-9019-e1bef4b52416
+		summarizeBy: none
+		sourceColumn: reported_date
+
+		variation Variation
+			isDefault
+			relationship: fa4413c5-06ec-4d39-9b34-c908fb8c96ae
+			defaultHierarchy: LocalDateTable_761d36b7-4b0c-43b7-b9ac-fd027a0986f4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column confirmed_fraud_flag
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: cdc189bc-4996-4bb7-8df4-0ea2115e019b
+		summarizeBy: none
+		sourceColumn: confirmed_fraud_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column loss_amount
+		dataType: double
+		lineageTag: da8a2e40-1708-4314-861e-88b5eb759eb5
+		summarizeBy: sum
+		sourceColumn: loss_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column recovered_amount
+		dataType: double
+		lineageTag: 4e1d662e-086e-44a4-91bc-3695c7ce2efb
+		summarizeBy: sum
+		sourceColumn: recovered_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_chargeback = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\fact_chargeback.csv"), [Delimiter = ",", Columns = 5, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"txn_id", Int64.Type}, {"reported_date", type datetime}, {"confirmed_fraud_flag", type logical}, {"loss_amount", type number}, {"recovered_amount", type number}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

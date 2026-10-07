@@ -1,0 +1,2001 @@
+merchant_id,merchant_name,category,city,country,risk_tier
+1,Merchant_00001,Grocery,Bengaluru,India,LOW
+2,Merchant_00002,Grocery,Bengaluru,India,LOW
+3,Merchant_00003,Grocery,Jaipur,India,MEDIUM
+4,Merchant_00004,Gift Cards,Pune,India,MEDIUM
+5,Merchant_00005,Gift Cards,Delhi,India,LOW
+6,Merchant_00006,Jewelry,Bengaluru,India,LOW
+7,Merchant_00007,Online Services,Delhi,India,MEDIUM
+8,Merchant_00008,Clothing,Mumbai,India,MEDIUM
+9,Merchant_00009,Electronics,Bengaluru,UAE,LOW
+10,Merchant_00010,Online Services,Bangalore,India,LOW
+11,Merchant_00011,Online Services,Bangalore,India,LOW
+12,Merchant_00012,Fuel,Kolkata,India,MEDIUM
+13,Merchant_00013,Entertainment,Delhi,India,LOW
+14,Merchant_00014,Dining,Indore,India,HIGH
+15,Merchant_00015,Healthcare,Lucknow,India,LOW
+16,Merchant_00016,Entertainment,Chandigarh,India,LOW
+17,Merchant_00017,Grocery,Lucknow,India,MEDIUM
+18,Merchant_00018,Dining,Hyderabad,India,LOW
+19,Merchant_00019,Travel,Indore,India,LOW
+20,Merchant_00020,Entertainment,Bengaluru,India,HIGH
+21,Merchant_00021,Dining,Chennai,India,HIGH
+22,Merchant_00022,Dining,Bangalore,India,LOW
+23,Merchant_00023,Grocery,Lucknow,India,LOW
+24,Merchant_00024,Dining,Chandigarh,India,LOW
+25,Merchant_00025,Clothing,Chennai,India,LOW
+26,Merchant_00026,Entertainment,Ahmedabad,India,LOW
+27,Merchant_00027,Dining,Mumbai,India,MEDIUM
+28,Merchant_00028,Travel,Bengaluru,India,LOW
+29,Merchant_00029,Fuel,Indore,India,LOW
+30,Merchant_00030,Clothing,Surat,India,LOW
+31,Merchant_00031,Grocery,Mumbai,India,LOW
+32,Merchant_00032,Online Services,Chennai,India,LOW
+33,Merchant_00033,Healthcare,Chennai,USA,MEDIUM
+34,Merchant_00034,Grocery,Bangalore,India,LOW
+35,Merchant_00035,Fuel,Bengaluru,India,LOW
+36,Merchant_00036,Electronics,Ahmedabad,USA,LOW
+37,Merchant_00037,Dining,Jaipur,India,MEDIUM
+38,Merchant_00038,Dining,Mumbai,India,MEDIUM
+39,Merchant_00039,Gift Cards,Chennai,India,HIGH
+40,Merchant_00040,Gift Cards,Jaipur,India,MEDIUM
+41,Merchant_00041,Dining,Bangalore,India,LOW
+42,Merchant_00042,Jewelry,Kolkata,India,MEDIUM
+43,Merchant_00043,Grocery,Bangalore,India,LOW
+44,Merchant_00044,Entertainment,Chennai,India,LOW
+45,Merchant_00045,Grocery,Pune,India,LOW
+46,Merchant_00046,Entertainment,Bengaluru,India,HIGH
+47,Merchant_00047,Gift Cards,Mumbai,Singapore,HIGH
+48,Merchant_00048,Online Services,Chennai,India,LOW
+49,Merchant_00049,Gift Cards,Jaipur,India,LOW
+50,Merchant_00050,Entertainment,Jaipur,USA,MEDIUM
+51,Merchant_00051,Grocery,Chennai,India,LOW
+52,Merchant_00052,Travel,Jaipur,India,LOW
+53,Merchant_00053,Electronics,Indore,India,MEDIUM
+54,Merchant_00054,Healthcare,Delhi,India,LOW
+55,Merchant_00055,Travel,Jaipur,India,LOW
+56,Merchant_00056,Entertainment,Mumbai,India,MEDIUM
+57,Merchant_00057,Healthcare,Nagpur,India,LOW
+58,Merchant_00058,Clothing,Bengaluru,India,LOW
+59,Merchant_00059,Grocery,Chandigarh,UAE,LOW
+60,Merchant_00060,Clothing,Pune,India,MEDIUM
+61,Merchant_00061,Dining,Nagpur,India,LOW
+62,Merchant_00062,Jewelry,Pune,India,LOW
+63,Merchant_00063,Grocery,Bengaluru,India,LOW
+64,Merchant_00064,Fuel,Chandigarh,India,MEDIUM
+65,Merchant_00065,Fuel,Kolkata,India,LOW
+66,Merchant_00066,Gift Cards,Chandigarh,India,MEDIUM
+67,Merchant_00067,Grocery,Nagpur,India,MEDIUM
+68,Merchant_00068,Online Services,Mumbai,India,MEDIUM
+69,Merchant_00069,Clothing,Pune,India,MEDIUM
+70,Merchant_00070,Fuel,Jaipur,India,MEDIUM
+71,Merchant_00071,Online Services,Hyderabad,India,MEDIUM
+72,Merchant_00072,Entertainment,Delhi,India,HIGH
+73,Merchant_00073,Online Services,Hyderabad,UAE,LOW
+74,Merchant_00074,Clothing,Nagpur,India,LOW
+75,Merchant_00075,Entertainment,Surat,India,LOW
+76,Merchant_00076,Dining,Indore,India,LOW
+77,Merchant_00077,Jewelry,Bengaluru,India,LOW
+78,Merchant_00078,Gift Cards,Surat,India,LOW
+79,Merchant_00079,Jewelry,Kolkata,India,MEDIUM
+80,Merchant_00080,Electronics,Lucknow,India,LOW
+81,Merchant_00081,Fuel,Hyderabad,India,HIGH
+82,Merchant_00082,Gift Cards,Nagpur,India,MEDIUM
+83,Merchant_00083,Travel,Chandigarh,India,MEDIUM
+84,Merchant_00084,Online Services,Delhi,India,LOW
+85,Merchant_00085,Dining,Bengaluru,India,LOW
+86,Merchant_00086,Travel,Bangalore,India,MEDIUM
+87,Merchant_00087,Healthcare,Delhi,India,HIGH
+88,Merchant_00088,Healthcare,Ahmedabad,India,LOW
+89,Merchant_00089,Clothing,Nagpur,India,MEDIUM
+90,Merchant_00090,Fuel,Lucknow,Singapore,LOW
+91,Merchant_00091,Entertainment,Nagpur,India,LOW
+92,Merchant_00092,Dining,Ahmedabad,India,LOW
+93,Merchant_00093,Electronics,Hyderabad,India,MEDIUM
+94,Merchant_00094,Fuel,Pune,India,MEDIUM
+95,Merchant_00095,Clothing,Chandigarh,India,LOW
+96,Merchant_00096,Grocery,Nagpur,India,MEDIUM
+97,Merchant_00097,Fuel,Pune,India,LOW
+98,Merchant_00098,Travel,Chandigarh,UK,LOW
+99,Merchant_00099,Entertainment,Bengaluru,India,LOW
+100,Merchant_00100,Electronics,Chandigarh,USA,LOW
+101,Merchant_00101,Travel,Jaipur,India,MEDIUM
+102,Merchant_00102,Fuel,Delhi,India,HIGH
+103,Merchant_00103,Dining,Nagpur,India,MEDIUM
+104,Merchant_00104,Jewelry,Surat,India,LOW
+105,Merchant_00105,Gift Cards,Pune,UK,LOW
+106,Merchant_00106,Jewelry,Hyderabad,India,MEDIUM
+107,Merchant_00107,Dining,Ahmedabad,India,LOW
+108,Merchant_00108,Travel,Chandigarh,India,LOW
+109,Merchant_00109,Travel,Kolkata,India,MEDIUM
+110,Merchant_00110,Travel,Hyderabad,India,HIGH
+111,Merchant_00111,Online Services,Indore,India,LOW
+112,Merchant_00112,Fuel,Bangalore,India,LOW
+113,Merchant_00113,Entertainment,Bangalore,India,HIGH
+114,Merchant_00114,Travel,Kolkata,India,LOW
+115,Merchant_00115,Fuel,Indore,India,LOW
+116,Merchant_00116,Dining,Ahmedabad,USA,MEDIUM
+117,Merchant_00117,Jewelry,Surat,India,MEDIUM
+118,Merchant_00118,Entertainment,Lucknow,India,HIGH
+119,Merchant_00119,Electronics,Indore,India,MEDIUM
+120,Merchant_00120,Dining,Delhi,India,LOW
+121,Merchant_00121,Fuel,Hyderabad,USA,LOW
+122,Merchant_00122,Healthcare,Bangalore,India,MEDIUM
+123,Merchant_00123,Clothing,Ahmedabad,India,HIGH
+124,Merchant_00124,Gift Cards,Kolkata,India,LOW
+125,Merchant_00125,Jewelry,Ahmedabad,India,LOW
+126,Merchant_00126,Entertainment,Ahmedabad,India,LOW
+127,Merchant_00127,Entertainment,Bengaluru,India,LOW
+128,Merchant_00128,Entertainment,Hyderabad,India,LOW
+129,Merchant_00129,Grocery,Chandigarh,UK,LOW
+130,Merchant_00130,Electronics,Surat,India,MEDIUM
+131,Merchant_00131,Online Services,Kolkata,India,LOW
+132,Merchant_00132,Dining,Chandigarh,India,LOW
+133,Merchant_00133,Jewelry,Jaipur,India,LOW
+134,Merchant_00134,Travel,Chandigarh,India,HIGH
+135,Merchant_00135,Travel,Pune,India,MEDIUM
+136,Merchant_00136,Jewelry,Delhi,India,LOW
+137,Merchant_00137,Travel,Ahmedabad,India,LOW
+138,Merchant_00138,Online Services,Jaipur,India,MEDIUM
+139,Merchant_00139,Dining,Lucknow,India,LOW
+140,Merchant_00140,Grocery,Pune,India,LOW
+141,Merchant_00141,Grocery,Surat,India,LOW
+142,Merchant_00142,Electronics,Jaipur,USA,LOW
+143,Merchant_00143,Gift Cards,Lucknow,India,LOW
+144,Merchant_00144,Travel,Jaipur,India,LOW
+145,Merchant_00145,Jewelry,Bengaluru,India,LOW
+146,Merchant_00146,Travel,Delhi,India,LOW
+147,Merchant_00147,Grocery,Delhi,India,LOW
+148,Merchant_00148,Fuel,Nagpur,India,LOW
+149,Merchant_00149,Jewelry,Bangalore,India,LOW
+150,Merchant_00150,Fuel,Indore,India,LOW
+151,Merchant_00151,Fuel,Hyderabad,USA,MEDIUM
+152,Merchant_00152,Clothing,Pune,India,MEDIUM
+153,Merchant_00153,Grocery,Jaipur,India,MEDIUM
+154,Merchant_00154,Entertainment,Jaipur,India,LOW
+155,Merchant_00155,Travel,Mumbai,India,LOW
+156,Merchant_00156,Travel,Delhi,India,LOW
+157,Merchant_00157,Grocery,Ahmedabad,India,LOW
+158,Merchant_00158,Jewelry,Mumbai,India,LOW
+159,Merchant_00159,Entertainment,Bangalore,India,LOW
+160,Merchant_00160,Dining,Jaipur,India,LOW
+161,Merchant_00161,Healthcare,Chennai,India,LOW
+162,Merchant_00162,Dining,Jaipur,India,LOW
+163,Merchant_00163,Jewelry,Jaipur,India,LOW
+164,Merchant_00164,Jewelry,Indore,India,MEDIUM
+165,Merchant_00165,Travel,Bangalore,India,LOW
+166,Merchant_00166,Online Services,Chandigarh,India,LOW
+167,Merchant_00167,Clothing,Bengaluru,India,LOW
+168,Merchant_00168,Entertainment,Bangalore,India,LOW
+169,Merchant_00169,Online Services,Lucknow,India,LOW
+170,Merchant_00170,Entertainment,Bangalore,India,LOW
+171,Merchant_00171,Dining,Kolkata,India,LOW
+172,Merchant_00172,Travel,Lucknow,UAE,LOW
+173,Merchant_00173,Grocery,Nagpur,India,LOW
+174,Merchant_00174,Healthcare,Delhi,India,HIGH
+175,Merchant_00175,Travel,Pune,India,LOW
+176,Merchant_00176,Electronics,Chennai,India,LOW
+177,Merchant_00177,Fuel,Kolkata,India,LOW
+178,Merchant_00178,Gift Cards,Mumbai,India,HIGH
+179,Merchant_00179,Grocery,Bengaluru,India,LOW
+180,Merchant_00180,Fuel,Hyderabad,India,HIGH
+181,Merchant_00181,Electronics,Hyderabad,India,LOW
+182,Merchant_00182,Fuel,Ahmedabad,India,HIGH
+183,Merchant_00183,Gift Cards,Delhi,India,MEDIUM
+184,Merchant_00184,Dining,Bengaluru,India,LOW
+185,Merchant_00185,Entertainment,Chennai,India,MEDIUM
+186,Merchant_00186,Entertainment,Kolkata,USA,LOW
+187,Merchant_00187,Gift Cards,Kolkata,India,LOW
+188,Merchant_00188,Online Services,Mumbai,India,LOW
+189,Merchant_00189,Electronics,Hyderabad,India,MEDIUM
+190,Merchant_00190,Clothing,Nagpur,India,LOW
+191,Merchant_00191,Grocery,Chennai,India,LOW
+192,Merchant_00192,Entertainment,Ahmedabad,India,LOW
+193,Merchant_00193,Gift Cards,Hyderabad,India,LOW
+194,Merchant_00194,Grocery,Lucknow,India,MEDIUM
+195,Merchant_00195,Gift Cards,Mumbai,Singapore,LOW
+196,Merchant_00196,Online Services,Ahmedabad,USA,HIGH
+197,Merchant_00197,Online Services,Chandigarh,India,LOW
+198,Merchant_00198,Jewelry,Pune,India,MEDIUM
+199,Merchant_00199,Healthcare,Jaipur,India,LOW
+200,Merchant_00200,Online Services,Lucknow,India,LOW
+201,Merchant_00201,Online Services,Bengaluru,India,MEDIUM
+202,Merchant_00202,Gift Cards,Indore,India,LOW
+203,Merchant_00203,Travel,Bengaluru,India,LOW
+204,Merchant_00204,Dining,Jaipur,India,MEDIUM
+205,Merchant_00205,Grocery,Kolkata,India,LOW
+206,Merchant_00206,Grocery,Bangalore,India,LOW
+207,Merchant_00207,Clothing,Surat,India,LOW
+208,Merchant_00208,Fuel,Nagpur,India,LOW
+209,Merchant_00209,Healthcare,Ahmedabad,India,MEDIUM
+210,Merchant_00210,Entertainment,Chandigarh,India,LOW
+211,Merchant_00211,Clothing,Hyderabad,UK,LOW
+212,Merchant_00212,Fuel,Pune,India,LOW
+213,Merchant_00213,Gift Cards,Chennai,India,LOW
+214,Merchant_00214,Jewelry,Kolkata,India,MEDIUM
+215,Merchant_00215,Gift Cards,Bangalore,India,MEDIUM
+216,Merchant_00216,Online Services,Jaipur,India,LOW
+217,Merchant_00217,Grocery,Bangalore,India,LOW
+218,Merchant_00218,Jewelry,Chennai,UK,LOW
+219,Merchant_00219,Healthcare,Ahmedabad,India,LOW
+220,Merchant_00220,Entertainment,Kolkata,India,HIGH
+221,Merchant_00221,Electronics,Indore,USA,LOW
+222,Merchant_00222,Grocery,Jaipur,UK,LOW
+223,Merchant_00223,Gift Cards,Kolkata,India,HIGH
+224,Merchant_00224,Jewelry,Delhi,India,MEDIUM
+225,Merchant_00225,Gift Cards,Delhi,India,MEDIUM
+226,Merchant_00226,Healthcare,Pune,India,LOW
+227,Merchant_00227,Gift Cards,Bengaluru,India,HIGH
+228,Merchant_00228,Jewelry,Pune,India,LOW
+229,Merchant_00229,Clothing,Surat,India,LOW
+230,Merchant_00230,Jewelry,Hyderabad,India,LOW
+231,Merchant_00231,Healthcare,Nagpur,UAE,HIGH
+232,Merchant_00232,Online Services,Ahmedabad,India,MEDIUM
+233,Merchant_00233,Travel,Delhi,India,MEDIUM
+234,Merchant_00234,Gift Cards,Pune,UAE,LOW
+235,Merchant_00235,Dining,Hyderabad,UAE,MEDIUM
+236,Merchant_00236,Entertainment,Chennai,India,LOW
+237,Merchant_00237,Travel,Delhi,India,MEDIUM
+238,Merchant_00238,Online Services,Pune,India,LOW
+239,Merchant_00239,Gift Cards,Chandigarh,India,LOW
+240,Merchant_00240,Healthcare,Delhi,India,LOW
+241,Merchant_00241,Travel,Surat,India,LOW
+242,Merchant_00242,Clothing,Chandigarh,India,LOW
+243,Merchant_00243,Clothing,Ahmedabad,India,LOW
+244,Merchant_00244,Entertainment,Bangalore,India,LOW
+245,Merchant_00245,Fuel,Hyderabad,India,LOW
+246,Merchant_00246,Dining,Pune,India,LOW
+247,Merchant_00247,Healthcare,Delhi,India,LOW
+248,Merchant_00248,Grocery,Nagpur,India,LOW
+249,Merchant_00249,Travel,Bengaluru,India,LOW
+250,Merchant_00250,Entertainment,Bengaluru,USA,LOW
+251,Merchant_00251,Jewelry,Bangalore,India,LOW
+252,Merchant_00252,Online Services,Delhi,India,LOW
+253,Merchant_00253,Jewelry,Lucknow,India,LOW
+254,Merchant_00254,Jewelry,Indore,India,HIGH
+255,Merchant_00255,Entertainment,Indore,UK,LOW
+256,Merchant_00256,Grocery,Kolkata,Singapore,LOW
+257,Merchant_00257,Grocery,Bangalore,India,LOW
+258,Merchant_00258,Gift Cards,Jaipur,India,HIGH
+259,Merchant_00259,Jewelry,Ahmedabad,India,HIGH
+260,Merchant_00260,Travel,Ahmedabad,India,LOW
+261,Merchant_00261,Clothing,Mumbai,India,MEDIUM
+262,Merchant_00262,Dining,Indore,India,LOW
+263,Merchant_00263,Gift Cards,Surat,India,HIGH
+264,Merchant_00264,Online Services,Jaipur,India,LOW
+265,Merchant_00265,Online Services,Surat,India,LOW
+266,Merchant_00266,Dining,Pune,India,LOW
+267,Merchant_00267,Travel,Kolkata,India,LOW
+268,Merchant_00268,Dining,Indore,India,MEDIUM
+269,Merchant_00269,Electronics,Chennai,India,LOW
+270,Merchant_00270,Electronics,Nagpur,India,LOW
+271,Merchant_00271,Travel,Pune,India,LOW
+272,Merchant_00272,Travel,Bengaluru,India,LOW
+273,Merchant_00273,Entertainment,Mumbai,USA,MEDIUM
+274,Merchant_00274,Fuel,Mumbai,India,LOW
+275,Merchant_00275,Clothing,Nagpur,India,LOW
+276,Merchant_00276,Entertainment,Kolkata,India,LOW
+277,Merchant_00277,Dining,Delhi,India,LOW
+278,Merchant_00278,Entertainment,Pune,India,HIGH
+279,Merchant_00279,Online Services,Ahmedabad,India,LOW
+280,Merchant_00280,Electronics,Chennai,India,MEDIUM
+281,Merchant_00281,Travel,Bengaluru,India,LOW
+282,Merchant_00282,Gift Cards,Indore,India,LOW
+283,Merchant_00283,Gift Cards,Surat,India,LOW
+284,Merchant_00284,Fuel,Indore,India,MEDIUM
+285,Merchant_00285,Fuel,Delhi,India,LOW
+286,Merchant_00286,Healthcare,Jaipur,India,HIGH
+287,Merchant_00287,Jewelry,Delhi,India,HIGH
+288,Merchant_00288,Gift Cards,Chandigarh,India,LOW
+289,Merchant_00289,Jewelry,Chennai,Singapore,LOW
+290,Merchant_00290,Fuel,Hyderabad,India,LOW
+291,Merchant_00291,Gift Cards,Bangalore,India,LOW
+292,Merchant_00292,Grocery,Surat,India,LOW
+293,Merchant_00293,Healthcare,Surat,India,MEDIUM
+294,Merchant_00294,Fuel,Delhi,India,LOW
+295,Merchant_00295,Entertainment,Nagpur,India,LOW
+296,Merchant_00296,Electronics,Nagpur,India,LOW
+297,Merchant_00297,Grocery,Surat,Singapore,MEDIUM
+298,Merchant_00298,Clothing,Kolkata,India,HIGH
+299,Merchant_00299,Fuel,Bengaluru,India,HIGH
+300,Merchant_00300,Jewelry,Lucknow,India,MEDIUM
+301,Merchant_00301,Jewelry,Nagpur,India,MEDIUM
+302,Merchant_00302,Gift Cards,Ahmedabad,India,MEDIUM
+303,Merchant_00303,Fuel,Bangalore,India,MEDIUM
+304,Merchant_00304,Gift Cards,Chandigarh,India,LOW
+305,Merchant_00305,Healthcare,Surat,USA,LOW
+306,Merchant_00306,Healthcare,Indore,India,LOW
+307,Merchant_00307,Jewelry,Kolkata,India,LOW
+308,Merchant_00308,Dining,Surat,India,HIGH
+309,Merchant_00309,Clothing,Jaipur,Singapore,MEDIUM
+310,Merchant_00310,Jewelry,Nagpur,India,MEDIUM
+311,Merchant_00311,Jewelry,Ahmedabad,India,LOW
+312,Merchant_00312,Entertainment,Jaipur,India,LOW
+313,Merchant_00313,Clothing,Hyderabad,India,LOW
+314,Merchant_00314,Travel,Kolkata,India,LOW
+315,Merchant_00315,Travel,Mumbai,UK,MEDIUM
+316,Merchant_00316,Grocery,Indore,India,LOW
+317,Merchant_00317,Entertainment,Ahmedabad,India,MEDIUM
+318,Merchant_00318,Electronics,Mumbai,India,LOW
+319,Merchant_00319,Gift Cards,Lucknow,India,LOW
+320,Merchant_00320,Grocery,Jaipur,India,LOW
+321,Merchant_00321,Dining,Ahmedabad,India,LOW
+322,Merchant_00322,Dining,Chennai,UAE,LOW
+323,Merchant_00323,Healthcare,Bangalore,UAE,MEDIUM
+324,Merchant_00324,Travel,Bengaluru,India,MEDIUM
+325,Merchant_00325,Electronics,Indore,India,LOW
+326,Merchant_00326,Travel,Chennai,USA,LOW
+327,Merchant_00327,Electronics,Surat,India,LOW
+328,Merchant_00328,Electronics,Hyderabad,India,MEDIUM
+329,Merchant_00329,Jewelry,Bengaluru,India,LOW
+330,Merchant_00330,Healthcare,Indore,India,LOW
+331,Merchant_00331,Gift Cards,Nagpur,India,MEDIUM
+332,Merchant_00332,Dining,Chennai,India,MEDIUM
+333,Merchant_00333,Grocery,Bangalore,India,MEDIUM
+334,Merchant_00334,Entertainment,Kolkata,India,LOW
+335,Merchant_00335,Clothing,Chandigarh,India,MEDIUM
+336,Merchant_00336,Fuel,Lucknow,India,MEDIUM
+337,Merchant_00337,Entertainment,Indore,India,LOW
+338,Merchant_00338,Clothing,Bengaluru,India,HIGH
+339,Merchant_00339,Clothing,Kolkata,India,LOW
+340,Merchant_00340,Jewelry,Surat,India,LOW
+341,Merchant_00341,Jewelry,Pune,India,LOW
+342,Merchant_00342,Entertainment,Nagpur,India,HIGH
+343,Merchant_00343,Dining,Nagpur,India,MEDIUM
+344,Merchant_00344,Fuel,Hyderabad,India,MEDIUM
+345,Merchant_00345,Gift Cards,Jaipur,India,LOW
+346,Merchant_00346,Grocery,Indore,UAE,LOW
+347,Merchant_00347,Clothing,Lucknow,India,LOW
+348,Merchant_00348,Jewelry,Chennai,India,LOW
+349,Merchant_00349,Dining,Jaipur,India,LOW
+350,Merchant_00350,Electronics,Bangalore,India,LOW
+351,Merchant_00351,Electronics,Ahmedabad,India,MEDIUM
+352,Merchant_00352,Gift Cards,Chennai,India,LOW
+353,Merchant_00353,Jewelry,Ahmedabad,India,LOW
+354,Merchant_00354,Fuel,Pune,USA,LOW
+355,Merchant_00355,Online Services,Kolkata,India,LOW
+356,Merchant_00356,Clothing,Hyderabad,India,LOW
+357,Merchant_00357,Gift Cards,Delhi,India,LOW
+358,Merchant_00358,Clothing,Bangalore,USA,LOW
+359,Merchant_00359,Grocery,Ahmedabad,India,LOW
+360,Merchant_00360,Clothing,Pune,India,LOW
+361,Merchant_00361,Healthcare,Bangalore,India,LOW
+362,Merchant_00362,Fuel,Lucknow,India,LOW
+363,Merchant_00363,Entertainment,Bangalore,India,LOW
+364,Merchant_00364,Healthcare,Hyderabad,India,LOW
+365,Merchant_00365,Dining,Bangalore,India,MEDIUM
+366,Merchant_00366,Entertainment,Kolkata,UAE,LOW
+367,Merchant_00367,Electronics,Pune,India,MEDIUM
+368,Merchant_00368,Dining,Surat,India,MEDIUM
+369,Merchant_00369,Entertainment,Delhi,India,LOW
+370,Merchant_00370,Electronics,Delhi,India,HIGH
+371,Merchant_00371,Fuel,Chandigarh,India,LOW
+372,Merchant_00372,Healthcare,Nagpur,India,LOW
+373,Merchant_00373,Electronics,Pune,India,HIGH
+374,Merchant_00374,Gift Cards,Jaipur,India,LOW
+375,Merchant_00375,Entertainment,Pune,India,LOW
+376,Merchant_00376,Travel,Mumbai,India,LOW
+377,Merchant_00377,Clothing,Jaipur,India,LOW
+378,Merchant_00378,Jewelry,Ahmedabad,India,HIGH
+379,Merchant_00379,Dining,Ahmedabad,India,MEDIUM
+380,Merchant_00380,Jewelry,Lucknow,India,LOW
+381,Merchant_00381,Gift Cards,Chandigarh,UK,MEDIUM
+382,Merchant_00382,Grocery,Kolkata,India,HIGH
+383,Merchant_00383,Healthcare,Lucknow,India,LOW
+384,Merchant_00384,Entertainment,Hyderabad,India,LOW
+385,Merchant_00385,Electronics,Bengaluru,India,MEDIUM
+386,Merchant_00386,Online Services,Surat,India,LOW
+387,Merchant_00387,Travel,Chandigarh,India,LOW
+388,Merchant_00388,Healthcare,Indore,India,LOW
+389,Merchant_00389,Grocery,Kolkata,UK,MEDIUM
+390,Merchant_00390,Travel,Nagpur,India,LOW
+391,Merchant_00391,Entertainment,Mumbai,India,LOW
+392,Merchant_00392,Fuel,Bengaluru,India,MEDIUM
+393,Merchant_00393,Grocery,Bangalore,India,HIGH
+394,Merchant_00394,Dining,Indore,India,HIGH
+395,Merchant_00395,Healthcare,Indore,India,LOW
+396,Merchant_00396,Entertainment,Pune,India,MEDIUM
+397,Merchant_00397,Healthcare,Chandigarh,India,LOW
+398,Merchant_00398,Grocery,Delhi,India,MEDIUM
+399,Merchant_00399,Dining,Surat,India,MEDIUM
+400,Merchant_00400,Jewelry,Hyderabad,India,LOW
+401,Merchant_00401,Travel,Mumbai,India,MEDIUM
+402,Merchant_00402,Dining,Pune,India,LOW
+403,Merchant_00403,Gift Cards,Indore,India,LOW
+404,Merchant_00404,Online Services,Chennai,India,HIGH
+405,Merchant_00405,Entertainment,Surat,India,LOW
+406,Merchant_00406,Electronics,Delhi,UAE,LOW
+407,Merchant_00407,Gift Cards,Nagpur,India,LOW
+408,Merchant_00408,Fuel,Surat,India,MEDIUM
+409,Merchant_00409,Grocery,Bangalore,India,LOW
+410,Merchant_00410,Fuel,Kolkata,India,MEDIUM
+411,Merchant_00411,Dining,Bengaluru,India,MEDIUM
+412,Merchant_00412,Healthcare,Lucknow,India,LOW
+413,Merchant_00413,Clothing,Bengaluru,India,LOW
+414,Merchant_00414,Healthcare,Nagpur,India,LOW
+415,Merchant_00415,Jewelry,Pune,India,MEDIUM
+416,Merchant_00416,Dining,Mumbai,India,LOW
+417,Merchant_00417,Travel,Pune,India,MEDIUM
+418,Merchant_00418,Gift Cards,Lucknow,UK,MEDIUM
+419,Merchant_00419,Electronics,Lucknow,India,HIGH
+420,Merchant_00420,Jewelry,Nagpur,India,LOW
+421,Merchant_00421,Grocery,Delhi,India,MEDIUM
+422,Merchant_00422,Gift Cards,Chandigarh,India,MEDIUM
+423,Merchant_00423,Online Services,Lucknow,India,MEDIUM
+424,Merchant_00424,Online Services,Bengaluru,India,LOW
+425,Merchant_00425,Entertainment,Pune,India,LOW
+426,Merchant_00426,Travel,Mumbai,India,LOW
+427,Merchant_00427,Travel,Hyderabad,India,MEDIUM
+428,Merchant_00428,Travel,Pune,India,MEDIUM
+429,Merchant_00429,Healthcare,Kolkata,India,LOW
+430,Merchant_00430,Travel,Nagpur,UAE,LOW
+431,Merchant_00431,Electronics,Mumbai,India,MEDIUM
+432,Merchant_00432,Jewelry,Ahmedabad,UK,LOW
+433,Merchant_00433,Gift Cards,Chennai,India,LOW
+434,Merchant_00434,Online Services,Bangalore,India,LOW
+435,Merchant_00435,Healthcare,Pune,India,LOW
+436,Merchant_00436,Online Services,Mumbai,India,LOW
+437,Merchant_00437,Clothing,Kolkata,USA,HIGH
+438,Merchant_00438,Online Services,Chandigarh,India,HIGH
+439,Merchant_00439,Travel,Bengaluru,India,MEDIUM
+440,Merchant_00440,Healthcare,Kolkata,India,MEDIUM
+441,Merchant_00441,Entertainment,Nagpur,India,LOW
+442,Merchant_00442,Entertainment,Chandigarh,India,MEDIUM
+443,Merchant_00443,Clothing,Indore,Singapore,MEDIUM
+444,Merchant_00444,Healthcare,Pune,India,LOW
+445,Merchant_00445,Jewelry,Bengaluru,India,LOW
+446,Merchant_00446,Fuel,Chandigarh,India,LOW
+447,Merchant_00447,Travel,Lucknow,India,LOW
+448,Merchant_00448,Jewelry,Hyderabad,India,LOW
+449,Merchant_00449,Clothing,Pune,India,MEDIUM
+450,Merchant_00450,Jewelry,Surat,India,LOW
+451,Merchant_00451,Jewelry,Indore,India,LOW
+452,Merchant_00452,Dining,Kolkata,India,LOW
+453,Merchant_00453,Fuel,Ahmedabad,India,LOW
+454,Merchant_00454,Entertainment,Pune,India,MEDIUM
+455,Merchant_00455,Entertainment,Mumbai,India,MEDIUM
+456,Merchant_00456,Electronics,Bangalore,India,MEDIUM
+457,Merchant_00457,Grocery,Jaipur,India,MEDIUM
+458,Merchant_00458,Gift Cards,Chennai,India,HIGH
+459,Merchant_00459,Clothing,Chennai,India,LOW
+460,Merchant_00460,Online Services,Nagpur,UAE,MEDIUM
+461,Merchant_00461,Dining,Mumbai,UK,MEDIUM
+462,Merchant_00462,Dining,Delhi,India,MEDIUM
+463,Merchant_00463,Gift Cards,Bangalore,India,LOW
+464,Merchant_00464,Gift Cards,Lucknow,India,LOW
+465,Merchant_00465,Clothing,Bengaluru,India,LOW
+466,Merchant_00466,Healthcare,Delhi,India,HIGH
+467,Merchant_00467,Electronics,Bangalore,India,MEDIUM
+468,Merchant_00468,Grocery,Surat,India,LOW
+469,Merchant_00469,Fuel,Jaipur,India,LOW
+470,Merchant_00470,Online Services,Nagpur,India,LOW
+471,Merchant_00471,Gift Cards,Indore,India,LOW
+472,Merchant_00472,Clothing,Pune,India,MEDIUM
+473,Merchant_00473,Fuel,Nagpur,India,LOW
+474,Merchant_00474,Grocery,Surat,India,MEDIUM
+475,Merchant_00475,Clothing,Kolkata,India,HIGH
+476,Merchant_00476,Travel,Bangalore,India,MEDIUM
+477,Merchant_00477,Healthcare,Nagpur,India,LOW
+478,Merchant_00478,Grocery,Jaipur,India,LOW
+479,Merchant_00479,Gift Cards,Lucknow,Singapore,LOW
+480,Merchant_00480,Jewelry,Bengaluru,India,HIGH
+481,Merchant_00481,Dining,Pune,India,LOW
+482,Merchant_00482,Dining,Bangalore,India,MEDIUM
+483,Merchant_00483,Grocery,Lucknow,Singapore,LOW
+484,Merchant_00484,Jewelry,Mumbai,India,MEDIUM
+485,Merchant_00485,Clothing,Delhi,India,LOW
+486,Merchant_00486,Grocery,Pune,India,HIGH
+487,Merchant_00487,Entertainment,Delhi,India,LOW
+488,Merchant_00488,Fuel,Jaipur,India,MEDIUM
+489,Merchant_00489,Entertainment,Chandigarh,India,LOW
+490,Merchant_00490,Entertainment,Nagpur,India,LOW
+491,Merchant_00491,Grocery,Kolkata,India,HIGH
+492,Merchant_00492,Electronics,Lucknow,India,MEDIUM
+493,Merchant_00493,Travel,Nagpur,India,HIGH
+494,Merchant_00494,Grocery,Nagpur,India,LOW
+495,Merchant_00495,Dining,Mumbai,India,LOW
+496,Merchant_00496,Healthcare,Mumbai,Singapore,LOW
+497,Merchant_00497,Fuel,Pune,UK,LOW
+498,Merchant_00498,Electronics,Chennai,India,LOW
+499,Merchant_00499,Clothing,Pune,India,LOW
+500,Merchant_00500,Online Services,Mumbai,India,MEDIUM
+501,Merchant_00501,Grocery,Delhi,India,LOW
+502,Merchant_00502,Electronics,Pune,India,LOW
+503,Merchant_00503,Healthcare,Chandigarh,India,LOW
+504,Merchant_00504,Gift Cards,Indore,India,HIGH
+505,Merchant_00505,Travel,Chandigarh,UK,HIGH
+506,Merchant_00506,Clothing,Lucknow,India,LOW
+507,Merchant_00507,Jewelry,Surat,India,LOW
+508,Merchant_00508,Healthcare,Mumbai,India,LOW
+509,Merchant_00509,Fuel,Bengaluru,India,LOW
+510,Merchant_00510,Gift Cards,Chandigarh,India,LOW
+511,Merchant_00511,Entertainment,Pune,India,LOW
+512,Merchant_00512,Healthcare,Mumbai,India,HIGH
+513,Merchant_00513,Grocery,Chennai,India,HIGH
+514,Merchant_00514,Electronics,Chandigarh,India,LOW
+515,Merchant_00515,Healthcare,Bangalore,India,LOW
+516,Merchant_00516,Gift Cards,Chandigarh,India,LOW
+517,Merchant_00517,Grocery,Bengaluru,Singapore,LOW
+518,Merchant_00518,Gift Cards,Bengaluru,India,LOW
+519,Merchant_00519,Grocery,Bangalore,India,HIGH
+520,Merchant_00520,Fuel,Delhi,UK,MEDIUM
+521,Merchant_00521,Fuel,Indore,Singapore,LOW
+522,Merchant_00522,Grocery,Mumbai,India,LOW
+523,Merchant_00523,Dining,Jaipur,India,MEDIUM
+524,Merchant_00524,Electronics,Lucknow,USA,LOW
+525,Merchant_00525,Entertainment,Kolkata,India,MEDIUM
+526,Merchant_00526,Electronics,Kolkata,India,LOW
+527,Merchant_00527,Gift Cards,Chandigarh,India,HIGH
+528,Merchant_00528,Dining,Lucknow,India,MEDIUM
+529,Merchant_00529,Gift Cards,Kolkata,India,MEDIUM
+530,Merchant_00530,Travel,Ahmedabad,India,HIGH
+531,Merchant_00531,Electronics,Delhi,India,HIGH
+532,Merchant_00532,Fuel,Chennai,India,LOW
+533,Merchant_00533,Fuel,Indore,India,LOW
+534,Merchant_00534,Electronics,Pune,India,LOW
+535,Merchant_00535,Grocery,Surat,India,LOW
+536,Merchant_00536,Gift Cards,Chennai,India,LOW
+537,Merchant_00537,Gift Cards,Nagpur,India,MEDIUM
+538,Merchant_00538,Gift Cards,Surat,UAE,LOW
+539,Merchant_00539,Online Services,Bangalore,India,HIGH
+540,Merchant_00540,Travel,Indore,India,LOW
+541,Merchant_00541,Healthcare,Ahmedabad,India,HIGH
+542,Merchant_00542,Gift Cards,Jaipur,India,LOW
+543,Merchant_00543,Dining,Kolkata,India,MEDIUM
+544,Merchant_00544,Dining,Pune,India,MEDIUM
+545,Merchant_00545,Online Services,Kolkata,India,LOW
+546,Merchant_00546,Fuel,Bengaluru,India,LOW
+547,Merchant_00547,Grocery,Chennai,India,LOW
+548,Merchant_00548,Entertainment,Pune,India,LOW
+549,Merchant_00549,Electronics,Ahmedabad,India,LOW
+550,Merchant_00550,Clothing,Indore,India,LOW
+551,Merchant_00551,Clothing,Pune,India,LOW
+552,Merchant_00552,Online Services,Surat,India,LOW
+553,Merchant_00553,Travel,Kolkata,India,LOW
+554,Merchant_00554,Fuel,Chandigarh,India,LOW
+555,Merchant_00555,Entertainment,Delhi,India,LOW
+556,Merchant_00556,Dining,Bengaluru,India,LOW
+557,Merchant_00557,Electronics,Jaipur,India,LOW
+558,Merchant_00558,Online Services,Pune,India,HIGH
+559,Merchant_00559,Online Services,Bengaluru,India,LOW
+560,Merchant_00560,Dining,Chennai,India,MEDIUM
+561,Merchant_00561,Clothing,Mumbai,India,LOW
+562,Merchant_00562,Electronics,Mumbai,India,LOW
+563,Merchant_00563,Gift Cards,Pune,India,LOW
+564,Merchant_00564,Grocery,Surat,India,LOW
+565,Merchant_00565,Gift Cards,Chennai,India,MEDIUM
+566,Merchant_00566,Entertainment,Mumbai,India,LOW
+567,Merchant_00567,Online Services,Ahmedabad,India,LOW
+568,Merchant_00568,Clothing,Delhi,India,LOW
+569,Merchant_00569,Electronics,Nagpur,India,MEDIUM
+570,Merchant_00570,Healthcare,Bangalore,Singapore,LOW
+571,Merchant_00571,Jewelry,Ahmedabad,India,LOW
+572,Merchant_00572,Gift Cards,Hyderabad,India,LOW
+573,Merchant_00573,Fuel,Bengaluru,India,LOW
+574,Merchant_00574,Electronics,Indore,India,LOW
+575,Merchant_00575,Online Services,Lucknow,Singapore,LOW
+576,Merchant_00576,Clothing,Bangalore,India,LOW
+577,Merchant_00577,Fuel,Chennai,UAE,HIGH
+578,Merchant_00578,Fuel,Ahmedabad,India,MEDIUM
+579,Merchant_00579,Dining,Bangalore,India,LOW
+580,Merchant_00580,Dining,Bangalore,India,LOW
+581,Merchant_00581,Dining,Kolkata,India,LOW
+582,Merchant_00582,Electronics,Bangalore,India,MEDIUM
+583,Merchant_00583,Jewelry,Pune,India,LOW
+584,Merchant_00584,Grocery,Lucknow,Singapore,LOW
+585,Merchant_00585,Travel,Jaipur,India,LOW
+586,Merchant_00586,Dining,Bangalore,India,LOW
+587,Merchant_00587,Jewelry,Chennai,India,LOW
+588,Merchant_00588,Fuel,Bangalore,India,HIGH
+589,Merchant_00589,Clothing,Indore,India,LOW
+590,Merchant_00590,Fuel,Jaipur,India,LOW
+591,Merchant_00591,Healthcare,Bengaluru,India,MEDIUM
+592,Merchant_00592,Online Services,Lucknow,India,LOW
+593,Merchant_00593,Online Services,Pune,India,LOW
+594,Merchant_00594,Online Services,Bengaluru,India,MEDIUM
+595,Merchant_00595,Travel,Lucknow,USA,LOW
+596,Merchant_00596,Entertainment,Jaipur,India,HIGH
+597,Merchant_00597,Grocery,Pune,India,LOW
+598,Merchant_00598,Dining,Hyderabad,India,LOW
+599,Merchant_00599,Dining,Hyderabad,India,MEDIUM
+600,Merchant_00600,Entertainment,Kolkata,UK,MEDIUM
+601,Merchant_00601,Gift Cards,Chandigarh,Singapore,HIGH
+602,Merchant_00602,Electronics,Bengaluru,UAE,LOW
+603,Merchant_00603,Online Services,Kolkata,India,LOW
+604,Merchant_00604,Grocery,Hyderabad,India,LOW
+605,Merchant_00605,Dining,Pune,India,LOW
+606,Merchant_00606,Travel,Nagpur,India,MEDIUM
+607,Merchant_00607,Grocery,Pune,India,LOW
+608,Merchant_00608,Gift Cards,Surat,UK,LOW
+609,Merchant_00609,Grocery,Ahmedabad,India,MEDIUM
+610,Merchant_00610,Entertainment,Ahmedabad,India,LOW
+611,Merchant_00611,Healthcare,Kolkata,India,HIGH
+612,Merchant_00612,Fuel,Bengaluru,UAE,HIGH
+613,Merchant_00613,Dining,Chandigarh,India,LOW
+614,Merchant_00614,Electronics,Lucknow,India,LOW
+615,Merchant_00615,Electronics,Hyderabad,India,LOW
+616,Merchant_00616,Entertainment,Chennai,India,MEDIUM
+617,Merchant_00617,Online Services,Pune,India,LOW
+618,Merchant_00618,Entertainment,Ahmedabad,India,LOW
+619,Merchant_00619,Fuel,Pune,India,LOW
+620,Merchant_00620,Dining,Pune,India,MEDIUM
+621,Merchant_00621,Gift Cards,Hyderabad,India,LOW
+622,Merchant_00622,Clothing,Nagpur,India,HIGH
+623,Merchant_00623,Fuel,Bengaluru,India,LOW
+624,Merchant_00624,Gift Cards,Surat,India,LOW
+625,Merchant_00625,Entertainment,Bangalore,India,LOW
+626,Merchant_00626,Online Services,Kolkata,India,LOW
+627,Merchant_00627,Gift Cards,Delhi,India,HIGH
+628,Merchant_00628,Entertainment,Ahmedabad,India,LOW
+629,Merchant_00629,Healthcare,Bengaluru,India,LOW
+630,Merchant_00630,Gift Cards,Bangalore,India,MEDIUM
+631,Merchant_00631,Dining,Surat,India,LOW
+632,Merchant_00632,Online Services,Jaipur,India,MEDIUM
+633,Merchant_00633,Dining,Mumbai,India,HIGH
+634,Merchant_00634,Travel,Nagpur,USA,MEDIUM
+635,Merchant_00635,Online Services,Surat,India,MEDIUM
+636,Merchant_00636,Dining,Lucknow,USA,HIGH
+637,Merchant_00637,Gift Cards,Lucknow,India,MEDIUM
+638,Merchant_00638,Fuel,Lucknow,India,LOW
+639,Merchant_00639,Gift Cards,Ahmedabad,India,LOW
+640,Merchant_00640,Online Services,Kolkata,India,MEDIUM
+641,Merchant_00641,Healthcare,Ahmedabad,India,LOW
+642,Merchant_00642,Jewelry,Ahmedabad,India,LOW
+643,Merchant_00643,Entertainment,Chennai,India,LOW
+644,Merchant_00644,Clothing,Bangalore,UK,MEDIUM
+645,Merchant_00645,Dining,Jaipur,India,LOW
+646,Merchant_00646,Fuel,Pune,India,LOW
+647,Merchant_00647,Entertainment,Surat,India,LOW
+648,Merchant_00648,Fuel,Indore,India,LOW
+649,Merchant_00649,Gift Cards,Indore,India,HIGH
+650,Merchant_00650,Entertainment,Delhi,India,MEDIUM
+651,Merchant_00651,Online Services,Hyderabad,India,LOW
+652,Merchant_00652,Jewelry,Hyderabad,India,LOW
+653,Merchant_00653,Clothing,Delhi,USA,LOW
+654,Merchant_00654,Travel,Mumbai,India,MEDIUM
+655,Merchant_00655,Entertainment,Pune,India,LOW
+656,Merchant_00656,Travel,Mumbai,USA,MEDIUM
+657,Merchant_00657,Fuel,Chennai,India,LOW
+658,Merchant_00658,Online Services,Indore,India,MEDIUM
+659,Merchant_00659,Gift Cards,Pune,India,HIGH
+660,Merchant_00660,Electronics,Surat,India,MEDIUM
+661,Merchant_00661,Fuel,Bengaluru,India,LOW
+662,Merchant_00662,Jewelry,Kolkata,India,HIGH
+663,Merchant_00663,Dining,Chennai,India,HIGH
+664,Merchant_00664,Online Services,Lucknow,India,MEDIUM
+665,Merchant_00665,Gift Cards,Jaipur,India,LOW
+666,Merchant_00666,Jewelry,Jaipur,India,LOW
+667,Merchant_00667,Gift Cards,Chennai,India,LOW
+668,Merchant_00668,Entertainment,Ahmedabad,India,LOW
+669,Merchant_00669,Online Services,Mumbai,India,MEDIUM
+670,Merchant_00670,Clothing,Kolkata,UK,LOW
+671,Merchant_00671,Electronics,Hyderabad,India,LOW
+672,Merchant_00672,Fuel,Delhi,India,MEDIUM
+673,Merchant_00673,Grocery,Pune,India,LOW
+674,Merchant_00674,Dining,Chennai,India,HIGH
+675,Merchant_00675,Travel,Kolkata,India,LOW
+676,Merchant_00676,Travel,Hyderabad,USA,MEDIUM
+677,Merchant_00677,Entertainment,Ahmedabad,India,LOW
+678,Merchant_00678,Online Services,Bengaluru,India,MEDIUM
+679,Merchant_00679,Jewelry,Bangalore,Singapore,LOW
+680,Merchant_00680,Fuel,Surat,India,LOW
+681,Merchant_00681,Fuel,Lucknow,India,LOW
+682,Merchant_00682,Online Services,Surat,India,HIGH
+683,Merchant_00683,Fuel,Hyderabad,India,LOW
+684,Merchant_00684,Healthcare,Nagpur,India,LOW
+685,Merchant_00685,Entertainment,Nagpur,India,LOW
+686,Merchant_00686,Entertainment,Kolkata,India,LOW
+687,Merchant_00687,Dining,Pune,India,LOW
+688,Merchant_00688,Dining,Chandigarh,India,LOW
+689,Merchant_00689,Grocery,Kolkata,India,HIGH
+690,Merchant_00690,Grocery,Lucknow,India,LOW
+691,Merchant_00691,Healthcare,Kolkata,India,LOW
+692,Merchant_00692,Grocery,Kolkata,India,LOW
+693,Merchant_00693,Fuel,Jaipur,India,LOW
+694,Merchant_00694,Electronics,Surat,India,LOW
+695,Merchant_00695,Online Services,Ahmedabad,USA,LOW
+696,Merchant_00696,Jewelry,Bangalore,India,LOW
+697,Merchant_00697,Grocery,Mumbai,India,LOW
+698,Merchant_00698,Fuel,Bangalore,India,MEDIUM
+699,Merchant_00699,Fuel,Mumbai,India,LOW
+700,Merchant_00700,Online Services,Chennai,India,LOW
+701,Merchant_00701,Travel,Delhi,India,HIGH
+702,Merchant_00702,Travel,Lucknow,India,LOW
+703,Merchant_00703,Grocery,Hyderabad,India,MEDIUM
+704,Merchant_00704,Entertainment,Kolkata,India,LOW
+705,Merchant_00705,Healthcare,Kolkata,India,LOW
+706,Merchant_00706,Online Services,Indore,India,LOW
+707,Merchant_00707,Healthcare,Mumbai,India,LOW
+708,Merchant_00708,Jewelry,Chennai,India,LOW
+709,Merchant_00709,Online Services,Pune,India,LOW
+710,Merchant_00710,Jewelry,Surat,India,LOW
+711,Merchant_00711,Travel,Surat,India,LOW
+712,Merchant_00712,Fuel,Jaipur,India,LOW
+713,Merchant_00713,Entertainment,Lucknow,India,LOW
+714,Merchant_00714,Electronics,Nagpur,India,LOW
+715,Merchant_00715,Entertainment,Pune,UAE,LOW
+716,Merchant_00716,Electronics,Hyderabad,India,HIGH
+717,Merchant_00717,Travel,Bangalore,India,MEDIUM
+718,Merchant_00718,Fuel,Bengaluru,India,MEDIUM
+719,Merchant_00719,Gift Cards,Mumbai,India,MEDIUM
+720,Merchant_00720,Entertainment,Nagpur,India,LOW
+721,Merchant_00721,Entertainment,Jaipur,India,MEDIUM
+722,Merchant_00722,Clothing,Indore,India,LOW
+723,Merchant_00723,Travel,Hyderabad,India,LOW
+724,Merchant_00724,Entertainment,Chandigarh,India,LOW
+725,Merchant_00725,Travel,Kolkata,USA,LOW
+726,Merchant_00726,Dining,Kolkata,India,LOW
+727,Merchant_00727,Healthcare,Nagpur,India,LOW
+728,Merchant_00728,Gift Cards,Bangalore,India,MEDIUM
+729,Merchant_00729,Healthcare,Indore,India,LOW
+730,Merchant_00730,Grocery,Bengaluru,India,LOW
+731,Merchant_00731,Healthcare,Ahmedabad,India,LOW
+732,Merchant_00732,Dining,Delhi,India,LOW
+733,Merchant_00733,Grocery,Mumbai,India,LOW
+734,Merchant_00734,Entertainment,Pune,UK,LOW
+735,Merchant_00735,Jewelry,Chennai,India,HIGH
+736,Merchant_00736,Travel,Surat,India,HIGH
+737,Merchant_00737,Entertainment,Jaipur,India,LOW
+738,Merchant_00738,Online Services,Delhi,India,MEDIUM
+739,Merchant_00739,Gift Cards,Hyderabad,UAE,LOW
+740,Merchant_00740,Clothing,Bengaluru,UAE,MEDIUM
+741,Merchant_00741,Healthcare,Ahmedabad,India,MEDIUM
+742,Merchant_00742,Gift Cards,Lucknow,India,LOW
+743,Merchant_00743,Dining,Chennai,India,LOW
+744,Merchant_00744,Entertainment,Surat,India,LOW
+745,Merchant_00745,Clothing,Chandigarh,India,LOW
+746,Merchant_00746,Dining,Chennai,India,LOW
+747,Merchant_00747,Clothing,Delhi,India,LOW
+748,Merchant_00748,Fuel,Chennai,India,LOW
+749,Merchant_00749,Entertainment,Jaipur,India,LOW
+750,Merchant_00750,Online Services,Delhi,India,LOW
+751,Merchant_00751,Travel,Bangalore,India,LOW
+752,Merchant_00752,Grocery,Pune,India,LOW
+753,Merchant_00753,Grocery,Bengaluru,India,MEDIUM
+754,Merchant_00754,Entertainment,Jaipur,India,LOW
+755,Merchant_00755,Travel,Chennai,India,LOW
+756,Merchant_00756,Travel,Chandigarh,India,LOW
+757,Merchant_00757,Jewelry,Chennai,India,LOW
+758,Merchant_00758,Clothing,Surat,India,HIGH
+759,Merchant_00759,Grocery,Hyderabad,India,LOW
+760,Merchant_00760,Fuel,Hyderabad,India,LOW
+761,Merchant_00761,Electronics,Kolkata,India,LOW
+762,Merchant_00762,Jewelry,Chennai,India,LOW
+763,Merchant_00763,Healthcare,Pune,India,LOW
+764,Merchant_00764,Gift Cards,Pune,India,LOW
+765,Merchant_00765,Healthcare,Chennai,India,MEDIUM
+766,Merchant_00766,Fuel,Hyderabad,India,LOW
+767,Merchant_00767,Electronics,Indore,UK,LOW
+768,Merchant_00768,Dining,Hyderabad,India,LOW
+769,Merchant_00769,Grocery,Surat,India,HIGH
+770,Merchant_00770,Fuel,Hyderabad,India,LOW
+771,Merchant_00771,Travel,Ahmedabad,USA,LOW
+772,Merchant_00772,Dining,Chandigarh,India,LOW
+773,Merchant_00773,Healthcare,Mumbai,India,HIGH
+774,Merchant_00774,Healthcare,Surat,India,LOW
+775,Merchant_00775,Healthcare,Lucknow,USA,LOW
+776,Merchant_00776,Fuel,Indore,India,LOW
+777,Merchant_00777,Travel,Chennai,India,MEDIUM
+778,Merchant_00778,Jewelry,Lucknow,Singapore,LOW
+779,Merchant_00779,Fuel,Mumbai,India,LOW
+780,Merchant_00780,Gift Cards,Bengaluru,India,LOW
+781,Merchant_00781,Electronics,Kolkata,Singapore,MEDIUM
+782,Merchant_00782,Travel,Bengaluru,Singapore,LOW
+783,Merchant_00783,Clothing,Bangalore,India,MEDIUM
+784,Merchant_00784,Online Services,Kolkata,India,LOW
+785,Merchant_00785,Grocery,Surat,India,HIGH
+786,Merchant_00786,Electronics,Delhi,India,LOW
+787,Merchant_00787,Healthcare,Pune,India,MEDIUM
+788,Merchant_00788,Fuel,Lucknow,India,LOW
+789,Merchant_00789,Clothing,Pune,India,LOW
+790,Merchant_00790,Entertainment,Hyderabad,India,MEDIUM
+791,Merchant_00791,Online Services,Mumbai,India,LOW
+792,Merchant_00792,Jewelry,Lucknow,India,LOW
+793,Merchant_00793,Jewelry,Hyderabad,Singapore,HIGH
+794,Merchant_00794,Clothing,Nagpur,India,LOW
+795,Merchant_00795,Healthcare,Hyderabad,India,LOW
+796,Merchant_00796,Healthcare,Delhi,India,LOW
+797,Merchant_00797,Clothing,Pune,India,MEDIUM
+798,Merchant_00798,Dining,Surat,India,LOW
+799,Merchant_00799,Travel,Nagpur,India,LOW
+800,Merchant_00800,Grocery,Hyderabad,India,LOW
+801,Merchant_00801,Travel,Bengaluru,India,HIGH
+802,Merchant_00802,Online Services,Lucknow,India,LOW
+803,Merchant_00803,Fuel,Ahmedabad,India,HIGH
+804,Merchant_00804,Dining,Chandigarh,India,HIGH
+805,Merchant_00805,Online Services,Hyderabad,India,LOW
+806,Merchant_00806,Gift Cards,Surat,India,LOW
+807,Merchant_00807,Entertainment,Surat,India,MEDIUM
+808,Merchant_00808,Travel,Surat,India,LOW
+809,Merchant_00809,Online Services,Bangalore,India,MEDIUM
+810,Merchant_00810,Entertainment,Pune,India,LOW
+811,Merchant_00811,Travel,Kolkata,India,MEDIUM
+812,Merchant_00812,Gift Cards,Ahmedabad,India,LOW
+813,Merchant_00813,Electronics,Lucknow,India,LOW
+814,Merchant_00814,Gift Cards,Surat,India,LOW
+815,Merchant_00815,Healthcare,Pune,UK,LOW
+816,Merchant_00816,Travel,Lucknow,UK,LOW
+817,Merchant_00817,Fuel,Jaipur,India,LOW
+818,Merchant_00818,Grocery,Chandigarh,India,MEDIUM
+819,Merchant_00819,Healthcare,Lucknow,India,LOW
+820,Merchant_00820,Healthcare,Surat,India,LOW
+821,Merchant_00821,Fuel,Mumbai,India,LOW
+822,Merchant_00822,Electronics,Chandigarh,UAE,LOW
+823,Merchant_00823,Fuel,Indore,India,LOW
+824,Merchant_00824,Fuel,Chandigarh,India,LOW
+825,Merchant_00825,Gift Cards,Ahmedabad,India,LOW
+826,Merchant_00826,Entertainment,Chennai,Singapore,MEDIUM
+827,Merchant_00827,Travel,Indore,India,LOW
+828,Merchant_00828,Travel,Surat,India,HIGH
+829,Merchant_00829,Grocery,Ahmedabad,India,LOW
+830,Merchant_00830,Electronics,Lucknow,India,LOW
+831,Merchant_00831,Fuel,Chennai,USA,MEDIUM
+832,Merchant_00832,Fuel,Surat,India,LOW
+833,Merchant_00833,Electronics,Bengaluru,India,MEDIUM
+834,Merchant_00834,Fuel,Lucknow,India,LOW
+835,Merchant_00835,Clothing,Ahmedabad,India,LOW
+836,Merchant_00836,Fuel,Chennai,India,LOW
+837,Merchant_00837,Fuel,Indore,India,LOW
+838,Merchant_00838,Jewelry,Surat,India,MEDIUM
+839,Merchant_00839,Travel,Kolkata,India,MEDIUM
+840,Merchant_00840,Entertainment,Ahmedabad,India,MEDIUM
+841,Merchant_00841,Travel,Delhi,India,LOW
+842,Merchant_00842,Travel,Ahmedabad,UAE,HIGH
+843,Merchant_00843,Grocery,Mumbai,India,LOW
+844,Merchant_00844,Clothing,Jaipur,India,LOW
+845,Merchant_00845,Electronics,Kolkata,India,LOW
+846,Merchant_00846,Dining,Ahmedabad,India,MEDIUM
+847,Merchant_00847,Grocery,Indore,India,MEDIUM
+848,Merchant_00848,Clothing,Bangalore,India,HIGH
+849,Merchant_00849,Entertainment,Delhi,India,MEDIUM
+850,Merchant_00850,Dining,Lucknow,India,LOW
+851,Merchant_00851,Travel,Lucknow,India,MEDIUM
+852,Merchant_00852,Grocery,Chandigarh,India,MEDIUM
+853,Merchant_00853,Dining,Lucknow,India,LOW
+854,Merchant_00854,Healthcare,Indore,India,MEDIUM
+855,Merchant_00855,Dining,Pune,India,MEDIUM
+856,Merchant_00856,Travel,Delhi,India,LOW
+857,Merchant_00857,Healthcare,Surat,India,LOW
+858,Merchant_00858,Entertainment,Lucknow,India,LOW
+859,Merchant_00859,Entertainment,Nagpur,India,MEDIUM
+860,Merchant_00860,Jewelry,Surat,India,LOW
+861,Merchant_00861,Grocery,Delhi,India,MEDIUM
+862,Merchant_00862,Fuel,Bengaluru,India,LOW
+863,Merchant_00863,Healthcare,Chandigarh,India,LOW
+864,Merchant_00864,Jewelry,Bengaluru,India,LOW
+865,Merchant_00865,Gift Cards,Bengaluru,India,LOW
+866,Merchant_00866,Gift Cards,Delhi,India,MEDIUM
+867,Merchant_00867,Healthcare,Hyderabad,Singapore,MEDIUM
+868,Merchant_00868,Dining,Nagpur,India,LOW
+869,Merchant_00869,Clothing,Delhi,India,LOW
+870,Merchant_00870,Electronics,Chandigarh,India,LOW
+871,Merchant_00871,Jewelry,Nagpur,India,LOW
+872,Merchant_00872,Entertainment,Bangalore,India,MEDIUM
+873,Merchant_00873,Grocery,Pune,India,MEDIUM
+874,Merchant_00874,Travel,Ahmedabad,India,LOW
+875,Merchant_00875,Online Services,Mumbai,India,LOW
+876,Merchant_00876,Healthcare,Pune,India,MEDIUM
+877,Merchant_00877,Grocery,Lucknow,India,LOW
+878,Merchant_00878,Jewelry,Surat,India,LOW
+879,Merchant_00879,Entertainment,Kolkata,India,LOW
+880,Merchant_00880,Online Services,Ahmedabad,India,HIGH
+881,Merchant_00881,Electronics,Bengaluru,India,LOW
+882,Merchant_00882,Healthcare,Kolkata,India,LOW
+883,Merchant_00883,Fuel,Jaipur,India,LOW
+884,Merchant_00884,Travel,Pune,India,MEDIUM
+885,Merchant_00885,Grocery,Ahmedabad,India,LOW
+886,Merchant_00886,Electronics,Lucknow,India,LOW
+887,Merchant_00887,Entertainment,Mumbai,India,LOW
+888,Merchant_00888,Online Services,Chandigarh,India,MEDIUM
+889,Merchant_00889,Fuel,Lucknow,India,MEDIUM
+890,Merchant_00890,Electronics,Surat,India,LOW
+891,Merchant_00891,Clothing,Chennai,Singapore,LOW
+892,Merchant_00892,Healthcare,Bengaluru,India,LOW
+893,Merchant_00893,Entertainment,Bengaluru,India,HIGH
+894,Merchant_00894,Fuel,Bengaluru,India,LOW
+895,Merchant_00895,Fuel,Bengaluru,India,LOW
+896,Merchant_00896,Clothing,Kolkata,India,LOW
+897,Merchant_00897,Grocery,Indore,India,HIGH
+898,Merchant_00898,Entertainment,Pune,India,LOW
+899,Merchant_00899,Fuel,Ahmedabad,India,HIGH
+900,Merchant_00900,Travel,Chennai,India,LOW
+901,Merchant_00901,Gift Cards,Chandigarh,India,LOW
+902,Merchant_00902,Online Services,Delhi,India,MEDIUM
+903,Merchant_00903,Gift Cards,Ahmedabad,India,MEDIUM
+904,Merchant_00904,Online Services,Delhi,Singapore,HIGH
+905,Merchant_00905,Entertainment,Surat,India,LOW
+906,Merchant_00906,Jewelry,Chennai,India,LOW
+907,Merchant_00907,Jewelry,Bangalore,India,LOW
+908,Merchant_00908,Travel,Delhi,India,LOW
+909,Merchant_00909,Fuel,Bangalore,India,MEDIUM
+910,Merchant_00910,Fuel,Bengaluru,India,MEDIUM
+911,Merchant_00911,Healthcare,Bengaluru,India,LOW
+912,Merchant_00912,Electronics,Mumbai,India,LOW
+913,Merchant_00913,Entertainment,Nagpur,India,MEDIUM
+914,Merchant_00914,Clothing,Nagpur,India,LOW
+915,Merchant_00915,Clothing,Hyderabad,India,MEDIUM
+916,Merchant_00916,Travel,Indore,India,LOW
+917,Merchant_00917,Clothing,Jaipur,UK,MEDIUM
+918,Merchant_00918,Entertainment,Indore,India,MEDIUM
+919,Merchant_00919,Travel,Surat,India,LOW
+920,Merchant_00920,Electronics,Hyderabad,India,LOW
+921,Merchant_00921,Gift Cards,Indore,India,LOW
+922,Merchant_00922,Gift Cards,Bengaluru,India,LOW
+923,Merchant_00923,Entertainment,Hyderabad,India,MEDIUM
+924,Merchant_00924,Jewelry,Bangalore,India,HIGH
+925,Merchant_00925,Gift Cards,Chennai,UK,LOW
+926,Merchant_00926,Healthcare,Hyderabad,India,LOW
+927,Merchant_00927,Entertainment,Kolkata,India,HIGH
+928,Merchant_00928,Fuel,Hyderabad,India,LOW
+929,Merchant_00929,Jewelry,Ahmedabad,India,HIGH
+930,Merchant_00930,Gift Cards,Surat,India,LOW
+931,Merchant_00931,Dining,Jaipur,India,LOW
+932,Merchant_00932,Gift Cards,Indore,India,LOW
+933,Merchant_00933,Travel,Ahmedabad,India,MEDIUM
+934,Merchant_00934,Healthcare,Chennai,India,HIGH
+935,Merchant_00935,Jewelry,Kolkata,India,HIGH
+936,Merchant_00936,Electronics,Ahmedabad,India,MEDIUM
+937,Merchant_00937,Healthcare,Pune,India,LOW
+938,Merchant_00938,Healthcare,Hyderabad,India,MEDIUM
+939,Merchant_00939,Travel,Kolkata,USA,MEDIUM
+940,Merchant_00940,Travel,Mumbai,USA,LOW
+941,Merchant_00941,Electronics,Surat,India,LOW
+942,Merchant_00942,Fuel,Ahmedabad,India,LOW
+943,Merchant_00943,Grocery,Bangalore,India,LOW
+944,Merchant_00944,Travel,Lucknow,India,MEDIUM
+945,Merchant_00945,Electronics,Hyderabad,India,LOW
+946,Merchant_00946,Online Services,Surat,India,HIGH
+947,Merchant_00947,Dining,Delhi,USA,LOW
+948,Merchant_00948,Entertainment,Kolkata,India,LOW
+949,Merchant_00949,Jewelry,Indore,India,LOW
+950,Merchant_00950,Travel,Delhi,India,LOW
+951,Merchant_00951,Clothing,Kolkata,India,MEDIUM
+952,Merchant_00952,Travel,Indore,India,MEDIUM
+953,Merchant_00953,Fuel,Nagpur,India,MEDIUM
+954,Merchant_00954,Entertainment,Chandigarh,India,MEDIUM
+955,Merchant_00955,Healthcare,Lucknow,India,HIGH
+956,Merchant_00956,Online Services,Bengaluru,India,LOW
+957,Merchant_00957,Fuel,Chandigarh,India,LOW
+958,Merchant_00958,Entertainment,Bangalore,India,MEDIUM
+959,Merchant_00959,Grocery,Ahmedabad,India,LOW
+960,Merchant_00960,Fuel,Nagpur,India,LOW
+961,Merchant_00961,Electronics,Pune,India,LOW
+962,Merchant_00962,Clothing,Jaipur,India,MEDIUM
+963,Merchant_00963,Dining,Delhi,India,LOW
+964,Merchant_00964,Dining,Surat,Singapore,MEDIUM
+965,Merchant_00965,Healthcare,Hyderabad,India,LOW
+966,Merchant_00966,Travel,Kolkata,India,MEDIUM
+967,Merchant_00967,Gift Cards,Indore,India,LOW
+968,Merchant_00968,Jewelry,Mumbai,India,LOW
+969,Merchant_00969,Electronics,Chennai,India,MEDIUM
+970,Merchant_00970,Entertainment,Chennai,India,LOW
+971,Merchant_00971,Dining,Ahmedabad,India,HIGH
+972,Merchant_00972,Online Services,Kolkata,India,LOW
+973,Merchant_00973,Online Services,Nagpur,Singapore,LOW
+974,Merchant_00974,Grocery,Chennai,India,MEDIUM
+975,Merchant_00975,Entertainment,Indore,India,LOW
+976,Merchant_00976,Healthcare,Nagpur,India,HIGH
+977,Merchant_00977,Fuel,Nagpur,USA,HIGH
+978,Merchant_00978,Jewelry,Chandigarh,India,LOW
+979,Merchant_00979,Entertainment,Hyderabad,India,LOW
+980,Merchant_00980,Dining,Indore,India,LOW
+981,Merchant_00981,Healthcare,Hyderabad,India,LOW
+982,Merchant_00982,Healthcare,Chandigarh,India,LOW
+983,Merchant_00983,Clothing,Surat,India,MEDIUM
+984,Merchant_00984,Travel,Bangalore,India,MEDIUM
+985,Merchant_00985,Gift Cards,Bangalore,UK,LOW
+986,Merchant_00986,Online Services,Surat,India,LOW
+987,Merchant_00987,Dining,Nagpur,India,LOW
+988,Merchant_00988,Jewelry,Hyderabad,India,LOW
+989,Merchant_00989,Electronics,Surat,India,LOW
+990,Merchant_00990,Healthcare,Kolkata,India,HIGH
+991,Merchant_00991,Grocery,Lucknow,India,MEDIUM
+992,Merchant_00992,Fuel,Pune,India,MEDIUM
+993,Merchant_00993,Travel,Chandigarh,India,LOW
+994,Merchant_00994,Travel,Indore,India,LOW
+995,Merchant_00995,Entertainment,Delhi,India,LOW
+996,Merchant_00996,Grocery,Indore,India,HIGH
+997,Merchant_00997,Dining,Jaipur,India,LOW
+998,Merchant_00998,Entertainment,Kolkata,India,LOW
+999,Merchant_00999,Jewelry,Pune,India,MEDIUM
+1000,Merchant_01000,Online Services,Mumbai,USA,LOW
+1001,Merchant_01001,Grocery,Chennai,India,LOW
+1002,Merchant_01002,Travel,Jaipur,India,LOW
+1003,Merchant_01003,Travel,Pune,India,MEDIUM
+1004,Merchant_01004,Electronics,Delhi,India,LOW
+1005,Merchant_01005,Dining,Bengaluru,India,LOW
+1006,Merchant_01006,Travel,Hyderabad,India,LOW
+1007,Merchant_01007,Travel,Nagpur,India,LOW
+1008,Merchant_01008,Dining,Chennai,India,LOW
+1009,Merchant_01009,Grocery,Ahmedabad,India,LOW
+1010,Merchant_01010,Travel,Nagpur,India,LOW
+1011,Merchant_01011,Gift Cards,Surat,India,MEDIUM
+1012,Merchant_01012,Travel,Nagpur,India,LOW
+1013,Merchant_01013,Travel,Bengaluru,India,LOW
+1014,Merchant_01014,Entertainment,Delhi,India,LOW
+1015,Merchant_01015,Travel,Bangalore,India,LOW
+1016,Merchant_01016,Grocery,Surat,UK,LOW
+1017,Merchant_01017,Online Services,Jaipur,India,LOW
+1018,Merchant_01018,Clothing,Indore,India,HIGH
+1019,Merchant_01019,Travel,Lucknow,India,MEDIUM
+1020,Merchant_01020,Fuel,Pune,UK,LOW
+1021,Merchant_01021,Healthcare,Bengaluru,India,MEDIUM
+1022,Merchant_01022,Clothing,Hyderabad,India,HIGH
+1023,Merchant_01023,Travel,Indore,India,LOW
+1024,Merchant_01024,Clothing,Bengaluru,UAE,HIGH
+1025,Merchant_01025,Dining,Hyderabad,India,MEDIUM
+1026,Merchant_01026,Jewelry,Kolkata,India,MEDIUM
+1027,Merchant_01027,Online Services,Bengaluru,India,HIGH
+1028,Merchant_01028,Online Services,Chandigarh,UK,LOW
+1029,Merchant_01029,Travel,Surat,India,LOW
+1030,Merchant_01030,Entertainment,Pune,India,MEDIUM
+1031,Merchant_01031,Healthcare,Bangalore,India,MEDIUM
+1032,Merchant_01032,Clothing,Chandigarh,India,LOW
+1033,Merchant_01033,Gift Cards,Chennai,India,LOW
+1034,Merchant_01034,Online Services,Hyderabad,India,LOW
+1035,Merchant_01035,Online Services,Hyderabad,India,MEDIUM
+1036,Merchant_01036,Healthcare,Kolkata,India,LOW
+1037,Merchant_01037,Gift Cards,Indore,India,LOW
+1038,Merchant_01038,Healthcare,Delhi,India,MEDIUM
+1039,Merchant_01039,Grocery,Chennai,India,LOW
+1040,Merchant_01040,Healthcare,Bengaluru,Singapore,LOW
+1041,Merchant_01041,Online Services,Indore,India,MEDIUM
+1042,Merchant_01042,Clothing,Mumbai,India,MEDIUM
+1043,Merchant_01043,Grocery,Kolkata,India,MEDIUM
+1044,Merchant_01044,Online Services,Kolkata,India,MEDIUM
+1045,Merchant_01045,Online Services,Pune,India,LOW
+1046,Merchant_01046,Grocery,Hyderabad,India,LOW
+1047,Merchant_01047,Clothing,Hyderabad,India,MEDIUM
+1048,Merchant_01048,Jewelry,Indore,India,LOW
+1049,Merchant_01049,Clothing,Kolkata,India,LOW
+1050,Merchant_01050,Fuel,Chandigarh,India,MEDIUM
+1051,Merchant_01051,Fuel,Lucknow,UAE,LOW
+1052,Merchant_01052,Jewelry,Surat,India,MEDIUM
+1053,Merchant_01053,Travel,Delhi,India,LOW
+1054,Merchant_01054,Grocery,Chandigarh,USA,MEDIUM
+1055,Merchant_01055,Online Services,Chandigarh,India,LOW
+1056,Merchant_01056,Fuel,Mumbai,India,LOW
+1057,Merchant_01057,Healthcare,Bengaluru,India,MEDIUM
+1058,Merchant_01058,Fuel,Chennai,India,MEDIUM
+1059,Merchant_01059,Jewelry,Bengaluru,India,LOW
+1060,Merchant_01060,Entertainment,Ahmedabad,India,LOW
+1061,Merchant_01061,Healthcare,Chandigarh,India,LOW
+1062,Merchant_01062,Travel,Delhi,India,MEDIUM
+1063,Merchant_01063,Clothing,Chandigarh,India,MEDIUM
+1064,Merchant_01064,Dining,Ahmedabad,India,LOW
+1065,Merchant_01065,Electronics,Nagpur,India,MEDIUM
+1066,Merchant_01066,Healthcare,Nagpur,India,HIGH
+1067,Merchant_01067,Grocery,Surat,Singapore,LOW
+1068,Merchant_01068,Grocery,Chandigarh,USA,LOW
+1069,Merchant_01069,Fuel,Pune,India,LOW
+1070,Merchant_01070,Gift Cards,Bangalore,India,LOW
+1071,Merchant_01071,Electronics,Kolkata,India,LOW
+1072,Merchant_01072,Electronics,Pune,UAE,MEDIUM
+1073,Merchant_01073,Clothing,Hyderabad,India,MEDIUM
+1074,Merchant_01074,Online Services,Indore,India,MEDIUM
+1075,Merchant_01075,Travel,Delhi,India,MEDIUM
+1076,Merchant_01076,Entertainment,Lucknow,India,LOW
+1077,Merchant_01077,Healthcare,Chandigarh,India,LOW
+1078,Merchant_01078,Jewelry,Nagpur,Singapore,LOW
+1079,Merchant_01079,Online Services,Mumbai,India,LOW
+1080,Merchant_01080,Entertainment,Nagpur,India,LOW
+1081,Merchant_01081,Dining,Bangalore,India,LOW
+1082,Merchant_01082,Electronics,Lucknow,India,MEDIUM
+1083,Merchant_01083,Entertainment,Delhi,India,MEDIUM
+1084,Merchant_01084,Entertainment,Mumbai,India,LOW
+1085,Merchant_01085,Jewelry,Surat,India,MEDIUM
+1086,Merchant_01086,Travel,Bangalore,India,LOW
+1087,Merchant_01087,Healthcare,Kolkata,India,LOW
+1088,Merchant_01088,Electronics,Delhi,India,LOW
+1089,Merchant_01089,Travel,Bangalore,India,LOW
+1090,Merchant_01090,Healthcare,Nagpur,India,HIGH
+1091,Merchant_01091,Healthcare,Chandigarh,India,HIGH
+1092,Merchant_01092,Grocery,Indore,India,LOW
+1093,Merchant_01093,Grocery,Nagpur,India,MEDIUM
+1094,Merchant_01094,Gift Cards,Chandigarh,India,LOW
+1095,Merchant_01095,Jewelry,Pune,India,LOW
+1096,Merchant_01096,Grocery,Ahmedabad,India,MEDIUM
+1097,Merchant_01097,Travel,Kolkata,India,LOW
+1098,Merchant_01098,Entertainment,Hyderabad,India,MEDIUM
+1099,Merchant_01099,Entertainment,Chandigarh,India,LOW
+1100,Merchant_01100,Dining,Jaipur,India,LOW
+1101,Merchant_01101,Online Services,Mumbai,India,LOW
+1102,Merchant_01102,Clothing,Nagpur,India,MEDIUM
+1103,Merchant_01103,Electronics,Bengaluru,India,LOW
+1104,Merchant_01104,Entertainment,Delhi,India,LOW
+1105,Merchant_01105,Entertainment,Chandigarh,India,LOW
+1106,Merchant_01106,Online Services,Hyderabad,India,LOW
+1107,Merchant_01107,Healthcare,Kolkata,India,HIGH
+1108,Merchant_01108,Online Services,Kolkata,India,MEDIUM
+1109,Merchant_01109,Electronics,Mumbai,India,LOW
+1110,Merchant_01110,Electronics,Ahmedabad,India,LOW
+1111,Merchant_01111,Entertainment,Chennai,India,MEDIUM
+1112,Merchant_01112,Grocery,Surat,India,LOW
+1113,Merchant_01113,Gift Cards,Kolkata,India,LOW
+1114,Merchant_01114,Clothing,Pune,India,LOW
+1115,Merchant_01115,Travel,Kolkata,UK,HIGH
+1116,Merchant_01116,Entertainment,Pune,India,LOW
+1117,Merchant_01117,Online Services,Mumbai,India,MEDIUM
+1118,Merchant_01118,Online Services,Mumbai,India,LOW
+1119,Merchant_01119,Healthcare,Hyderabad,India,LOW
+1120,Merchant_01120,Fuel,Hyderabad,India,LOW
+1121,Merchant_01121,Entertainment,Mumbai,India,MEDIUM
+1122,Merchant_01122,Healthcare,Mumbai,India,LOW
+1123,Merchant_01123,Gift Cards,Chennai,India,LOW
+1124,Merchant_01124,Entertainment,Delhi,India,LOW
+1125,Merchant_01125,Travel,Kolkata,UAE,LOW
+1126,Merchant_01126,Clothing,Bangalore,India,MEDIUM
+1127,Merchant_01127,Clothing,Delhi,India,HIGH
+1128,Merchant_01128,Healthcare,Hyderabad,India,LOW
+1129,Merchant_01129,Dining,Bengaluru,USA,LOW
+1130,Merchant_01130,Clothing,Bengaluru,India,HIGH
+1131,Merchant_01131,Online Services,Pune,India,LOW
+1132,Merchant_01132,Online Services,Kolkata,India,LOW
+1133,Merchant_01133,Clothing,Lucknow,India,LOW
+1134,Merchant_01134,Travel,Mumbai,USA,MEDIUM
+1135,Merchant_01135,Dining,Nagpur,India,LOW
+1136,Merchant_01136,Dining,Pune,India,LOW
+1137,Merchant_01137,Jewelry,Hyderabad,India,LOW
+1138,Merchant_01138,Healthcare,Chennai,India,MEDIUM
+1139,Merchant_01139,Travel,Lucknow,India,MEDIUM
+1140,Merchant_01140,Travel,Indore,India,MEDIUM
+1141,Merchant_01141,Fuel,Indore,India,MEDIUM
+1142,Merchant_01142,Healthcare,Chandigarh,India,LOW
+1143,Merchant_01143,Entertainment,Lucknow,India,LOW
+1144,Merchant_01144,Jewelry,Lucknow,India,HIGH
+1145,Merchant_01145,Gift Cards,Jaipur,India,LOW
+1146,Merchant_01146,Grocery,Pune,India,MEDIUM
+1147,Merchant_01147,Travel,Ahmedabad,India,MEDIUM
+1148,Merchant_01148,Grocery,Bengaluru,India,MEDIUM
+1149,Merchant_01149,Healthcare,Hyderabad,India,MEDIUM
+1150,Merchant_01150,Travel,Pune,India,LOW
+1151,Merchant_01151,Dining,Nagpur,India,MEDIUM
+1152,Merchant_01152,Electronics,Mumbai,India,LOW
+1153,Merchant_01153,Jewelry,Surat,India,HIGH
+1154,Merchant_01154,Electronics,Ahmedabad,India,LOW
+1155,Merchant_01155,Online Services,Lucknow,Singapore,LOW
+1156,Merchant_01156,Fuel,Indore,India,HIGH
+1157,Merchant_01157,Electronics,Hyderabad,India,MEDIUM
+1158,Merchant_01158,Entertainment,Chennai,India,MEDIUM
+1159,Merchant_01159,Online Services,Hyderabad,India,LOW
+1160,Merchant_01160,Fuel,Hyderabad,India,LOW
+1161,Merchant_01161,Travel,Bengaluru,India,LOW
+1162,Merchant_01162,Jewelry,Mumbai,India,MEDIUM
+1163,Merchant_01163,Entertainment,Lucknow,India,MEDIUM
+1164,Merchant_01164,Fuel,Hyderabad,UK,MEDIUM
+1165,Merchant_01165,Entertainment,Indore,India,LOW
+1166,Merchant_01166,Gift Cards,Bangalore,India,LOW
+1167,Merchant_01167,Entertainment,Surat,India,MEDIUM
+1168,Merchant_01168,Healthcare,Surat,India,MEDIUM
+1169,Merchant_01169,Entertainment,Indore,India,MEDIUM
+1170,Merchant_01170,Clothing,Bangalore,India,LOW
+1171,Merchant_01171,Healthcare,Surat,India,MEDIUM
+1172,Merchant_01172,Dining,Bengaluru,India,LOW
+1173,Merchant_01173,Healthcare,Jaipur,India,MEDIUM
+1174,Merchant_01174,Travel,Bengaluru,India,MEDIUM
+1175,Merchant_01175,Gift Cards,Jaipur,India,HIGH
+1176,Merchant_01176,Gift Cards,Ahmedabad,India,LOW
+1177,Merchant_01177,Healthcare,Bengaluru,UK,HIGH
+1178,Merchant_01178,Jewelry,Kolkata,India,MEDIUM
+1179,Merchant_01179,Electronics,Lucknow,India,MEDIUM
+1180,Merchant_01180,Dining,Pune,India,LOW
+1181,Merchant_01181,Clothing,Ahmedabad,India,LOW
+1182,Merchant_01182,Healthcare,Bangalore,India,MEDIUM
+1183,Merchant_01183,Fuel,Ahmedabad,India,MEDIUM
+1184,Merchant_01184,Clothing,Pune,India,MEDIUM
+1185,Merchant_01185,Entertainment,Indore,India,LOW
+1186,Merchant_01186,Electronics,Lucknow,UK,MEDIUM
+1187,Merchant_01187,Online Services,Ahmedabad,India,LOW
+1188,Merchant_01188,Clothing,Surat,India,HIGH
+1189,Merchant_01189,Travel,Delhi,India,MEDIUM
+1190,Merchant_01190,Travel,Mumbai,India,HIGH
+1191,Merchant_01191,Dining,Chandigarh,India,LOW
+1192,Merchant_01192,Online Services,Chandigarh,India,HIGH
+1193,Merchant_01193,Grocery,Chandigarh,India,MEDIUM
+1194,Merchant_01194,Travel,Chennai,India,MEDIUM
+1195,Merchant_01195,Fuel,Nagpur,India,MEDIUM
+1196,Merchant_01196,Gift Cards,Lucknow,India,MEDIUM
+1197,Merchant_01197,Electronics,Kolkata,India,MEDIUM
+1198,Merchant_01198,Online Services,Ahmedabad,India,HIGH
+1199,Merchant_01199,Electronics,Pune,India,MEDIUM
+1200,Merchant_01200,Grocery,Ahmedabad,India,LOW
+1201,Merchant_01201,Entertainment,Delhi,India,LOW
+1202,Merchant_01202,Clothing,Lucknow,India,LOW
+1203,Merchant_01203,Gift Cards,Jaipur,India,LOW
+1204,Merchant_01204,Travel,Hyderabad,India,LOW
+1205,Merchant_01205,Dining,Pune,India,LOW
+1206,Merchant_01206,Jewelry,Indore,India,MEDIUM
+1207,Merchant_01207,Clothing,Surat,India,HIGH
+1208,Merchant_01208,Healthcare,Kolkata,India,LOW
+1209,Merchant_01209,Entertainment,Bengaluru,India,HIGH
+1210,Merchant_01210,Jewelry,Mumbai,India,LOW
+1211,Merchant_01211,Fuel,Bangalore,India,MEDIUM
+1212,Merchant_01212,Fuel,Chandigarh,India,LOW
+1213,Merchant_01213,Grocery,Mumbai,India,HIGH
+1214,Merchant_01214,Jewelry,Indore,India,LOW
+1215,Merchant_01215,Fuel,Nagpur,India,LOW
+1216,Merchant_01216,Travel,Chandigarh,USA,LOW
+1217,Merchant_01217,Dining,Bangalore,India,MEDIUM
+1218,Merchant_01218,Travel,Jaipur,India,LOW
+1219,Merchant_01219,Fuel,Ahmedabad,India,MEDIUM
+1220,Merchant_01220,Online Services,Nagpur,India,MEDIUM
+1221,Merchant_01221,Fuel,Surat,India,LOW
+1222,Merchant_01222,Dining,Surat,India,MEDIUM
+1223,Merchant_01223,Clothing,Hyderabad,India,LOW
+1224,Merchant_01224,Fuel,Ahmedabad,India,LOW
+1225,Merchant_01225,Clothing,Indore,India,LOW
+1226,Merchant_01226,Healthcare,Pune,India,LOW
+1227,Merchant_01227,Entertainment,Hyderabad,India,MEDIUM
+1228,Merchant_01228,Gift Cards,Pune,India,HIGH
+1229,Merchant_01229,Clothing,Delhi,India,LOW
+1230,Merchant_01230,Online Services,Jaipur,India,HIGH
+1231,Merchant_01231,Healthcare,Ahmedabad,India,LOW
+1232,Merchant_01232,Electronics,Jaipur,India,LOW
+1233,Merchant_01233,Fuel,Delhi,India,LOW
+1234,Merchant_01234,Clothing,Indore,India,LOW
+1235,Merchant_01235,Jewelry,Indore,India,LOW
+1236,Merchant_01236,Clothing,Mumbai,India,MEDIUM
+1237,Merchant_01237,Healthcare,Nagpur,India,LOW
+1238,Merchant_01238,Fuel,Nagpur,India,LOW
+1239,Merchant_01239,Clothing,Indore,India,LOW
+1240,Merchant_01240,Grocery,Chennai,USA,MEDIUM
+1241,Merchant_01241,Dining,Pune,India,LOW
+1242,Merchant_01242,Entertainment,Nagpur,India,LOW
+1243,Merchant_01243,Electronics,Indore,India,LOW
+1244,Merchant_01244,Travel,Delhi,India,LOW
+1245,Merchant_01245,Entertainment,Bengaluru,India,HIGH
+1246,Merchant_01246,Healthcare,Bengaluru,India,LOW
+1247,Merchant_01247,Travel,Bangalore,India,LOW
+1248,Merchant_01248,Dining,Hyderabad,India,LOW
+1249,Merchant_01249,Clothing,Bangalore,India,LOW
+1250,Merchant_01250,Clothing,Indore,India,LOW
+1251,Merchant_01251,Jewelry,Jaipur,UK,LOW
+1252,Merchant_01252,Jewelry,Bangalore,India,LOW
+1253,Merchant_01253,Jewelry,Pune,India,LOW
+1254,Merchant_01254,Entertainment,Chandigarh,India,LOW
+1255,Merchant_01255,Grocery,Jaipur,Singapore,MEDIUM
+1256,Merchant_01256,Grocery,Hyderabad,India,LOW
+1257,Merchant_01257,Grocery,Kolkata,India,LOW
+1258,Merchant_01258,Online Services,Surat,India,LOW
+1259,Merchant_01259,Healthcare,Indore,India,MEDIUM
+1260,Merchant_01260,Entertainment,Surat,UAE,LOW
+1261,Merchant_01261,Electronics,Mumbai,Singapore,MEDIUM
+1262,Merchant_01262,Clothing,Mumbai,India,MEDIUM
+1263,Merchant_01263,Travel,Indore,USA,HIGH
+1264,Merchant_01264,Online Services,Indore,India,MEDIUM
+1265,Merchant_01265,Healthcare,Lucknow,India,LOW
+1266,Merchant_01266,Healthcare,Chennai,India,MEDIUM
+1267,Merchant_01267,Online Services,Delhi,India,LOW
+1268,Merchant_01268,Online Services,Ahmedabad,India,MEDIUM
+1269,Merchant_01269,Dining,Hyderabad,India,LOW
+1270,Merchant_01270,Gift Cards,Delhi,UK,LOW
+1271,Merchant_01271,Clothing,Indore,India,LOW
+1272,Merchant_01272,Entertainment,Chennai,USA,MEDIUM
+1273,Merchant_01273,Dining,Pune,India,LOW
+1274,Merchant_01274,Gift Cards,Bengaluru,India,LOW
+1275,Merchant_01275,Grocery,Nagpur,India,HIGH
+1276,Merchant_01276,Clothing,Lucknow,USA,LOW
+1277,Merchant_01277,Online Services,Hyderabad,India,MEDIUM
+1278,Merchant_01278,Healthcare,Lucknow,Singapore,LOW
+1279,Merchant_01279,Healthcare,Nagpur,India,LOW
+1280,Merchant_01280,Electronics,Bengaluru,UK,MEDIUM
+1281,Merchant_01281,Clothing,Jaipur,India,LOW
+1282,Merchant_01282,Travel,Jaipur,India,MEDIUM
+1283,Merchant_01283,Fuel,Delhi,India,LOW
+1284,Merchant_01284,Jewelry,Delhi,India,LOW
+1285,Merchant_01285,Travel,Chennai,India,LOW
+1286,Merchant_01286,Healthcare,Indore,India,LOW
+1287,Merchant_01287,Dining,Chandigarh,Singapore,LOW
+1288,Merchant_01288,Clothing,Mumbai,India,LOW
+1289,Merchant_01289,Fuel,Ahmedabad,India,MEDIUM
+1290,Merchant_01290,Dining,Mumbai,India,LOW
+1291,Merchant_01291,Gift Cards,Bangalore,India,MEDIUM
+1292,Merchant_01292,Fuel,Chennai,UK,LOW
+1293,Merchant_01293,Dining,Lucknow,India,MEDIUM
+1294,Merchant_01294,Jewelry,Indore,India,LOW
+1295,Merchant_01295,Electronics,Delhi,USA,LOW
+1296,Merchant_01296,Jewelry,Delhi,India,LOW
+1297,Merchant_01297,Electronics,Chennai,India,HIGH
+1298,Merchant_01298,Gift Cards,Surat,USA,MEDIUM
+1299,Merchant_01299,Healthcare,Chennai,India,HIGH
+1300,Merchant_01300,Entertainment,Mumbai,India,LOW
+1301,Merchant_01301,Jewelry,Surat,India,LOW
+1302,Merchant_01302,Grocery,Lucknow,India,LOW
+1303,Merchant_01303,Jewelry,Indore,India,LOW
+1304,Merchant_01304,Travel,Nagpur,India,MEDIUM
+1305,Merchant_01305,Gift Cards,Bengaluru,Singapore,LOW
+1306,Merchant_01306,Travel,Kolkata,India,MEDIUM
+1307,Merchant_01307,Entertainment,Pune,India,LOW
+1308,Merchant_01308,Electronics,Bengaluru,India,LOW
+1309,Merchant_01309,Entertainment,Lucknow,India,MEDIUM
+1310,Merchant_01310,Travel,Bangalore,India,LOW
+1311,Merchant_01311,Entertainment,Bangalore,India,HIGH
+1312,Merchant_01312,Travel,Jaipur,India,LOW
+1313,Merchant_01313,Travel,Indore,UK,LOW
+1314,Merchant_01314,Gift Cards,Nagpur,India,LOW
+1315,Merchant_01315,Healthcare,Bangalore,India,MEDIUM
+1316,Merchant_01316,Clothing,Bangalore,India,MEDIUM
+1317,Merchant_01317,Online Services,Hyderabad,India,HIGH
+1318,Merchant_01318,Entertainment,Bangalore,India,MEDIUM
+1319,Merchant_01319,Fuel,Nagpur,India,MEDIUM
+1320,Merchant_01320,Electronics,Kolkata,India,MEDIUM
+1321,Merchant_01321,Fuel,Indore,India,HIGH
+1322,Merchant_01322,Grocery,Chandigarh,India,LOW
+1323,Merchant_01323,Healthcare,Surat,India,MEDIUM
+1324,Merchant_01324,Online Services,Delhi,India,LOW
+1325,Merchant_01325,Gift Cards,Bengaluru,India,MEDIUM
+1326,Merchant_01326,Online Services,Mumbai,India,HIGH
+1327,Merchant_01327,Entertainment,Lucknow,India,LOW
+1328,Merchant_01328,Fuel,Delhi,India,LOW
+1329,Merchant_01329,Travel,Pune,USA,LOW
+1330,Merchant_01330,Clothing,Chennai,Singapore,LOW
+1331,Merchant_01331,Travel,Indore,India,LOW
+1332,Merchant_01332,Fuel,Surat,India,MEDIUM
+1333,Merchant_01333,Online Services,Indore,India,LOW
+1334,Merchant_01334,Clothing,Jaipur,India,LOW
+1335,Merchant_01335,Healthcare,Kolkata,India,LOW
+1336,Merchant_01336,Entertainment,Hyderabad,India,LOW
+1337,Merchant_01337,Electronics,Ahmedabad,India,LOW
+1338,Merchant_01338,Fuel,Hyderabad,India,LOW
+1339,Merchant_01339,Fuel,Nagpur,India,LOW
+1340,Merchant_01340,Jewelry,Nagpur,India,LOW
+1341,Merchant_01341,Entertainment,Jaipur,India,LOW
+1342,Merchant_01342,Gift Cards,Lucknow,India,MEDIUM
+1343,Merchant_01343,Dining,Pune,India,MEDIUM
+1344,Merchant_01344,Fuel,Ahmedabad,India,MEDIUM
+1345,Merchant_01345,Dining,Bangalore,India,LOW
+1346,Merchant_01346,Online Services,Delhi,USA,MEDIUM
+1347,Merchant_01347,Jewelry,Delhi,India,MEDIUM
+1348,Merchant_01348,Healthcare,Hyderabad,India,MEDIUM
+1349,Merchant_01349,Healthcare,Indore,India,MEDIUM
+1350,Merchant_01350,Online Services,Nagpur,India,LOW
+1351,Merchant_01351,Clothing,Delhi,India,MEDIUM
+1352,Merchant_01352,Travel,Lucknow,India,LOW
+1353,Merchant_01353,Jewelry,Bengaluru,India,MEDIUM
+1354,Merchant_01354,Gift Cards,Mumbai,India,LOW
+1355,Merchant_01355,Online Services,Mumbai,India,HIGH
+1356,Merchant_01356,Clothing,Surat,India,LOW
+1357,Merchant_01357,Dining,Surat,India,LOW
+1358,Merchant_01358,Gift Cards,Jaipur,India,LOW
+1359,Merchant_01359,Fuel,Nagpur,India,LOW
+1360,Merchant_01360,Travel,Chennai,India,LOW
+1361,Merchant_01361,Online Services,Nagpur,India,MEDIUM
+1362,Merchant_01362,Online Services,Hyderabad,India,LOW
+1363,Merchant_01363,Gift Cards,Bengaluru,USA,MEDIUM
+1364,Merchant_01364,Electronics,Surat,India,MEDIUM
+1365,Merchant_01365,Healthcare,Chennai,India,LOW
+1366,Merchant_01366,Entertainment,Nagpur,India,MEDIUM
+1367,Merchant_01367,Gift Cards,Mumbai,India,MEDIUM
+1368,Merchant_01368,Clothing,Surat,Singapore,LOW
+1369,Merchant_01369,Travel,Surat,India,LOW
+1370,Merchant_01370,Grocery,Lucknow,India,MEDIUM
+1371,Merchant_01371,Grocery,Delhi,India,MEDIUM
+1372,Merchant_01372,Electronics,Chandigarh,USA,HIGH
+1373,Merchant_01373,Electronics,Bengaluru,India,MEDIUM
+1374,Merchant_01374,Travel,Kolkata,India,LOW
+1375,Merchant_01375,Jewelry,Jaipur,India,LOW
+1376,Merchant_01376,Healthcare,Lucknow,India,MEDIUM
+1377,Merchant_01377,Grocery,Jaipur,India,LOW
+1378,Merchant_01378,Travel,Bangalore,India,LOW
+1379,Merchant_01379,Dining,Hyderabad,India,LOW
+1380,Merchant_01380,Grocery,Pune,India,LOW
+1381,Merchant_01381,Travel,Mumbai,UAE,HIGH
+1382,Merchant_01382,Electronics,Chennai,India,LOW
+1383,Merchant_01383,Clothing,Chandigarh,India,LOW
+1384,Merchant_01384,Fuel,Ahmedabad,India,LOW
+1385,Merchant_01385,Healthcare,Jaipur,India,LOW
+1386,Merchant_01386,Jewelry,Delhi,India,MEDIUM
+1387,Merchant_01387,Healthcare,Indore,Singapore,LOW
+1388,Merchant_01388,Healthcare,Mumbai,USA,MEDIUM
+1389,Merchant_01389,Electronics,Lucknow,USA,LOW
+1390,Merchant_01390,Travel,Bengaluru,India,LOW
+1391,Merchant_01391,Gift Cards,Bengaluru,India,MEDIUM
+1392,Merchant_01392,Grocery,Chennai,India,LOW
+1393,Merchant_01393,Grocery,Chennai,India,LOW
+1394,Merchant_01394,Gift Cards,Nagpur,India,LOW
+1395,Merchant_01395,Clothing,Nagpur,India,LOW
+1396,Merchant_01396,Electronics,Pune,India,MEDIUM
+1397,Merchant_01397,Entertainment,Bangalore,India,LOW
+1398,Merchant_01398,Healthcare,Ahmedabad,USA,LOW
+1399,Merchant_01399,Electronics,Mumbai,India,LOW
+1400,Merchant_01400,Fuel,Bangalore,India,MEDIUM
+1401,Merchant_01401,Entertainment,Nagpur,India,LOW
+1402,Merchant_01402,Clothing,Jaipur,India,LOW
+1403,Merchant_01403,Clothing,Ahmedabad,India,MEDIUM
+1404,Merchant_01404,Grocery,Ahmedabad,India,LOW
+1405,Merchant_01405,Grocery,Ahmedabad,India,HIGH
+1406,Merchant_01406,Gift Cards,Ahmedabad,India,MEDIUM
+1407,Merchant_01407,Gift Cards,Jaipur,India,MEDIUM
+1408,Merchant_01408,Online Services,Indore,India,LOW
+1409,Merchant_01409,Travel,Bengaluru,India,LOW
+1410,Merchant_01410,Entertainment,Pune,India,LOW
+1411,Merchant_01411,Fuel,Jaipur,India,LOW
+1412,Merchant_01412,Gift Cards,Delhi,India,LOW
+1413,Merchant_01413,Grocery,Mumbai,India,MEDIUM
+1414,Merchant_01414,Grocery,Jaipur,India,LOW
+1415,Merchant_01415,Electronics,Lucknow,India,MEDIUM
+1416,Merchant_01416,Entertainment,Indore,Singapore,MEDIUM
+1417,Merchant_01417,Grocery,Delhi,India,LOW
+1418,Merchant_01418,Jewelry,Chennai,USA,LOW
+1419,Merchant_01419,Clothing,Kolkata,India,LOW
+1420,Merchant_01420,Grocery,Mumbai,India,MEDIUM
+1421,Merchant_01421,Grocery,Bengaluru,UAE,MEDIUM
+1422,Merchant_01422,Gift Cards,Bengaluru,India,MEDIUM
+1423,Merchant_01423,Clothing,Chandigarh,India,LOW
+1424,Merchant_01424,Entertainment,Chandigarh,India,MEDIUM
+1425,Merchant_01425,Clothing,Surat,India,MEDIUM
+1426,Merchant_01426,Jewelry,Mumbai,India,MEDIUM
+1427,Merchant_01427,Clothing,Surat,India,LOW
+1428,Merchant_01428,Travel,Nagpur,India,MEDIUM
+1429,Merchant_01429,Electronics,Jaipur,USA,LOW
+1430,Merchant_01430,Jewelry,Surat,India,LOW
+1431,Merchant_01431,Healthcare,Nagpur,India,LOW
+1432,Merchant_01432,Fuel,Lucknow,India,LOW
+1433,Merchant_01433,Electronics,Ahmedabad,India,HIGH
+1434,Merchant_01434,Entertainment,Bangalore,India,MEDIUM
+1435,Merchant_01435,Travel,Nagpur,India,MEDIUM
+1436,Merchant_01436,Gift Cards,Ahmedabad,India,LOW
+1437,Merchant_01437,Electronics,Surat,India,MEDIUM
+1438,Merchant_01438,Travel,Delhi,India,LOW
+1439,Merchant_01439,Gift Cards,Jaipur,India,LOW
+1440,Merchant_01440,Fuel,Ahmedabad,India,MEDIUM
+1441,Merchant_01441,Electronics,Ahmedabad,UK,MEDIUM
+1442,Merchant_01442,Jewelry,Hyderabad,India,HIGH
+1443,Merchant_01443,Travel,Jaipur,India,LOW
+1444,Merchant_01444,Grocery,Indore,UK,LOW
+1445,Merchant_01445,Dining,Delhi,India,LOW
+1446,Merchant_01446,Online Services,Chennai,India,LOW
+1447,Merchant_01447,Jewelry,Pune,India,HIGH
+1448,Merchant_01448,Entertainment,Delhi,India,LOW
+1449,Merchant_01449,Online Services,Nagpur,India,MEDIUM
+1450,Merchant_01450,Dining,Bangalore,Singapore,LOW
+1451,Merchant_01451,Grocery,Chandigarh,India,MEDIUM
+1452,Merchant_01452,Healthcare,Lucknow,India,HIGH
+1453,Merchant_01453,Healthcare,Kolkata,India,LOW
+1454,Merchant_01454,Healthcare,Nagpur,India,LOW
+1455,Merchant_01455,Entertainment,Delhi,India,LOW
+1456,Merchant_01456,Online Services,Ahmedabad,India,LOW
+1457,Merchant_01457,Jewelry,Jaipur,India,LOW
+1458,Merchant_01458,Travel,Bangalore,India,LOW
+1459,Merchant_01459,Entertainment,Jaipur,India,LOW
+1460,Merchant_01460,Grocery,Surat,India,MEDIUM
+1461,Merchant_01461,Clothing,Bengaluru,India,LOW
+1462,Merchant_01462,Dining,Surat,India,LOW
+1463,Merchant_01463,Online Services,Chennai,India,LOW
+1464,Merchant_01464,Dining,Pune,India,MEDIUM
+1465,Merchant_01465,Healthcare,Mumbai,India,MEDIUM
+1466,Merchant_01466,Electronics,Kolkata,UK,LOW
+1467,Merchant_01467,Fuel,Jaipur,India,MEDIUM
+1468,Merchant_01468,Clothing,Chandigarh,India,LOW
+1469,Merchant_01469,Grocery,Mumbai,UAE,HIGH
+1470,Merchant_01470,Entertainment,Delhi,India,HIGH
+1471,Merchant_01471,Electronics,Mumbai,India,LOW
+1472,Merchant_01472,Dining,Jaipur,India,MEDIUM
+1473,Merchant_01473,Healthcare,Delhi,India,LOW
+1474,Merchant_01474,Electronics,Mumbai,India,LOW
+1475,Merchant_01475,Grocery,Chandigarh,India,LOW
+1476,Merchant_01476,Dining,Mumbai,India,MEDIUM
+1477,Merchant_01477,Travel,Mumbai,India,MEDIUM
+1478,Merchant_01478,Electronics,Kolkata,India,LOW
+1479,Merchant_01479,Fuel,Lucknow,USA,LOW
+1480,Merchant_01480,Electronics,Ahmedabad,India,LOW
+1481,Merchant_01481,Travel,Mumbai,India,LOW
+1482,Merchant_01482,Entertainment,Pune,UK,HIGH
+1483,Merchant_01483,Entertainment,Nagpur,India,LOW
+1484,Merchant_01484,Jewelry,Bengaluru,India,MEDIUM
+1485,Merchant_01485,Electronics,Surat,India,LOW
+1486,Merchant_01486,Grocery,Chennai,India,LOW
+1487,Merchant_01487,Clothing,Bangalore,USA,LOW
+1488,Merchant_01488,Online Services,Mumbai,India,LOW
+1489,Merchant_01489,Clothing,Bangalore,India,LOW
+1490,Merchant_01490,Online Services,Lucknow,India,LOW
+1491,Merchant_01491,Jewelry,Nagpur,India,HIGH
+1492,Merchant_01492,Gift Cards,Delhi,India,LOW
+1493,Merchant_01493,Jewelry,Delhi,India,LOW
+1494,Merchant_01494,Entertainment,Chennai,India,LOW
+1495,Merchant_01495,Jewelry,Bengaluru,India,MEDIUM
+1496,Merchant_01496,Entertainment,Indore,USA,MEDIUM
+1497,Merchant_01497,Grocery,Chandigarh,India,LOW
+1498,Merchant_01498,Clothing,Kolkata,India,MEDIUM
+1499,Merchant_01499,Clothing,Delhi,India,LOW
+1500,Merchant_01500,Jewelry,Delhi,USA,LOW
+1501,Merchant_01501,Jewelry,Nagpur,India,LOW
+1502,Merchant_01502,Travel,Indore,India,LOW
+1503,Merchant_01503,Fuel,Surat,India,MEDIUM
+1504,Merchant_01504,Fuel,Chandigarh,India,LOW
+1505,Merchant_01505,Travel,Jaipur,India,MEDIUM
+1506,Merchant_01506,Healthcare,Indore,India,LOW
+1507,Merchant_01507,Dining,Mumbai,India,LOW
+1508,Merchant_01508,Jewelry,Bengaluru,India,LOW
+1509,Merchant_01509,Electronics,Kolkata,India,LOW
+1510,Merchant_01510,Travel,Surat,India,MEDIUM
+1511,Merchant_01511,Travel,Surat,India,LOW
+1512,Merchant_01512,Jewelry,Surat,India,MEDIUM
+1513,Merchant_01513,Healthcare,Bangalore,UK,LOW
+1514,Merchant_01514,Gift Cards,Nagpur,India,LOW
+1515,Merchant_01515,Jewelry,Pune,India,LOW
+1516,Merchant_01516,Entertainment,Jaipur,India,LOW
+1517,Merchant_01517,Jewelry,Lucknow,India,MEDIUM
+1518,Merchant_01518,Dining,Bangalore,India,LOW
+1519,Merchant_01519,Online Services,Kolkata,India,LOW
+1520,Merchant_01520,Gift Cards,Lucknow,India,LOW
+1521,Merchant_01521,Gift Cards,Chennai,UK,HIGH
+1522,Merchant_01522,Clothing,Delhi,India,LOW
+1523,Merchant_01523,Entertainment,Indore,India,LOW
+1524,Merchant_01524,Healthcare,Delhi,India,MEDIUM
+1525,Merchant_01525,Electronics,Hyderabad,India,LOW
+1526,Merchant_01526,Healthcare,Bangalore,India,LOW
+1527,Merchant_01527,Clothing,Hyderabad,India,MEDIUM
+1528,Merchant_01528,Entertainment,Hyderabad,India,HIGH
+1529,Merchant_01529,Clothing,Bangalore,India,MEDIUM
+1530,Merchant_01530,Clothing,Chennai,India,LOW
+1531,Merchant_01531,Clothing,Surat,India,MEDIUM
+1532,Merchant_01532,Healthcare,Jaipur,India,HIGH
+1533,Merchant_01533,Electronics,Jaipur,India,LOW
+1534,Merchant_01534,Grocery,Jaipur,India,LOW
+1535,Merchant_01535,Travel,Lucknow,India,LOW
+1536,Merchant_01536,Grocery,Jaipur,India,LOW
+1537,Merchant_01537,Gift Cards,Ahmedabad,India,LOW
+1538,Merchant_01538,Online Services,Mumbai,India,LOW
+1539,Merchant_01539,Grocery,Delhi,India,LOW
+1540,Merchant_01540,Healthcare,Surat,India,LOW
+1541,Merchant_01541,Travel,Delhi,India,MEDIUM
+1542,Merchant_01542,Clothing,Chennai,India,LOW
+1543,Merchant_01543,Electronics,Hyderabad,India,MEDIUM
+1544,Merchant_01544,Jewelry,Ahmedabad,India,LOW
+1545,Merchant_01545,Electronics,Mumbai,India,LOW
+1546,Merchant_01546,Dining,Nagpur,India,MEDIUM
+1547,Merchant_01547,Jewelry,Kolkata,India,LOW
+1548,Merchant_01548,Clothing,Kolkata,Singapore,MEDIUM
+1549,Merchant_01549,Entertainment,Chennai,India,MEDIUM
+1550,Merchant_01550,Entertainment,Ahmedabad,India,MEDIUM
+1551,Merchant_01551,Clothing,Indore,India,LOW
+1552,Merchant_01552,Travel,Mumbai,USA,LOW
+1553,Merchant_01553,Fuel,Hyderabad,India,MEDIUM
+1554,Merchant_01554,Dining,Jaipur,India,MEDIUM
+1555,Merchant_01555,Online Services,Delhi,India,LOW
+1556,Merchant_01556,Online Services,Chandigarh,USA,LOW
+1557,Merchant_01557,Grocery,Indore,India,LOW
+1558,Merchant_01558,Gift Cards,Hyderabad,UAE,LOW
+1559,Merchant_01559,Travel,Lucknow,UAE,LOW
+1560,Merchant_01560,Gift Cards,Mumbai,India,LOW
+1561,Merchant_01561,Entertainment,Delhi,India,LOW
+1562,Merchant_01562,Clothing,Surat,India,MEDIUM
+1563,Merchant_01563,Electronics,Surat,India,LOW
+1564,Merchant_01564,Online Services,Nagpur,India,LOW
+1565,Merchant_01565,Fuel,Chennai,India,MEDIUM
+1566,Merchant_01566,Gift Cards,Delhi,India,MEDIUM
+1567,Merchant_01567,Entertainment,Ahmedabad,India,MEDIUM
+1568,Merchant_01568,Entertainment,Chandigarh,UK,LOW
+1569,Merchant_01569,Dining,Hyderabad,India,HIGH
+1570,Merchant_01570,Travel,Chandigarh,India,LOW
+1571,Merchant_01571,Online Services,Pune,India,LOW
+1572,Merchant_01572,Electronics,Jaipur,India,LOW
+1573,Merchant_01573,Fuel,Delhi,India,LOW
+1574,Merchant_01574,Dining,Bengaluru,India,LOW
+1575,Merchant_01575,Clothing,Jaipur,India,LOW
+1576,Merchant_01576,Gift Cards,Hyderabad,India,MEDIUM
+1577,Merchant_01577,Healthcare,Chandigarh,India,LOW
+1578,Merchant_01578,Healthcare,Indore,India,LOW
+1579,Merchant_01579,Fuel,Chennai,India,LOW
+1580,Merchant_01580,Grocery,Kolkata,India,LOW
+1581,Merchant_01581,Dining,Bangalore,India,LOW
+1582,Merchant_01582,Dining,Lucknow,India,LOW
+1583,Merchant_01583,Electronics,Surat,India,LOW
+1584,Merchant_01584,Grocery,Pune,India,LOW
+1585,Merchant_01585,Clothing,Bengaluru,India,HIGH
+1586,Merchant_01586,Electronics,Chennai,India,LOW
+1587,Merchant_01587,Electronics,Mumbai,India,LOW
+1588,Merchant_01588,Gift Cards,Pune,India,LOW
+1589,Merchant_01589,Entertainment,Chandigarh,India,LOW
+1590,Merchant_01590,Healthcare,Ahmedabad,India,LOW
+1591,Merchant_01591,Dining,Hyderabad,India,MEDIUM
+1592,Merchant_01592,Entertainment,Chandigarh,India,HIGH
+1593,Merchant_01593,Online Services,Lucknow,India,LOW
+1594,Merchant_01594,Entertainment,Lucknow,India,LOW
+1595,Merchant_01595,Jewelry,Delhi,India,LOW
+1596,Merchant_01596,Travel,Kolkata,India,LOW
+1597,Merchant_01597,Gift Cards,Kolkata,USA,MEDIUM
+1598,Merchant_01598,Travel,Lucknow,India,HIGH
+1599,Merchant_01599,Jewelry,Chandigarh,USA,LOW
+1600,Merchant_01600,Clothing,Delhi,India,MEDIUM
+1601,Merchant_01601,Jewelry,Mumbai,India,LOW
+1602,Merchant_01602,Clothing,Surat,India,LOW
+1603,Merchant_01603,Clothing,Kolkata,India,MEDIUM
+1604,Merchant_01604,Electronics,Delhi,India,LOW
+1605,Merchant_01605,Entertainment,Chennai,India,LOW
+1606,Merchant_01606,Electronics,Chennai,India,LOW
+1607,Merchant_01607,Travel,Chennai,India,LOW
+1608,Merchant_01608,Electronics,Ahmedabad,India,MEDIUM
+1609,Merchant_01609,Gift Cards,Hyderabad,India,HIGH
+1610,Merchant_01610,Entertainment,Chandigarh,India,MEDIUM
+1611,Merchant_01611,Fuel,Bengaluru,India,LOW
+1612,Merchant_01612,Travel,Delhi,India,MEDIUM
+1613,Merchant_01613,Healthcare,Delhi,India,LOW
+1614,Merchant_01614,Jewelry,Ahmedabad,India,LOW
+1615,Merchant_01615,Healthcare,Lucknow,Singapore,LOW
+1616,Merchant_01616,Gift Cards,Ahmedabad,India,HIGH
+1617,Merchant_01617,Gift Cards,Kolkata,India,LOW
+1618,Merchant_01618,Fuel,Chennai,UAE,LOW
+1619,Merchant_01619,Jewelry,Jaipur,India,LOW
+1620,Merchant_01620,Healthcare,Nagpur,India,LOW
+1621,Merchant_01621,Travel,Chandigarh,India,LOW
+1622,Merchant_01622,Dining,Ahmedabad,India,LOW
+1623,Merchant_01623,Online Services,Delhi,India,MEDIUM
+1624,Merchant_01624,Grocery,Mumbai,India,LOW
+1625,Merchant_01625,Travel,Jaipur,UAE,MEDIUM
+1626,Merchant_01626,Gift Cards,Indore,India,MEDIUM
+1627,Merchant_01627,Entertainment,Nagpur,India,LOW
+1628,Merchant_01628,Gift Cards,Jaipur,India,MEDIUM
+1629,Merchant_01629,Electronics,Bengaluru,India,MEDIUM
+1630,Merchant_01630,Grocery,Kolkata,India,LOW
+1631,Merchant_01631,Grocery,Chandigarh,India,LOW
+1632,Merchant_01632,Entertainment,Jaipur,India,LOW
+1633,Merchant_01633,Electronics,Nagpur,India,LOW
+1634,Merchant_01634,Grocery,Pune,India,LOW
+1635,Merchant_01635,Travel,Pune,India,HIGH
+1636,Merchant_01636,Healthcare,Mumbai,India,MEDIUM
+1637,Merchant_01637,Healthcare,Bengaluru,India,LOW
+1638,Merchant_01638,Dining,Kolkata,India,LOW
+1639,Merchant_01639,Jewelry,Indore,India,HIGH
+1640,Merchant_01640,Dining,Chennai,India,LOW
+1641,Merchant_01641,Electronics,Mumbai,India,LOW
+1642,Merchant_01642,Dining,Chennai,India,MEDIUM
+1643,Merchant_01643,Clothing,Kolkata,India,MEDIUM
+1644,Merchant_01644,Online Services,Bengaluru,UAE,MEDIUM
+1645,Merchant_01645,Electronics,Jaipur,India,LOW
+1646,Merchant_01646,Entertainment,Kolkata,India,LOW
+1647,Merchant_01647,Travel,Nagpur,India,LOW
+1648,Merchant_01648,Dining,Mumbai,India,MEDIUM
+1649,Merchant_01649,Healthcare,Bangalore,India,MEDIUM
+1650,Merchant_01650,Fuel,Surat,India,MEDIUM
+1651,Merchant_01651,Electronics,Nagpur,UAE,MEDIUM
+1652,Merchant_01652,Gift Cards,Nagpur,India,MEDIUM
+1653,Merchant_01653,Electronics,Bengaluru,India,LOW
+1654,Merchant_01654,Entertainment,Mumbai,India,LOW
+1655,Merchant_01655,Gift Cards,Chandigarh,India,LOW
+1656,Merchant_01656,Travel,Indore,USA,MEDIUM
+1657,Merchant_01657,Gift Cards,Nagpur,India,LOW
+1658,Merchant_01658,Fuel,Delhi,India,HIGH
+1659,Merchant_01659,Clothing,Bangalore,India,LOW
+1660,Merchant_01660,Gift Cards,Kolkata,India,LOW
+1661,Merchant_01661,Electronics,Bangalore,USA,LOW
+1662,Merchant_01662,Healthcare,Hyderabad,India,MEDIUM
+1663,Merchant_01663,Online Services,Bengaluru,India,LOW
+1664,Merchant_01664,Electronics,Surat,India,LOW
+1665,Merchant_01665,Jewelry,Bangalore,India,HIGH
+1666,Merchant_01666,Entertainment,Jaipur,India,MEDIUM
+1667,Merchant_01667,Travel,Nagpur,India,LOW
+1668,Merchant_01668,Electronics,Bangalore,India,LOW
+1669,Merchant_01669,Dining,Pune,India,MEDIUM
+1670,Merchant_01670,Gift Cards,Chandigarh,India,LOW
+1671,Merchant_01671,Jewelry,Lucknow,India,LOW
+1672,Merchant_01672,Gift Cards,Mumbai,India,MEDIUM
+1673,Merchant_01673,Electronics,Lucknow,UK,LOW
+1674,Merchant_01674,Fuel,Lucknow,India,LOW
+1675,Merchant_01675,Online Services,Bangalore,India,LOW
+1676,Merchant_01676,Gift Cards,Chennai,India,HIGH
+1677,Merchant_01677,Healthcare,Chennai,India,MEDIUM
+1678,Merchant_01678,Travel,Bangalore,India,LOW
+1679,Merchant_01679,Electronics,Lucknow,India,HIGH
+1680,Merchant_01680,Travel,Delhi,India,LOW
+1681,Merchant_01681,Grocery,Mumbai,UAE,MEDIUM
+1682,Merchant_01682,Grocery,Chennai,India,LOW
+1683,Merchant_01683,Healthcare,Pune,UAE,LOW
+1684,Merchant_01684,Dining,Chandigarh,India,HIGH
+1685,Merchant_01685,Dining,Surat,India,LOW
+1686,Merchant_01686,Online Services,Kolkata,India,LOW
+1687,Merchant_01687,Travel,Nagpur,India,MEDIUM
+1688,Merchant_01688,Healthcare,Kolkata,India,LOW
+1689,Merchant_01689,Clothing,Pune,India,MEDIUM
+1690,Merchant_01690,Entertainment,Hyderabad,India,MEDIUM
+1691,Merchant_01691,Jewelry,Indore,India,HIGH
+1692,Merchant_01692,Travel,Ahmedabad,India,MEDIUM
+1693,Merchant_01693,Jewelry,Delhi,India,MEDIUM
+1694,Merchant_01694,Clothing,Lucknow,India,HIGH
+1695,Merchant_01695,Healthcare,Kolkata,India,LOW
+1696,Merchant_01696,Clothing,Bangalore,India,LOW
+1697,Merchant_01697,Grocery,Bengaluru,India,MEDIUM
+1698,Merchant_01698,Travel,Kolkata,India,LOW
+1699,Merchant_01699,Healthcare,Jaipur,India,LOW
+1700,Merchant_01700,Clothing,Bengaluru,India,LOW
+1701,Merchant_01701,Online Services,Lucknow,India,HIGH
+1702,Merchant_01702,Fuel,Lucknow,India,LOW
+1703,Merchant_01703,Electronics,Bangalore,India,MEDIUM
+1704,Merchant_01704,Dining,Ahmedabad,India,LOW
+1705,Merchant_01705,Jewelry,Surat,India,LOW
+1706,Merchant_01706,Online Services,Surat,UK,LOW
+1707,Merchant_01707,Jewelry,Chandigarh,India,MEDIUM
+1708,Merchant_01708,Online Services,Chennai,India,MEDIUM
+1709,Merchant_01709,Jewelry,Pune,India,MEDIUM
+1710,Merchant_01710,Clothing,Bengaluru,India,LOW
+1711,Merchant_01711,Online Services,Delhi,India,LOW
+1712,Merchant_01712,Gift Cards,Hyderabad,India,LOW
+1713,Merchant_01713,Travel,Jaipur,India,LOW
+1714,Merchant_01714,Entertainment,Chandigarh,India,LOW
+1715,Merchant_01715,Clothing,Indore,India,LOW
+1716,Merchant_01716,Jewelry,Jaipur,USA,MEDIUM
+1717,Merchant_01717,Online Services,Bengaluru,India,LOW
+1718,Merchant_01718,Online Services,Bengaluru,India,MEDIUM
+1719,Merchant_01719,Clothing,Chandigarh,India,LOW
+1720,Merchant_01720,Entertainment,Nagpur,India,MEDIUM
+1721,Merchant_01721,Online Services,Jaipur,India,HIGH
+1722,Merchant_01722,Travel,Chennai,India,LOW
+1723,Merchant_01723,Entertainment,Kolkata,India,LOW
+1724,Merchant_01724,Clothing,Lucknow,India,MEDIUM
+1725,Merchant_01725,Online Services,Delhi,India,MEDIUM
+1726,Merchant_01726,Dining,Kolkata,India,LOW
+1727,Merchant_01727,Travel,Delhi,India,LOW
+1728,Merchant_01728,Grocery,Chennai,India,LOW
+1729,Merchant_01729,Jewelry,Ahmedabad,India,HIGH
+1730,Merchant_01730,Dining,Surat,India,MEDIUM
+1731,Merchant_01731,Online Services,Delhi,UK,MEDIUM
+1732,Merchant_01732,Entertainment,Bengaluru,India,MEDIUM
+1733,Merchant_01733,Grocery,Jaipur,India,MEDIUM
+1734,Merchant_01734,Healthcare,Nagpur,India,MEDIUM
+1735,Merchant_01735,Fuel,Bangalore,India,LOW
+1736,Merchant_01736,Clothing,Chandigarh,India,MEDIUM
+1737,Merchant_01737,Clothing,Bangalore,India,MEDIUM
+1738,Merchant_01738,Travel,Mumbai,India,MEDIUM
+1739,Merchant_01739,Fuel,Hyderabad,India,LOW
+1740,Merchant_01740,Healthcare,Kolkata,India,LOW
+1741,Merchant_01741,Jewelry,Bangalore,India,LOW
+1742,Merchant_01742,Healthcare,Jaipur,India,MEDIUM
+1743,Merchant_01743,Travel,Bengaluru,India,MEDIUM
+1744,Merchant_01744,Travel,Indore,India,LOW
+1745,Merchant_01745,Online Services,Lucknow,India,LOW
+1746,Merchant_01746,Healthcare,Chennai,India,MEDIUM
+1747,Merchant_01747,Dining,Bangalore,India,LOW
+1748,Merchant_01748,Travel,Chennai,India,LOW
+1749,Merchant_01749,Travel,Bengaluru,India,LOW
+1750,Merchant_01750,Jewelry,Nagpur,UK,HIGH
+1751,Merchant_01751,Electronics,Pune,India,HIGH
+1752,Merchant_01752,Travel,Pune,India,HIGH
+1753,Merchant_01753,Entertainment,Indore,India,LOW
+1754,Merchant_01754,Jewelry,Pune,India,LOW
+1755,Merchant_01755,Electronics,Kolkata,India,HIGH
+1756,Merchant_01756,Electronics,Bengaluru,India,LOW
+1757,Merchant_01757,Gift Cards,Delhi,India,MEDIUM
+1758,Merchant_01758,Travel,Lucknow,India,LOW
+1759,Merchant_01759,Travel,Chennai,India,LOW
+1760,Merchant_01760,Clothing,Indore,India,MEDIUM
+1761,Merchant_01761,Healthcare,Chandigarh,India,MEDIUM
+1762,Merchant_01762,Online Services,Ahmedabad,India,HIGH
+1763,Merchant_01763,Grocery,Pune,USA,LOW
+1764,Merchant_01764,Entertainment,Delhi,India,LOW
+1765,Merchant_01765,Electronics,Chandigarh,India,LOW
+1766,Merchant_01766,Clothing,Hyderabad,India,LOW
+1767,Merchant_01767,Travel,Mumbai,India,LOW
+1768,Merchant_01768,Entertainment,Indore,India,LOW
+1769,Merchant_01769,Fuel,Mumbai,India,MEDIUM
+1770,Merchant_01770,Online Services,Bengaluru,USA,LOW
+1771,Merchant_01771,Gift Cards,Pune,UAE,MEDIUM
+1772,Merchant_01772,Dining,Kolkata,India,LOW
+1773,Merchant_01773,Gift Cards,Pune,India,LOW
+1774,Merchant_01774,Travel,Bangalore,India,LOW
+1775,Merchant_01775,Clothing,Chandigarh,India,LOW
+1776,Merchant_01776,Travel,Nagpur,India,LOW
+1777,Merchant_01777,Grocery,Lucknow,India,MEDIUM
+1778,Merchant_01778,Jewelry,Chennai,India,LOW
+1779,Merchant_01779,Travel,Delhi,India,LOW
+1780,Merchant_01780,Entertainment,Jaipur,India,MEDIUM
+1781,Merchant_01781,Dining,Delhi,India,MEDIUM
+1782,Merchant_01782,Entertainment,Lucknow,India,MEDIUM
+1783,Merchant_01783,Fuel,Hyderabad,India,LOW
+1784,Merchant_01784,Grocery,Bengaluru,India,MEDIUM
+1785,Merchant_01785,Gift Cards,Lucknow,India,LOW
+1786,Merchant_01786,Grocery,Chandigarh,India,LOW
+1787,Merchant_01787,Grocery,Hyderabad,India,LOW
+1788,Merchant_01788,Clothing,Chennai,India,LOW
+1789,Merchant_01789,Gift Cards,Nagpur,India,LOW
+1790,Merchant_01790,Online Services,Indore,UAE,MEDIUM
+1791,Merchant_01791,Fuel,Nagpur,India,MEDIUM
+1792,Merchant_01792,Entertainment,Lucknow,India,LOW
+1793,Merchant_01793,Fuel,Delhi,India,MEDIUM
+1794,Merchant_01794,Grocery,Indore,India,MEDIUM
+1795,Merchant_01795,Fuel,Jaipur,India,MEDIUM
+1796,Merchant_01796,Fuel,Jaipur,UK,LOW
+1797,Merchant_01797,Online Services,Lucknow,India,LOW
+1798,Merchant_01798,Travel,Surat,India,LOW
+1799,Merchant_01799,Clothing,Jaipur,India,MEDIUM
+1800,Merchant_01800,Electronics,Pune,India,LOW
+1801,Merchant_01801,Dining,Delhi,India,LOW
+1802,Merchant_01802,Online Services,Surat,India,MEDIUM
+1803,Merchant_01803,Jewelry,Surat,India,LOW
+1804,Merchant_01804,Grocery,Indore,India,MEDIUM
+1805,Merchant_01805,Travel,Ahmedabad,India,MEDIUM
+1806,Merchant_01806,Electronics,Chandigarh,USA,LOW
+1807,Merchant_01807,Fuel,Hyderabad,India,LOW
+1808,Merchant_01808,Dining,Jaipur,India,LOW
+1809,Merchant_01809,Electronics,Delhi,UK,LOW
+1810,Merchant_01810,Grocery,Delhi,India,LOW
+1811,Merchant_01811,Entertainment,Bengaluru,India,LOW
+1812,Merchant_01812,Gift Cards,Hyderabad,India,LOW
+1813,Merchant_01813,Grocery,Surat,India,LOW
+1814,Merchant_01814,Dining,Hyderabad,India,LOW
+1815,Merchant_01815,Travel,Nagpur,India,MEDIUM
+1816,Merchant_01816,Dining,Bengaluru,India,LOW
+1817,Merchant_01817,Travel,Chandigarh,India,MEDIUM
+1818,Merchant_01818,Gift Cards,Indore,UK,LOW
+1819,Merchant_01819,Grocery,Ahmedabad,India,LOW
+1820,Merchant_01820,Entertainment,Bangalore,India,HIGH
+1821,Merchant_01821,Clothing,Hyderabad,India,LOW
+1822,Merchant_01822,Grocery,Mumbai,India,LOW
+1823,Merchant_01823,Travel,Chandigarh,India,LOW
+1824,Merchant_01824,Grocery,Mumbai,India,MEDIUM
+1825,Merchant_01825,Healthcare,Delhi,India,LOW
+1826,Merchant_01826,Travel,Lucknow,India,LOW
+1827,Merchant_01827,Clothing,Lucknow,India,LOW
+1828,Merchant_01828,Gift Cards,Surat,India,MEDIUM
+1829,Merchant_01829,Grocery,Bangalore,USA,LOW
+1830,Merchant_01830,Grocery,Delhi,India,MEDIUM
+1831,Merchant_01831,Grocery,Hyderabad,India,LOW
+1832,Merchant_01832,Healthcare,Jaipur,USA,MEDIUM
+1833,Merchant_01833,Travel,Nagpur,India,LOW
+1834,Merchant_01834,Healthcare,Lucknow,India,LOW
+1835,Merchant_01835,Clothing,Lucknow,India,LOW
+1836,Merchant_01836,Healthcare,Bangalore,India,LOW
+1837,Merchant_01837,Fuel,Indore,India,MEDIUM
+1838,Merchant_01838,Gift Cards,Kolkata,India,LOW
+1839,Merchant_01839,Gift Cards,Nagpur,India,LOW
+1840,Merchant_01840,Clothing,Surat,UK,LOW
+1841,Merchant_01841,Healthcare,Delhi,India,LOW
+1842,Merchant_01842,Entertainment,Delhi,India,HIGH
+1843,Merchant_01843,Grocery,Delhi,India,LOW
+1844,Merchant_01844,Electronics,Bengaluru,India,LOW
+1845,Merchant_01845,Travel,Lucknow,USA,LOW
+1846,Merchant_01846,Travel,Hyderabad,India,LOW
+1847,Merchant_01847,Dining,Bangalore,India,LOW
+1848,Merchant_01848,Electronics,Bangalore,India,LOW
+1849,Merchant_01849,Clothing,Surat,India,LOW
+1850,Merchant_01850,Grocery,Bangalore,India,LOW
+1851,Merchant_01851,Healthcare,Chandigarh,India,LOW
+1852,Merchant_01852,Clothing,Nagpur,India,LOW
+1853,Merchant_01853,Gift Cards,Indore,India,LOW
+1854,Merchant_01854,Gift Cards,Mumbai,India,LOW
+1855,Merchant_01855,Grocery,Indore,India,MEDIUM
+1856,Merchant_01856,Fuel,Bangalore,India,MEDIUM
+1857,Merchant_01857,Online Services,Chennai,India,LOW
+1858,Merchant_01858,Entertainment,Bengaluru,India,MEDIUM
+1859,Merchant_01859,Travel,Delhi,USA,LOW
+1860,Merchant_01860,Gift Cards,Hyderabad,India,LOW
+1861,Merchant_01861,Online Services,Jaipur,India,LOW
+1862,Merchant_01862,Dining,Delhi,India,LOW
+1863,Merchant_01863,Fuel,Chandigarh,India,HIGH
+1864,Merchant_01864,Electronics,Bangalore,India,MEDIUM
+1865,Merchant_01865,Fuel,Pune,UAE,MEDIUM
+1866,Merchant_01866,Online Services,Indore,India,LOW
+1867,Merchant_01867,Gift Cards,Lucknow,India,LOW
+1868,Merchant_01868,Fuel,Lucknow,India,LOW
+1869,Merchant_01869,Gift Cards,Hyderabad,India,LOW
+1870,Merchant_01870,Online Services,Hyderabad,India,LOW
+1871,Merchant_01871,Fuel,Chandigarh,India,MEDIUM
+1872,Merchant_01872,Jewelry,Chandigarh,India,MEDIUM
+1873,Merchant_01873,Dining,Surat,India,LOW
+1874,Merchant_01874,Grocery,Bengaluru,India,MEDIUM
+1875,Merchant_01875,Jewelry,Bangalore,India,HIGH
+1876,Merchant_01876,Jewelry,Chandigarh,India,MEDIUM
+1877,Merchant_01877,Electronics,Lucknow,India,LOW
+1878,Merchant_01878,Gift Cards,Pune,India,MEDIUM
+1879,Merchant_01879,Fuel,Ahmedabad,India,LOW
+1880,Merchant_01880,Gift Cards,Chennai,India,LOW
+1881,Merchant_01881,Online Services,Hyderabad,USA,LOW
+1882,Merchant_01882,Healthcare,Hyderabad,Singapore,LOW
+1883,Merchant_01883,Electronics,Bangalore,India,LOW
+1884,Merchant_01884,Travel,Indore,India,LOW
+1885,Merchant_01885,Healthcare,Pune,India,MEDIUM
+1886,Merchant_01886,Travel,Bangalore,India,MEDIUM
+1887,Merchant_01887,Grocery,Chandigarh,India,MEDIUM
+1888,Merchant_01888,Entertainment,Bangalore,UAE,LOW
+1889,Merchant_01889,Jewelry,Bangalore,India,LOW
+1890,Merchant_01890,Healthcare,Kolkata,India,HIGH
+1891,Merchant_01891,Clothing,Jaipur,India,LOW
+1892,Merchant_01892,Jewelry,Bangalore,India,LOW
+1893,Merchant_01893,Entertainment,Chandigarh,India,LOW
+1894,Merchant_01894,Gift Cards,Surat,India,LOW
+1895,Merchant_01895,Healthcare,Surat,UK,LOW
+1896,Merchant_01896,Jewelry,Lucknow,India,HIGH
+1897,Merchant_01897,Grocery,Kolkata,India,LOW
+1898,Merchant_01898,Online Services,Ahmedabad,India,LOW
+1899,Merchant_01899,Fuel,Hyderabad,India,LOW
+1900,Merchant_01900,Electronics,Chennai,India,MEDIUM
+1901,Merchant_01901,Healthcare,Indore,India,LOW
+1902,Merchant_01902,Travel,Indore,India,MEDIUM
+1903,Merchant_01903,Online Services,Bangalore,India,LOW
+1904,Merchant_01904,Clothing,Kolkata,India,LOW
+1905,Merchant_01905,Electronics,Jaipur,India,MEDIUM
+1906,Merchant_01906,Online Services,Lucknow,India,LOW
+1907,Merchant_01907,Clothing,Pune,UK,HIGH
+1908,Merchant_01908,Jewelry,Bangalore,India,LOW
+1909,Merchant_01909,Dining,Bangalore,India,LOW
+1910,Merchant_01910,Travel,Chandigarh,India,LOW
+1911,Merchant_01911,Dining,Kolkata,India,MEDIUM
+1912,Merchant_01912,Gift Cards,Hyderabad,India,MEDIUM
+1913,Merchant_01913,Jewelry,Pune,India,LOW
+1914,Merchant_01914,Clothing,Pune,India,LOW
+1915,Merchant_01915,Jewelry,Pune,India,LOW
+1916,Merchant_01916,Online Services,Surat,India,LOW
+1917,Merchant_01917,Online Services,Pune,India,LOW
+1918,Merchant_01918,Dining,Bengaluru,India,LOW
+1919,Merchant_01919,Gift Cards,Ahmedabad,India,LOW
+1920,Merchant_01920,Gift Cards,Ahmedabad,USA,LOW
+1921,Merchant_01921,Gift Cards,Bengaluru,India,HIGH
+1922,Merchant_01922,Dining,Chennai,India,LOW
+1923,Merchant_01923,Fuel,Mumbai,India,MEDIUM
+1924,Merchant_01924,Dining,Ahmedabad,India,MEDIUM
+1925,Merchant_01925,Electronics,Mumbai,India,MEDIUM
+1926,Merchant_01926,Fuel,Delhi,India,LOW
+1927,Merchant_01927,Dining,Surat,India,LOW
+1928,Merchant_01928,Electronics,Indore,India,LOW
+1929,Merchant_01929,Grocery,Kolkata,India,LOW
+1930,Merchant_01930,Healthcare,Nagpur,India,HIGH
+1931,Merchant_01931,Healthcare,Pune,India,LOW
+1932,Merchant_01932,Entertainment,Lucknow,India,LOW
+1933,Merchant_01933,Jewelry,Jaipur,India,LOW
+1934,Merchant_01934,Healthcare,Bengaluru,India,LOW
+1935,Merchant_01935,Clothing,Chandigarh,India,LOW
+1936,Merchant_01936,Electronics,Bengaluru,India,MEDIUM
+1937,Merchant_01937,Entertainment,Bangalore,India,LOW
+1938,Merchant_01938,Jewelry,Pune,USA,LOW
+1939,Merchant_01939,Electronics,Pune,India,LOW
+1940,Merchant_01940,Gift Cards,Chandigarh,India,LOW
+1941,Merchant_01941,Travel,Surat,India,LOW
+1942,Merchant_01942,Dining,Ahmedabad,UAE,LOW
+1943,Merchant_01943,Entertainment,Hyderabad,India,HIGH
+1944,Merchant_01944,Entertainment,Indore,India,MEDIUM
+1945,Merchant_01945,Fuel,Mumbai,India,LOW
+1946,Merchant_01946,Fuel,Delhi,India,MEDIUM
+1947,Merchant_01947,Dining,Chennai,India,HIGH
+1948,Merchant_01948,Grocery,Bengaluru,India,LOW
+1949,Merchant_01949,Dining,Jaipur,India,MEDIUM
+1950,Merchant_01950,Online Services,Jaipur,India,LOW
+1951,Merchant_01951,Grocery,Jaipur,Singapore,LOW
+1952,Merchant_01952,Electronics,Kolkata,India,LOW
+1953,Merchant_01953,Entertainment,Mumbai,India,LOW
+1954,Merchant_01954,Grocery,Chandigarh,India,HIGH
+1955,Merchant_01955,Clothing,Mumbai,India,LOW
+1956,Merchant_01956,Gift Cards,Hyderabad,Singapore,LOW
+1957,Merchant_01957,Fuel,Surat,Singapore,MEDIUM
+1958,Merchant_01958,Online Services,Chandigarh,India,LOW
+1959,Merchant_01959,Travel,Surat,India,LOW
+1960,Merchant_01960,Dining,Bengaluru,India,LOW
+1961,Merchant_01961,Fuel,Kolkata,India,MEDIUM
+1962,Merchant_01962,Entertainment,Indore,India,LOW
+1963,Merchant_01963,Jewelry,Surat,India,MEDIUM
+1964,Merchant_01964,Grocery,Mumbai,India,LOW
+1965,Merchant_01965,Online Services,Lucknow,India,MEDIUM
+1966,Merchant_01966,Electronics,Bengaluru,India,LOW
+1967,Merchant_01967,Fuel,Nagpur,India,LOW
+1968,Merchant_01968,Electronics,Pune,India,LOW
+1969,Merchant_01969,Grocery,Bengaluru,India,HIGH
+1970,Merchant_01970,Fuel,Surat,India,LOW
+1971,Merchant_01971,Entertainment,Indore,India,MEDIUM
+1972,Merchant_01972,Online Services,Bengaluru,India,MEDIUM
+1973,Merchant_01973,Grocery,Bengaluru,India,LOW
+1974,Merchant_01974,Gift Cards,Delhi,India,LOW
+1975,Merchant_01975,Healthcare,Jaipur,UK,LOW
+1976,Merchant_01976,Clothing,Lucknow,India,MEDIUM
+1977,Merchant_01977,Gift Cards,Lucknow,India,LOW
+1978,Merchant_01978,Dining,Ahmedabad,India,MEDIUM
+1979,Merchant_01979,Jewelry,Indore,India,LOW
+1980,Merchant_01980,Healthcare,Surat,India,MEDIUM
+1981,Merchant_01981,Healthcare,Mumbai,India,LOW
+1982,Merchant_01982,Online Services,Nagpur,India,HIGH
+1983,Merchant_01983,Gift Cards,Lucknow,India,LOW
+1984,Merchant_01984,Fuel,Bangalore,India,MEDIUM
+1985,Merchant_01985,Online Services,Surat,India,LOW
+1986,Merchant_01986,Jewelry,Kolkata,India,LOW
+1987,Merchant_01987,Online Services,Lucknow,India,MEDIUM
+1988,Merchant_01988,Online Services,Bangalore,India,HIGH
+1989,Merchant_01989,Clothing,Delhi,India,MEDIUM
+1990,Merchant_01990,Grocery,Bengaluru,India,LOW
+1991,Merchant_01991,Online Services,Chennai,India,MEDIUM
+1992,Merchant_01992,Clothing,Chennai,India,HIGH
+1993,Merchant_01993,Clothing,Delhi,India,LOW
+1994,Merchant_01994,Jewelry,Mumbai,India,LOW
+1995,Merchant_01995,Electronics,Pune,India,MEDIUM
+1996,Merchant_01996,Dining,Bangalore,India,LOW
+1997,Merchant_01997,Travel,Chandigarh,India,LOW
+1998,Merchant_01998,Entertainment,Chandigarh,India,LOW
+1999,Merchant_01999,Dining,Hyderabad,USA,HIGH
+2000,Merchant_02000,Gift Cards,Pune,India,LOW

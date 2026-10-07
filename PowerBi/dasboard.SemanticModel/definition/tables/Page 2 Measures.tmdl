@@ -1,0 +1,122 @@
+/// Measures for Page 2 (Fraud Pattern Analysis).
+/// 
+/// The band breakdown visuals read the calculated columns on
+/// fact_transaction_clean directly ('Amount Band', 'Country Match',
+/// 'Card Age Band', 'Risk Pattern'), so they need no bespoke measures here.
+/// Only the scalars that are not expressible as a plain column split live in
+/// this table.
+table 'Page 2 Measures'
+	lineageTag: a2000001-0000-4000-8000-000000000001
+
+	/// Share of total fraud value captured by transactions above 25K.
+	/// 0.5587 = 55.87% of fraud value from 0.32% of volume.
+	measure 'Fraud Value Share Above 25K' =
+			
+			DIVIDE(
+			    CALCULATE([Fraud Value], fact_transaction_clean[amount] > 25000),
+			    [Fraud Value],
+			    0
+			)
+		formatString: 0.00%
+		lineageTag: a2000005-0000-4000-8000-000000000001
+
+	measure 'Volume Share Above 25K' =
+			
+			DIVIDE(
+			    CALCULATE([Total Transactions], fact_transaction_clean[amount] > 25000),
+			    [Total Transactions],
+			    0
+			)
+		formatString: 0.00%
+		lineageTag: a2000006-0000-4000-8000-000000000001
+
+	/// Headline scalars for the strongest observed pattern.
+	measure 'Top Pattern Fraud Value' =
+			
+			CALCULATE(
+			    [Fraud Value],
+			    fact_transaction_clean[channel] = "E_COMMERCE",
+			    fact_transaction_clean[category] IN { "Electronics", "Gift Cards" },
+			    fact_transaction_clean[amount] >= 10000
+			)
+		formatString: "₹"#,##0
+		lineageTag: a2000013-0000-4000-8000-000000000001
+
+	measure 'Top Pattern Fraud Rate' =
+			
+			CALCULATE(
+			    DIVIDE([Fraud Transactions], [Total Transactions], 0),
+			    fact_transaction_clean[channel] = "E_COMMERCE",
+			    fact_transaction_clean[category] IN { "Electronics", "Gift Cards" },
+			    fact_transaction_clean[amount] >= 10000
+			)
+		formatString: 0.00%
+		lineageTag: a2000014-0000-4000-8000-000000000001
+
+	measure 'Top Pattern Fraud Value Coverage' =
+			
+			DIVIDE(
+			    [Top Pattern Fraud Value],
+			    [Fraud Value],
+			    0
+			)
+		formatString: 0.00%
+		lineageTag: a2000015-0000-4000-8000-000000000001
+
+	measure 'Top Pattern Transactions' =
+			
+			CALCULATE(
+			    [Total Transactions],
+			    fact_transaction_clean[channel] = "E_COMMERCE",
+			    fact_transaction_clean[category] IN { "Electronics", "Gift Cards" },
+			    fact_transaction_clean[amount] >= 10000
+			)
+		formatString: #,##0
+		lineageTag: a2000016-0000-4000-8000-000000000001
+
+	/// Ratio of the mismatch fraud rate to the match fraud rate. Guards the
+	/// claim that mismatch roughly doubles risk.
+	measure 'Mismatch Rate Multiple' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        [Fraud Rate],
+			        fact_transaction_clean[Country Match] = "Mismatch"
+			    ),
+			    CALCULATE(
+			        [Fraud Rate],
+			        fact_transaction_clean[Country Match] = "Match"
+			    ),
+			    0
+			)
+		formatString: 0.00"x"
+		lineageTag: a2000019-0000-4000-8000-000000000001
+
+	/// Fraud rate for the R001 production threshold, for the Page 1 / Page 3
+	/// comparison against the 10K exploration threshold.
+	measure 'R001 Threshold Fraud Rate' =
+			
+			CALCULATE(
+			    DIVIDE([Fraud Transactions], [Total Transactions], 0),
+			    fact_transaction_clean[channel] = "E_COMMERCE",
+			    fact_transaction_clean[category] IN { "Electronics", "Gift Cards" },
+			    fact_transaction_clean[amount] >= 20000
+			)
+		formatString: 0.00%
+		lineageTag: a2000020-0000-4000-8000-000000000001
+
+	column Column
+		formatString: 0
+		lineageTag: a2000017-0000-4000-8000-000000000001
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Page 2 Measures' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = a2000018-0000-4000-8000-000000000001
+

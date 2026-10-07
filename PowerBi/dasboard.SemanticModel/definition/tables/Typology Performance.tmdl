@@ -1,0 +1,119 @@
+table 'Typology Performance'
+	lineageTag: eb449101-43fc-499e-bbf7-3ec32f56a0ab
+
+	column typology
+		dataType: string
+		lineageTag: c97e1aa5-63bf-4a89-a539-5338c702b62a
+		summarizeBy: none
+		sourceColumn: typology
+
+		annotation SummarizationSetBy = Automatic
+
+	column fraud_transactions
+		dataType: int64
+		formatString: 0
+		lineageTag: 648e7fe0-22bb-496b-95b9-f66bbffd3ca2
+		summarizeBy: sum
+		sourceColumn: fraud_transactions
+
+		annotation SummarizationSetBy = Automatic
+
+	column fraud_value
+		dataType: double
+		lineageTag: 7357921f-8c65-4962-b8c0-1a231465fa09
+		summarizeBy: sum
+		sourceColumn: fraud_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R001_caught
+		dataType: int64
+		formatString: 0
+		lineageTag: 384f37d0-ebdb-4922-9b2f-e03d704157fb
+		summarizeBy: sum
+		sourceColumn: R001_caught
+
+		annotation SummarizationSetBy = Automatic
+
+	column R002_caught
+		dataType: int64
+		formatString: 0
+		lineageTag: fcac69a7-4247-4b98-a496-eea42c624285
+		summarizeBy: sum
+		sourceColumn: R002_caught
+
+		annotation SummarizationSetBy = Automatic
+
+	column R001_recall_pct
+		dataType: double
+		lineageTag: 091111cd-b82c-4502-912a-13c307d33b62
+		summarizeBy: sum
+		sourceColumn: R001_recall_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R002_recall_pct
+		dataType: int64
+		formatString: 0
+		lineageTag: 909720ba-4a73-4bec-a229-434d3eb11635
+		summarizeBy: sum
+		sourceColumn: R002_recall_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column R001_value_caught
+		dataType: double
+		lineageTag: 6166ff32-5db5-444d-b868-083e7c47e881
+		summarizeBy: sum
+		sourceColumn: R001_value_caught
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R002_value_caught
+		dataType: double
+		lineageTag: 4c0e5b45-4414-428f-bcbc-6f0cd0db503e
+		summarizeBy: sum
+		sourceColumn: R002_value_caught
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R001_value_coverage_pct
+		dataType: double
+		lineageTag: 7fee019b-ee6a-4feb-bc47-34f2d8f72e19
+		summarizeBy: sum
+		sourceColumn: R001_value_coverage_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R002_value_coverage_pct
+		dataType: int64
+		formatString: 0
+		lineageTag: afb3ca46-ad74-40e9-9b08-9753e5729748
+		summarizeBy: sum
+		sourceColumn: R002_value_coverage_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Typology Performance' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\excel\fraud_rule_business_case.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Typology Performance", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"typology", type text}, {"fraud_transactions", Int64.Type}, {"fraud_value", type number}, {"R001_caught", Int64.Type}, {"R002_caught", Int64.Type}, {"R001_recall_pct", type number}, {"R002_recall_pct", Int64.Type}, {"R001_value_caught", type number}, {"R002_value_caught", type number}, {"R001_value_coverage_pct", type number}, {"R002_value_coverage_pct", Int64.Type}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

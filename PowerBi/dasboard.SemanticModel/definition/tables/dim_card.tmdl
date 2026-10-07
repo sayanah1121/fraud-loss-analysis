@@ -1,0 +1,74 @@
+table dim_card
+	lineageTag: 6c1b359e-0c46-44f0-bc2a-c337913d89b9
+
+	column card_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 77a5d59e-4e18-4d96-a596-90e1db2195b3
+		summarizeBy: none
+		sourceColumn: card_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: f890046d-0355-4c92-9038-1e550a54a2b4
+		summarizeBy: sum
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column card_type
+		dataType: string
+		lineageTag: 38b88b23-f5d2-47f3-8797-82bd01743405
+		summarizeBy: none
+		sourceColumn: card_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column issue_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 19ea4a16-0e62-49d7-ae26-4329b0da3bca
+		summarizeBy: none
+		sourceColumn: issue_date
+
+		variation Variation
+			isDefault
+			relationship: f6d6c923-fe08-4fce-b41b-2295acb197bf
+			defaultHierarchy: LocalDateTable_43e1ec6b-3c3f-4e90-a731-e957554fcda8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column credit_limit
+		dataType: int64
+		formatString: 0
+		lineageTag: b9288fe6-9768-4a8b-8605-695b630bdaa1
+		summarizeBy: sum
+		sourceColumn: credit_limit
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: bd808ef3-2df6-47d2-bec5-ede4183fab5e
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_card = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\dim_card.csv"), [Delimiter = ",", Columns = 6, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"card_id", Int64.Type}, {"customer_id", Int64.Type}, {"card_type", type text}, {"issue_date", type date}, {"credit_limit", Int64.Type}, {"status", type text}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

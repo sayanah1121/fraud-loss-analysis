@@ -1,0 +1,88 @@
+table Capacity
+	lineageTag: 59e95a48-e901-4495-bb46-00d88d7cf0d6
+
+	column rule_id
+		dataType: string
+		lineageTag: 95b3fc24-22dd-4dbc-a94e-aedb2d00006a
+		summarizeBy: none
+		sourceColumn: rule_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rule_name
+		dataType: string
+		lineageTag: 22797a59-dfbf-494e-9984-51ee9e6bbc67
+		summarizeBy: none
+		sourceColumn: rule_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_alerts_validation
+		dataType: int64
+		formatString: 0
+		lineageTag: 38156cf9-58f2-4e92-8332-845f96ed6ab9
+		summarizeBy: sum
+		sourceColumn: total_alerts_validation
+
+		annotation SummarizationSetBy = Automatic
+
+	column validation_months
+		dataType: int64
+		formatString: 0
+		lineageTag: be812679-13ef-4def-8d6f-5aecf6d15d2d
+		summarizeBy: sum
+		sourceColumn: validation_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_alerts_per_month
+		dataType: double
+		lineageTag: fa21937d-7484-49f9-89bf-5891abcee58c
+		summarizeBy: sum
+		sourceColumn: avg_alerts_per_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column monthly_capacity
+		dataType: int64
+		formatString: 0
+		lineageTag: a3171c8c-0938-427a-ac1f-1f26cd8c2daa
+		summarizeBy: sum
+		sourceColumn: monthly_capacity
+
+		annotation SummarizationSetBy = Automatic
+
+	column capacity_utilization_pct
+		dataType: double
+		lineageTag: 0f5d88f2-4582-4d53-9fbb-017f29234792
+		summarizeBy: sum
+		sourceColumn: capacity_utilization_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column within_capacity
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c18c073d-1710-4634-8eff-02fc676c25bf
+		summarizeBy: none
+		sourceColumn: within_capacity
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Capacity = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\excel\fraud_rule_business_case.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Capacity", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"rule_id", type text}, {"rule_name", type text}, {"total_alerts_validation", Int64.Type}, {"validation_months", Int64.Type}, {"avg_alerts_per_month", type number}, {"monthly_capacity", Int64.Type}, {"capacity_utilization_pct", type number}, {"within_capacity", type logical}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

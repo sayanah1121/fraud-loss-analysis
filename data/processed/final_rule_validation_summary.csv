@@ -1,0 +1,3 @@
+rule_id,rule_name,role,alerts,TP,FP,FN,TN,precision_pct,recall_pct,fpr_pct,accuracy_pct,f1_pct,fraud_value_caught,fraud_value_coverage_pct,expected_fraud_prevented,review_cost,customer_friction_cost,expected_net_savings
+R001,High-value E-commerce High-risk Category,Primary loss-prevention,616,432,184,3092,496706,70.12987012987013,12.258796821793416,0.037030328644166714,99.34534205677699,20.869565217391305,18550201.98,58.35381399879833,14840161.584,92400,18400,14729361.584
+R002,E-commerce Card Testing,Secondary preventive control,781,716,65,2808,496825,91.67733674775928,20.317820658342793,0.013081366097124111,99.42587537518935,33.263646922183504,18493.85,0.05817654622764794,14795.08,117150,6500,-108854.92

@@ -1,0 +1,8 @@
+metric,value
+Clean transactions,1498353.0
+Chargeback records,10500.0
+Chargebacks linked to clean transactions,10488.0
+Orphan chargebacks,12.0
+Orphan chargeback gross loss,88077.08
+Orphan chargeback recovered amount,35232.28
+Orphan chargeback net loss,52844.8

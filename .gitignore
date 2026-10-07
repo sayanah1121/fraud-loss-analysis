@@ -1,0 +1,81 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+*.code-workspace
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Python tooling
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# SQLite / local databases
+# =========================
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+
+# Project database
+data/fraud_analysis.db
+
+# =========================
+# Generated / hidden data
+# =========================
+
+# Hidden simulation ground truth
+data/raw/sim_ground_truth.csv
+
+# Large generated transaction datasets
+data/raw/transactions.csv
+data/processed/fact_transaction_clean.csv
+
+# Other generated raw datasets
+data/raw/*.csv
+
+# =========================
+# Power BI local/cache files
+# =========================
+**/.pbi/
+**/localSettings.json
+**/cache.abf
+
+# Power BI temporary files
+*.tmp
+*.bak
+
+# =========================
+# Temporary project files
+# =========================
+*.log
+project_files.txt
+data/processed/final_validation_transactions.csv

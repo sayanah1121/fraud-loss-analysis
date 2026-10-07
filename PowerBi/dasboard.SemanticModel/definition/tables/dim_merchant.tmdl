@@ -1,0 +1,64 @@
+table dim_merchant
+	lineageTag: 1cfc20f0-7f48-4dd5-bd21-2c824a9207d7
+
+	column merchant_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ddf4da2-6088-4ad5-b359-2aefabe746ec
+		summarizeBy: none
+		sourceColumn: merchant_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column merchant_name
+		dataType: string
+		lineageTag: faa706ae-4ff3-417d-a950-17f6370a35f7
+		summarizeBy: none
+		sourceColumn: merchant_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: ba024526-7102-4ea3-a790-687496d7bcdb
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 4b49d947-8da2-4a11-81a0-1c0e8a511751
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: feb84bbd-6d24-4053-b149-224273920cb4
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_tier
+		dataType: string
+		lineageTag: fc09ac2b-2ea6-4e82-bfff-9f6aecfff74f
+		summarizeBy: none
+		sourceColumn: risk_tier
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_merchant = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\dim_merchant.csv"), [Delimiter = ",", Columns = 6, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"merchant_id", Int64.Type}, {"merchant_name", type text}, {"category", type text}, {"city", type text}, {"country", type text}, {"risk_tier", type text}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

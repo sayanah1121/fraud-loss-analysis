@@ -1,0 +1,6 @@
+rule_id,rule_name,rule_type,condition,status,reason
+R001,High-value E-commerce high-risk category,Primary loss-prevention rule,"E_COMMERCE AND (Electronics OR Gift Cards) AND amount >= ₹20,000",RECOMMENDED,Strong validation economics and meets precision/capacity guardrails
+R002,E-commerce card-testing control,Preventive control,E_COMMERCE AND amount <= ₹50,SECONDARY CONTROL,91.03% fraud rate but only 0.06% of total fraud value
+R003,Cross-border high-value,Diagnostic/watchlist,"Country mismatch AND amount >= ₹20,000",WATCHLIST,Meaningful fraud value but insufficient precision for standalone deployment
+R004,Impossible travel,Diagnostic/watchlist,Merchant country changes within short time window,REJECTED,Low fraud-value coverage and weak operational economics
+R005,Merchant/device concentration,Diagnostic/watchlist,Unusually high number of cards per merchant/device,REJECTED,Precision remains close to baseline

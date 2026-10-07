@@ -1,0 +1,45 @@
+table Sensitivity
+	lineageTag: fd580343-5f60-4c82-8bc6-b1df338e6d11
+
+	column 'Fraud prevention rate (%)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0f47d157-059a-4b01-bfdc-b466a0e57241
+		summarizeBy: sum
+		sourceColumn: Fraud prevention rate (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column R001_expected_net_savings
+		dataType: double
+		lineageTag: a1fb56ca-f7c1-4a2b-a33e-d1197e2294e7
+		summarizeBy: sum
+		sourceColumn: R001_expected_net_savings
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column R002_expected_net_savings
+		dataType: double
+		lineageTag: 6bce50a4-9ab8-4aa3-96f6-dfc8028685d1
+		summarizeBy: sum
+		sourceColumn: R002_expected_net_savings
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Sensitivity = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\excel\fraud_rule_business_case.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Sensitivity", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"Fraud prevention rate (%)", Int64.Type}, {"R001_expected_net_savings", type number}, {"R002_expected_net_savings", type number}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

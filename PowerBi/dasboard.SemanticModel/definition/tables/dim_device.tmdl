@@ -1,0 +1,48 @@
+table dim_device
+	lineageTag: d1a9e808-5f91-4068-a7e0-0b476413b6b3
+
+	column device_id
+		dataType: int64
+		formatString: 0
+		lineageTag: cdd1bbc0-9c87-4b57-a03b-755189fbd961
+		summarizeBy: none
+		sourceColumn: device_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column device_type
+		dataType: string
+		lineageTag: 589aaed8-99ab-493c-a549-1dd1b29ee2b1
+		summarizeBy: none
+		sourceColumn: device_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column first_seen_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 532c44f3-729e-46df-8e59-7a720d6418ad
+		summarizeBy: none
+		sourceColumn: first_seen_date
+
+		variation Variation
+			isDefault
+			relationship: 7798fd52-be6a-408f-8bb4-2426f45fa503
+			defaultHierarchy: LocalDateTable_df0b76e7-8970-47d8-b66c-c3b37cc8440a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition dim_device = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\data\processed\dim_device.csv"), [Delimiter = ",", Columns = 3, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"device_id", Int64.Type}, {"device_type", type text}, {"first_seen_date", type date}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,7 @@
+issue,count,action
+Duplicate transactions,0,Removed exact duplicates
+Invalid transaction amounts,1199,Removed amount <= 0
+Missing device IDs,3004,Replaced with -1 (Unknown)
+Missing IP country,3002,Replaced with UNKNOWN
+Orphan merchant IDs,450,Removed orphan transactions
+Inconsistent city names,0,Standardized to Bengaluru

@@ -1,0 +1,145 @@
+table 'Rule Results'
+	lineageTag: 8329ed39-a236-4cf4-b4e9-72da6ffbb269
+
+	column rule_id
+		dataType: string
+		lineageTag: 4cde4a48-d448-4f9d-8c02-4404513c20aa
+		summarizeBy: none
+		sourceColumn: rule_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rule_name
+		dataType: string
+		lineageTag: 9d06970f-9f93-4cef-bbdd-b04d0ede9d4f
+		summarizeBy: none
+		sourceColumn: rule_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column role
+		dataType: string
+		lineageTag: 0a6baed3-ee1e-4152-bb7b-97f002e115d9
+		summarizeBy: none
+		sourceColumn: role
+
+		annotation SummarizationSetBy = Automatic
+
+	column alerts
+		dataType: int64
+		formatString: 0
+		lineageTag: 9add8450-5afd-41a2-a6b4-1dcdada2e30a
+		summarizeBy: sum
+		sourceColumn: alerts
+
+		annotation SummarizationSetBy = Automatic
+
+	column TP
+		dataType: int64
+		formatString: 0
+		lineageTag: a59e845e-e9f9-4c32-9a2c-ab2e9c69a86f
+		summarizeBy: sum
+		sourceColumn: TP
+
+		annotation SummarizationSetBy = Automatic
+
+	column FP
+		dataType: int64
+		formatString: 0
+		lineageTag: 75952d69-e040-4e1c-8de8-fdbece12f73a
+		summarizeBy: sum
+		sourceColumn: FP
+
+		annotation SummarizationSetBy = Automatic
+
+	column precision_pct
+		dataType: double
+		lineageTag: 964cb66e-e4d6-417a-8e96-7a502c5e2829
+		summarizeBy: sum
+		sourceColumn: precision_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column recall_pct
+		dataType: double
+		lineageTag: b2cd63f4-d674-4af5-8fd2-bbff31c5ee7d
+		summarizeBy: sum
+		sourceColumn: recall_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fraud_value_caught
+		dataType: double
+		lineageTag: 13c7371b-8254-4205-8a52-5b7b0798bb2b
+		summarizeBy: sum
+		sourceColumn: fraud_value_caught
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fraud_value_coverage_pct
+		dataType: double
+		lineageTag: cc4fe315-d8c4-4ac5-b618-3032cfc80227
+		summarizeBy: sum
+		sourceColumn: fraud_value_coverage_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column expected_fraud_prevented
+		dataType: double
+		lineageTag: c8d7373d-89d3-4d25-806d-7939a1e12b94
+		summarizeBy: sum
+		sourceColumn: expected_fraud_prevented
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column review_cost
+		dataType: int64
+		formatString: 0
+		lineageTag: f4e02195-f1c2-46c9-9ed8-f673b2d54246
+		summarizeBy: sum
+		sourceColumn: review_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_friction_cost
+		dataType: int64
+		formatString: 0
+		lineageTag: d040c51e-36d1-4de0-9fc9-94c10b59cfe3
+		summarizeBy: sum
+		sourceColumn: customer_friction_cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column expected_net_savings
+		dataType: double
+		lineageTag: ea4c394b-60e5-4b94-963f-25cf4ab4872c
+		summarizeBy: sum
+		sourceColumn: expected_net_savings
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Rule Results' = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(File.Contents("D:\fraud-loss-analysis-step1\fraud-loss-analysis\excel\fraud_rule_business_case.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Rule Results", Kind = "Sheet"]}[Data],
+				  #"Promoted headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"rule_id", type text}, {"rule_name", type text}, {"role", type text}, {"alerts", Int64.Type}, {"TP", Int64.Type}, {"FP", Int64.Type}, {"precision_pct", type number}, {"recall_pct", type number}, {"fraud_value_caught", type number}, {"fraud_value_coverage_pct", type number}, {"expected_fraud_prevented", type number}, {"review_cost", Int64.Type}, {"customer_friction_cost", Int64.Type}, {"expected_net_savings", type number}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

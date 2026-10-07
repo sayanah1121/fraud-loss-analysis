@@ -1,0 +1,193 @@
+/// Measures for Page 3 (Rule Performance & Optimization).
+/// 
+/// Two families live here:
+/// 
+/// 1. Threshold-sweep measures over 'R001 Threshold Sweep'. The sweep is a
+/// static analytical result (validation period only), so these are thin
+/// aggregates that exist to control number formatting, not to compute.
+/// 
+/// 2. Capacity measures over 'Capacity'. The source column
+/// `capacity_utilization_pct` holds 30.8 -- already percent-scaled, NOT a
+/// 0-1 fraction -- so every format string here uses 0.00"%" rather than
+/// 0.00%, which would render "3080.00%".
+/// 
+/// The brief refers to this column as `Capacity[utilization_pct]`; the real
+/// name is `capacity_utilization_pct`.
+/// 
+/// TMDL NOTE: only `///` doc comments are legal in a .tmdl file. A plain `//`
+/// line is an indentation parse error that blocks the whole project from
+/// opening, with the error pointing at the comment line rather than at the
+/// measure it was meant to describe.
+table 'Page 3 Measures'
+	lineageTag: b4000001-0000-4000-8000-000000000001
+
+	/// Validation-period alert volume at the selected threshold.
+	/// INR 20,000 -> 616, which is the figure on the R001 Alert Volume card.
+	measure 'Threshold Alerts' =
+			
+			SUM('R001 Threshold Sweep'[alerts])
+		formatString: #,##0
+		lineageTag: b4000002-0000-4000-8000-000000000001
+
+	/// Validation-period precision, percent-scaled. 70.13 -> "70.13%".
+	measure 'Threshold Precision' =
+			
+			AVERAGE('R001 Threshold Sweep'[precision_pct])
+		formatString: 0.00"%"
+		lineageTag: b4000003-0000-4000-8000-000000000001
+
+	/// Validation-period fraud value captured. INR 20,000 -> 18,550,201.98.
+	measure 'Threshold Fraud Value' =
+			
+			SUM('R001 Threshold Sweep'[fraud_value])
+		formatString: "₹"#,##0
+		lineageTag: b4000004-0000-4000-8000-000000000001
+
+	/// Fraud transactions caught, for the sweep's tooltip.
+	measure 'Threshold Fraud Txns' =
+			
+			SUM('R001 Threshold Sweep'[fraud_transactions])
+		formatString: #,##0
+		lineageTag: b4000005-0000-4000-8000-000000000001
+
+	/// Legitimate alerts raised, i.e. the review workload from a miss.
+	measure 'Threshold Legit Txns' =
+			
+			SUM('R001 Threshold Sweep'[legitimate_transactions])
+		formatString: #,##0
+		lineageTag: b4000006-0000-4000-8000-000000000001
+
+	/// Review capacity consumed by R001, percent-scaled. -> 30.8.
+	measure 'R001 Capacity Utilization' =
+			
+			CALCULATE(
+			    MAX('Capacity'[capacity_utilization_pct]),
+			    'Capacity'[rule_id] = "R001"
+			)
+		formatString: 0.00"%"
+		lineageTag: b4000007-0000-4000-8000-000000000001
+
+	/// R001 alerts per month across the 4-month validation window. -> 154.
+	measure 'R001 Avg Alerts Per Month' =
+			
+			CALCULATE(
+			    MAX('Capacity'[avg_alerts_per_month]),
+			    'Capacity'[rule_id] = "R001"
+			)
+		formatString: #,##0
+		lineageTag: b4000008-0000-4000-8000-000000000001
+
+	/// Assumed monthly review capacity. -> 500.
+	measure 'R001 Monthly Review Capacity' =
+			
+			CALCULATE(
+			    MAX('Capacity'[monthly_capacity]),
+			    'Capacity'[rule_id] = "R001"
+			)
+		formatString: #,##0
+		lineageTag: b4000009-0000-4000-8000-000000000001
+
+	/// R001 recall against a typology. 61.90 for account_takeover.
+	measure 'R001 Typology Recall' =
+			
+			AVERAGE('Typology Performance'[R001_recall_pct])
+		formatString: 0.00"%"
+		lineageTag: b4000010-0000-4000-8000-000000000001
+
+	/// Share of that typology's fraud VALUE caught by R001.
+	/// 84.07 for account_takeover.
+	measure 'R001 Typology Value Coverage' =
+			
+			AVERAGE('Typology Performance'[R001_value_coverage_pct])
+		formatString: 0.00"%"
+		lineageTag: b4000011-0000-4000-8000-000000000001
+
+	/// Number of fraud transactions R001 caught in that typology. -> 429.
+	measure 'R001 Typology Caught' =
+			
+			SUM('Typology Performance'[R001_caught])
+		formatString: #,##0
+		lineageTag: b4000012-0000-4000-8000-000000000001
+
+	/// Total hidden fraud in that typology. -> 693.
+	measure 'Typology Fraud Txns' =
+			
+			SUM('Typology Performance'[fraud_transactions])
+		formatString: #,##0
+		lineageTag: b4000013-0000-4000-8000-000000000001
+
+	measure 'Rule Alerts' =
+			
+			SUM('Rule Results'[alerts])
+		formatString: #,##0
+		lineageTag: b4000014-0000-4000-8000-000000000001
+
+	/// Stored percent-scaled: 70.13, not 0.7013.
+	measure 'Rule Precision' =
+			
+			AVERAGE('Rule Results'[precision_pct])
+		formatString: 0.00"%"
+		lineageTag: b4000015-0000-4000-8000-000000000001
+
+	measure 'Rule Recall' =
+			
+			AVERAGE('Rule Results'[recall_pct])
+		formatString: 0.00"%"
+		lineageTag: b4000016-0000-4000-8000-000000000001
+
+	measure 'Rule Fraud Value Caught' =
+			
+			SUM('Rule Results'[fraud_value_caught])
+		formatString: "₹"#,##0
+		lineageTag: b4000017-0000-4000-8000-000000000001
+
+	/// Negative for R002. Format shows the minus sign in red.
+	measure 'Rule Net Savings' =
+			
+			SUM('Rule Results'[expected_net_savings])
+		formatString: "₹"#,##0;[Red]-"₹"#,##0
+		lineageTag: b4000018-0000-4000-8000-000000000001
+
+	measure 'Rule Expected Prevented' =
+			
+			SUM('Rule Results'[expected_fraud_prevented])
+		formatString: "₹"#,##0
+		lineageTag: b4000019-0000-4000-8000-000000000001
+
+	measure 'Rule Review Cost' =
+			
+			SUM('Rule Results'[review_cost])
+		formatString: "₹"#,##0
+		lineageTag: b4000020-0000-4000-8000-000000000001
+
+	measure 'Rule Friction Cost' =
+			
+			SUM('Rule Results'[customer_friction_cost])
+		formatString: "₹"#,##0
+		lineageTag: b4000021-0000-4000-8000-000000000001
+
+	/// R001 net savings at each assumed prevention rate. Stays positive
+	/// across the whole 50-100% sweep.
+	measure 'Sensitivity R001 Net Savings' =
+			
+			SUM(Sensitivity[R001_expected_net_savings])
+		formatString: "₹"#,##0
+		lineageTag: b4000022-0000-4000-8000-000000000001
+
+	/// R002 net savings at each assumed prevention rate. Stays negative
+	/// across the whole 50-100% sweep, which is what makes "retain as a
+	/// preventive control rather than a manual-review rule" a robust
+	/// conclusion rather than an artefact of the 80% assumption.
+	measure 'Sensitivity R002 Net Savings' =
+			
+			SUM(Sensitivity[R002_expected_net_savings])
+		formatString: "₹"#,##0;[Red]-"₹"#,##0
+		lineageTag: b4000023-0000-4000-8000-000000000001
+
+	/// Assumed prevention rate as a percentage label: 80 -> "80%".
+	measure 'Sensitivity Prevention Rate' =
+			
+			AVERAGE(Sensitivity[Fraud prevention rate (%)])
+		formatString: 0"%"
+		lineageTag: b4000024-0000-4000-8000-000000000001
+

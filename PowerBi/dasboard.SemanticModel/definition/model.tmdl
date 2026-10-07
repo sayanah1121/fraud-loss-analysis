@@ -1,0 +1,40 @@
+model Model
+	culture: en-IN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Summary","Assumptions","Rule Results","Capacity","Sensitivity","Typology Performance","fact_transaction_clean","dim_card","dim_customer","dim_device","dim_merchant","fact_chargeback"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Summary
+ref table Assumptions
+ref table 'Rule Results'
+ref table Capacity
+ref table Sensitivity
+ref table 'Typology Performance'
+ref table fact_transaction_clean
+ref table DateTableTemplate_7d52e804-f69c-42fb-b30f-2d2cd31e87a9
+ref table LocalDateTable_6366da29-0165-4b48-9456-eec0a1b30318
+ref table dim_card
+ref table LocalDateTable_43e1ec6b-3c3f-4e90-a731-e957554fcda8
+ref table dim_customer
+ref table dim_device
+ref table LocalDateTable_df0b76e7-8970-47d8-b66c-c3b37cc8440a
+ref table dim_merchant
+ref table fact_chargeback
+ref table LocalDateTable_761d36b7-4b0c-43b7-b9ac-fd027a0986f4
+ref table dim_date
+ref table _Measures
+ref table 'Page 2 Measures'
+ref table 'Page 3 Measures'
+ref table 'R001 Threshold Sweep'
+
+ref cultureInfo en-IN
+
